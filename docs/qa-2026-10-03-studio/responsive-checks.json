@@ -1,0 +1,182 @@
+[
+  {
+    "bodyWidth": 305,
+    "clippedText": [],
+    "height": 568,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 170,
+        "loaded": true
+      },
+      {
+        "height": 180,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 4502.7001953125,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "bodyWidth": 360,
+    "clippedText": [],
+    "height": 667,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 195.1000061035156,
+        "loaded": true
+      },
+      {
+        "height": 180,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 4316.92529296875,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "bodyWidth": 375,
+    "clippedText": [],
+    "height": 844,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 203,
+        "loaded": true
+      },
+      {
+        "height": 180,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 4300.8251953125,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "bodyWidth": 415,
+    "clippedText": [],
+    "height": 932,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 223.8000030517578,
+        "loaded": true
+      },
+      {
+        "height": 180,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 4231.02490234375,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 430
+  },
+  {
+    "bodyWidth": 584,
+    "clippedText": [],
+    "height": 800,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 230,
+        "loaded": true
+      },
+      {
+        "height": 180,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 4053.875,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 599
+  },
+  {
+    "bodyWidth": 585,
+    "clippedText": [],
+    "height": 960,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 320,
+        "loaded": true
+      },
+      {
+        "height": 300,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 7213.4375,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 600
+  },
+  {
+    "bodyWidth": 753,
+    "clippedText": [],
+    "height": 1024,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 320,
+        "loaded": true
+      },
+      {
+        "height": 300,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 6418.33740234375,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "bodyWidth": 1009,
+    "clippedText": [],
+    "height": 768,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 340,
+        "loaded": true
+      },
+      {
+        "height": 360,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 5122.8125,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "bodyWidth": 1351,
+    "clippedText": [],
+    "height": 768,
+    "heroTitleVisible": "visible",
+    "images": [
+      {
+        "height": 437.2375183105469,
+        "loaded": true
+      },
+      {
+        "height": 360,
+        "loaded": true
+      }
+    ],
+    "mainHeight": 4955.5625,
+    "openDetails": 0,
+    "overflow": false,
+    "width": 1366
+  }
+]

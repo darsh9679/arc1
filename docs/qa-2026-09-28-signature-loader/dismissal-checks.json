@@ -1,0 +1,58 @@
+[
+  {
+    "method": "click",
+    "elapsedMs": 351,
+    "before": {
+      "gutter": "stable",
+      "locked": true
+    },
+    "after": {
+      "focus": "Replay the introduction ↗",
+      "gutter": "",
+      "locked": false,
+      "overflow": ""
+    }
+  },
+  {
+    "method": "Escape",
+    "elapsedMs": 56,
+    "before": {
+      "gutter": "stable",
+      "locked": true
+    },
+    "after": {
+      "focus": "Replay the introduction ↗",
+      "gutter": "",
+      "locked": false,
+      "overflow": ""
+    }
+  },
+  {
+    "method": "Tab",
+    "elapsedMs": 44,
+    "before": {
+      "gutter": "stable",
+      "locked": true
+    },
+    "after": {
+      "focus": "Replay the introduction ↗",
+      "gutter": "",
+      "locked": false,
+      "overflow": ""
+    }
+  },
+  {
+    "method": "natural",
+    "elapsedMs": 1871,
+    "before": {
+      "gutter": "stable",
+      "locked": true
+    },
+    "after": {
+      "focus": "Replay the introduction ↗",
+      "gutter": "",
+      "locked": false,
+      "overflow": ""
+    }
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "inBounds": true,
+    "locked": true,
+    "logoLoaded": true,
+    "overflow": false,
+    "signature": [
+      495.6000061035156,
+      303.3999938964844,
+      360,
+      161.1999969482422
+    ],
+    "skipHeight": 44,
+    "viewport": [
+      1366,
+      768
+    ]
+  },
+  {
+    "inBounds": true,
+    "locked": true,
+    "logoLoaded": true,
+    "overflow": false,
+    "signature": [
+      52.60000228881836,
+      357.6750183105469,
+      270,
+      128.65000915527344
+    ],
+    "skipHeight": 44,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "inBounds": true,
+    "locked": true,
+    "logoLoaded": true,
+    "overflow": false,
+    "signature": [
+      28,
+      222.375,
+      248.8000030517578,
+      123.25
+    ],
+    "skipHeight": 44,
+    "viewport": [
+      320,
+      568
+    ]
+  },
+  {
+    "inBounds": true,
+    "locked": true,
+    "logoLoaded": true,
+    "overflow": false,
+    "signature": [
+      141.40000915527344,
+      100.6750030517578,
+      270,
+      118.6500015258789
+    ],
+    "skipHeight": 44,
+    "viewport": [
+      568,
+      320
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "phone": {
+    "height": 667,
+    "mainHeight": 13288.7998046875,
+    "pageHeight": 14251,
+    "sections": [
+      {
+        "height": 673.2000122070312,
+        "id": "",
+        "title": "Architecture witha deeper perspective."
+      },
+      {
+        "height": 1681.800048828125,
+        "id": "practice",
+        "title": "Every spacehas a story."
+      },
+      {
+        "height": 1107.3125,
+        "id": "founder",
+        "title": "Ar. SharvariPawaskar."
+      },
+      {
+        "height": 1191.7125244140625,
+        "id": "philosophy",
+        "title": "Three-Eyed Vision."
+      },
+      {
+        "height": 1228.5999755859375,
+        "id": "",
+        "title": "Our Vision"
+      },
+      {
+        "height": 2557.650146484375,
+        "id": "",
+        "title": "Finding calmin the chaos."
+      },
+      {
+        "height": 1094.4000244140625,
+        "id": "services",
+        "title": "Thoughtful design.Considered delivery."
+      },
+      {
+        "height": 3638.525146484375,
+        "id": "",
+        "title": "From understandingto experience."
+      }
+    ],
+    "width": 375
+  }
+}

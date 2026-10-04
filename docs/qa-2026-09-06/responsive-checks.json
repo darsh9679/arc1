@@ -1,0 +1,218 @@
+[
+  {
+    "path": "/",
+    "breakpoint": "320",
+    "clippedHeadings": [],
+    "height": 740,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "path": "/studio",
+    "breakpoint": "320",
+    "clippedHeadings": [],
+    "height": 740,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "path": "/work",
+    "breakpoint": "320",
+    "clippedHeadings": [],
+    "height": 740,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "path": "/recognition",
+    "breakpoint": "320",
+    "clippedHeadings": [],
+    "height": 740,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "path": "/contact",
+    "breakpoint": "320",
+    "clippedHeadings": [],
+    "height": 740,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "path": "/work/nerul-workspace",
+    "breakpoint": "320",
+    "clippedHeadings": [],
+    "height": 740,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "path": "/",
+    "breakpoint": "390",
+    "clippedHeadings": [],
+    "height": 844,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/studio",
+    "breakpoint": "390",
+    "clippedHeadings": [],
+    "height": 844,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/work",
+    "breakpoint": "390",
+    "clippedHeadings": [],
+    "height": 844,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/recognition",
+    "breakpoint": "390",
+    "clippedHeadings": [],
+    "height": 844,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/contact",
+    "breakpoint": "390",
+    "clippedHeadings": [],
+    "height": 844,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/work/nerul-workspace",
+    "breakpoint": "390",
+    "clippedHeadings": [],
+    "height": 844,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "path": "/",
+    "breakpoint": "768",
+    "clippedHeadings": [],
+    "height": 1025,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "path": "/studio",
+    "breakpoint": "768",
+    "clippedHeadings": [],
+    "height": 1025,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "path": "/work",
+    "breakpoint": "768",
+    "clippedHeadings": [],
+    "height": 1025,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "path": "/recognition",
+    "breakpoint": "768",
+    "clippedHeadings": [],
+    "height": 1025,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "path": "/contact",
+    "breakpoint": "768",
+    "clippedHeadings": [],
+    "height": 1025,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "path": "/work/nerul-workspace",
+    "breakpoint": "768",
+    "clippedHeadings": [],
+    "height": 1025,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "path": "/",
+    "breakpoint": "1024",
+    "clippedHeadings": [],
+    "height": 768,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 1025
+  },
+  {
+    "path": "/studio",
+    "breakpoint": "1024",
+    "clippedHeadings": [],
+    "height": 768,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 1025
+  },
+  {
+    "path": "/work",
+    "breakpoint": "1024",
+    "clippedHeadings": [],
+    "height": 768,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 1025
+  },
+  {
+    "path": "/recognition",
+    "breakpoint": "1024",
+    "clippedHeadings": [],
+    "height": 768,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 1025
+  },
+  {
+    "path": "/contact",
+    "breakpoint": "1024",
+    "clippedHeadings": [],
+    "height": 768,
+    "imageTransform": null,
+    "overflow": false,
+    "width": 1025
+  },
+  {
+    "path": "/work/nerul-workspace",
+    "breakpoint": "1024",
+    "clippedHeadings": [],
+    "height": 768,
+    "imageTransform": "none",
+    "overflow": false,
+    "width": 1025
+  }
+]

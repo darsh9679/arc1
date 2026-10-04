@@ -1,0 +1,153 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  padding: 28px;
+  overflow: hidden;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+.presentation {
+  width: min(100%, 360px);
+}
+.signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+}
+.logo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 596 / 152;
+}
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.logoUnderlay {
+  opacity: 0.12;
+}
+.logoReveal {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 100% 0 0);
+}
+.caption {
+  margin: 28px 0 0;
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+.progress {
+  width: 100%;
+  margin-top: 32px;
+}
+.progressLabel {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--color-ink-soft);
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+.percentage {
+  color: var(--color-ink);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.track {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  appearance: none;
+  border: 0;
+  overflow: hidden;
+  background: var(--color-line);
+  color: var(--color-accent);
+}
+.track::-webkit-progress-bar {
+  background: var(--color-line);
+}
+.track::-webkit-progress-value {
+  background: var(--color-accent);
+}
+.track::-moz-progress-bar {
+  background: var(--color-accent);
+}
+.skip {
+  position: absolute;
+  right: max(32px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-width: 92px;
+  min-height: 44px;
+  padding: 8px;
+  border: 0;
+  background: none;
+  color: var(--color-ink-soft);
+  font-size: 10px;
+  cursor: pointer;
+}
+.skip span {
+  font-size: 15px;
+}
+.skip:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+.skip:hover {
+  color: var(--color-ink);
+}
+@media (max-width: 600px) {
+  .presentation {
+    width: min(100%, 270px);
+  }
+  .caption {
+    font-size: 8px;
+    letter-spacing: 0.19em;
+    margin-top: 24px;
+  }
+  .progress {
+    margin-top: 28px;
+  }
+  .skip {
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+  }
+}
+@media (max-height: 450px) {
+  .presentation {
+    width: min(65%, 270px);
+  }
+  .caption {
+    margin-top: 18px;
+  }
+  .progress {
+    margin-top: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .root {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "cards": [
+    {
+      "position": "sticky",
+      "title": "Understand",
+      "top": 45,
+      "transform": "matrix(0.9709, 0, 0, 0.9709, 0, 0)"
+    },
+    {
+      "position": "sticky",
+      "title": "Observe",
+      "top": 300.35699462890625,
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    }
+  ],
+  "hiddenText": 0,
+  "viewport": [
+    1366,
+    768
+  ]
+}

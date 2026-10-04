@@ -1,0 +1,80 @@
+[
+  {
+    "dialog": true,
+    "focused": "Enter the studio ↗",
+    "height": 768,
+    "outside": [],
+    "overflow": false,
+    "photoLoaded": true,
+    "viewport": [
+      1366,
+      768
+    ],
+    "width": 1366.4000244140625
+  },
+  {
+    "dialog": true,
+    "focused": "Enter the studio ↗",
+    "height": 844,
+    "outside": [],
+    "overflow": false,
+    "photoLoaded": true,
+    "viewport": [
+      390,
+      844
+    ],
+    "width": 390.3999938964844
+  },
+  {
+    "dialog": true,
+    "focused": "Enter the studio ↗",
+    "height": 568,
+    "outside": [],
+    "overflow": false,
+    "photoLoaded": true,
+    "viewport": [
+      320,
+      568
+    ],
+    "width": 320
+  },
+  {
+    "dialog": true,
+    "focused": "Enter the studio ↗",
+    "height": 1024,
+    "outside": [],
+    "overflow": false,
+    "photoLoaded": true,
+    "viewport": [
+      768,
+      1024
+    ],
+    "width": 768
+  },
+  {
+    "dialog": true,
+    "focused": "Enter the studio ↗",
+    "height": 390.3999938964844,
+    "outside": [],
+    "overflow": false,
+    "photoLoaded": true,
+    "viewport": [
+      844,
+      390
+    ],
+    "width": 844
+  },
+  {
+    "dialog": true,
+    "focused": "Enter the studio ↗",
+    "height": 320,
+    "outside": [],
+    "overflow": false,
+    "photoLoaded": true,
+    "viewport": [
+      568,
+      320
+    ],
+    "width": 568
+  }
+]

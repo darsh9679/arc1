@@ -1,0 +1,52 @@
+{
+  "ghatkopar-apartment": {
+    "gallery": [
+      {
+        "src": "/images/projects/ghatkopar-apartment/gallery/01-living-and-dining.jpeg?v=7536c13b4e06",
+        "title": "Living and dining",
+        "alt": "Warm timber joinery and a calm living and dining space in a Ghatkopar apartment.",
+        "aspect": "landscape"
+      }
+    ]
+  },
+  "ratnagiri-apartment": {
+    "gallery": [
+      {
+        "src": "/images/projects/ratnagiri-apartment/gallery/01-window-seat.jpeg?v=42d3ece6fa3a",
+        "title": "A quiet place by the window",
+        "alt": "A window seat with teal cushions, plants and natural daylight in a Ratnagiri apartment.",
+        "aspect": "landscape"
+      }
+    ]
+  },
+  "anagha-salon": {
+    "gallery": [
+      {
+        "src": "/images/projects/anagha-salon/gallery/01-salon-floor.jpeg?v=134656fee76f",
+        "title": "Salon floor",
+        "alt": "Teal salon chairs, mirrors and open shelving arranged across the bright salon floor.",
+        "aspect": "landscape"
+      }
+    ]
+  },
+  "andheri-apartment": {
+    "gallery": [
+      {
+        "src": "/images/projects/andheri-apartment/gallery/01-living-room.jpeg?v=d3f1e31f6dcb",
+        "title": "Living room",
+        "alt": "A warm, understated living room with light upholstery and timber finishes in an Andheri apartment.",
+        "aspect": "landscape"
+      }
+    ]
+  },
+  "thane-apartment": {
+    "gallery": [
+      {
+        "src": "/images/projects/thane-apartment/gallery/01-living-and-media-wall.png?v=098ae50b7663",
+        "title": "Living and media wall",
+        "alt": "A Modern Classic living room with teal seating, marble-look detailing, warm timber and layered lighting.",
+        "aspect": "landscape"
+      }
+    ]
+  }
+}

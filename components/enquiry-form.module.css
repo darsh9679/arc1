@@ -1,0 +1,274 @@
+.form.form {
+  display: grid;
+  min-width: 0;
+  gap: 14px;
+}
+.form .row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 14px;
+}
+.form.form label {
+  display: block;
+  min-width: 0;
+  color: var(--color-ink);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.form.form label > span {
+  color: var(--color-accent);
+  font-size: 11px;
+  font-weight: 400;
+}
+.form.form input,
+.form.form select,
+.form.form textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-line);
+  border-radius: 2px;
+  background: var(--enquiry-control-bg, #fafaf7);
+  color: var(--color-ink);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  box-shadow: none;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+.form.form input,
+.form.form select {
+  height: 46px;
+}
+.form.form select {
+  padding-right: 34px;
+}
+.form.form [data-slot='native-select-wrapper'] {
+  width: 100%;
+}
+.form.form [data-slot='native-select-icon'] {
+  top: calc(50% + 3px);
+  right: 12px;
+}
+.form.form textarea {
+  min-height: 88px;
+  field-sizing: fixed;
+  resize: vertical;
+}
+.form.form input::placeholder,
+.form.form textarea::placeholder {
+  color: #747c6e;
+  font-size: 12px;
+  opacity: 1;
+}
+.form.form input:hover,
+.form.form select:hover,
+.form.form textarea:hover {
+  border-color: var(--color-ink-soft);
+}
+.form.form input:focus,
+.form.form select:focus,
+.form.form textarea:focus {
+  background: #fefefe;
+  border-color: var(--color-ink-soft);
+  outline: 2px solid var(--color-ink-soft);
+  outline-offset: 2px;
+}
+.form .hint {
+  display: block;
+  margin-top: 6px;
+  color: var(--color-ink-soft);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.form .notice {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 10px;
+  line-height: 1.75;
+}
+.form .submit {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 2px;
+  padding: 12px 16px;
+  border: 1px solid var(--enquiry-button, #23372e);
+  border-radius: 2px;
+  background: var(--enquiry-button, #23372e);
+  color: var(--enquiry-button-text, #f7f6ef);
+  font-size: 13px;
+  font-weight: 500;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+.form .submit:hover {
+  border-color: var(--enquiry-button-hover, #344d3f);
+  background: var(--enquiry-button-hover, #344d3f);
+}
+.form .submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.form .status {
+  display: block;
+  margin: 0;
+  padding: 14px;
+  border-left: 2px solid var(--color-ink-soft);
+  background: #eef0e9;
+  color: var(--color-ink);
+  font-size: 12px;
+  line-height: 1.75;
+  scroll-margin-block: 110px 24px;
+}
+.form .status:empty {
+  display: none;
+}
+.form .draft {
+  min-width: 0;
+  padding-top: 2px;
+}
+.form .draft textarea {
+  min-height: 160px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.form .draftActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+.form .draftActions button,
+.form .draftActions > a {
+  min-height: 44px;
+  border-radius: 2px;
+  font-size: 11px;
+}
+.form .draftActions button {
+  padding: 10px 12px;
+  border: 1px solid var(--color-line);
+}
+.form .draftActions > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: 9px;
+}
+.map.map {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 320px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  background: #f2f1ea;
+}
+.map iframe {
+  display: block;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  border: 0;
+}
+.mapCaption {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--color-line);
+  background: var(--color-paper);
+}
+.mapCaption > svg {
+  flex: none;
+  color: var(--color-accent);
+}
+.mapCaption address {
+  flex: 1;
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.mapCaption a {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--color-ink);
+  font-size: 11px;
+}
+.mapCaption a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 1000px) {
+  .form .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .form.form {
+    gap: 10px;
+  }
+  .form .row {
+    gap: 10px;
+  }
+  .form.form input,
+  .form.form select {
+    height: 44px;
+    min-height: 44px;
+  }
+  .form.form textarea {
+    min-height: 84px;
+    height: 84px;
+  }
+  .form .draft textarea {
+    min-height: 160px;
+    height: 160px;
+  }
+  .form .submit {
+    min-height: 46px;
+    font-size: 12px;
+  }
+  .map.map {
+    height: 292px;
+  }
+  .mapCaption {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+  .mapCaption > svg {
+    display: none;
+  }
+  .mapCaption address,
+  .mapCaption a {
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .form.form input,
+  .form.form select,
+  .form.form textarea,
+  .form .submit {
+    transition: none;
+  }
+}

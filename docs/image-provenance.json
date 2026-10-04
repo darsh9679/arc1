@@ -1,0 +1,119 @@
+{
+  "created": "2026-08-31",
+  "userInstruction": "generate the premium quality images and use that here",
+  "authorizationNote": "This later user request supersedes the earlier no-AI image instruction. Original project facts remain unchanged.",
+  "assets": [
+    {
+      "name": "workspace-wide",
+      "sitePath": "/images/concepts/workspace-wide.webp",
+      "file": "public/images/concepts/workspace-wide.webp",
+      "original": "../generated-concepts/workspace-wide.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 195402,
+      "tool": "Built-in imagegen",
+      "kind": "AI-generated concept — not an actual studio project",
+      "operation": "generate",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium editorial architectural website hero concept, single wide landscape image, 16:9 composition, requested 1920 x 1080 pixels.\nPrimary request: Create one original photorealistic interior architecture photograph of a fictional high-end contemporary Indian workspace. This is a speculative concept, NOT a depiction of any real project or the actual Nerul project.\nScene and architecture: A generous, believable boutique workspace with warm limestone floors, lime-plaster walls and ceiling, dark teak and oak, a little restrained aged brass, and an elegant, plausible construction vocabulary. Deep dark timber joinery along the left side. Large floor-to-ceiling glazing across the back and right, with a refined dark metal window grid and an abstract hazy Indian city skyline outside. The skyline has no recognizable buildings, landmarks or stadium. A long generous oak communal working table and beautifully refined woven desk chairs occupy the right half. The interior feels calm, expensive, humane and quietly Indian contemporary, not a showroom.\nComposition: Camera at human eye level, architectural magazine photography, 24–28mm tilt-shift lens, precise upright verticals, deep natural room perspective. Keep the left approximately 40 percent darker and relatively uncluttered so white website hero text can be overlaid there later. The warm workspace and furniture on the right are the main visual subject. Show enough floor, wall and window grid to enable a geometrically registered matching empty before view in a subsequent edit.\nLighting and material: Warm lateral natural daylight through the glazing, physically plausible soft shadows. Highly tactile imperfect limestone, lime plaster, subtle grain and joinery joints, real woven texture, restrained patina. An authentic photograph with subtle sensor grain and natural tonal range. Warm paper, charcoal and brass palette.\nConstraints: This single image is the furnished AFTER image of a fictional concept. No text is rendered in the image. No people, text, captions, logos, watermarks, recognizable skyline landmarks, stadiums, excessive decoration, impossible structure, warped furniture, glossy CGI, plastic materials or oversaturated styling. Exactly one final image, no comparison panel, no contact sheet, no border.",
+      "qa": [
+        "Inspected generated output and the saved local image.",
+        "Warm limestone, lime plaster, dark timber joinery, woven chairs and aged brass match the requested palette.",
+        "Table and chairs sit principally on the right; darker left cabinetry offers room for light hero copy.",
+        "No people, readable text, logos, watermarks, recognizable skyline landmarks or stadium observed.",
+        "Convincing editorial architectural concept with straight verticals and natural daylight."
+      ]
+    },
+    {
+      "name": "workspace-before",
+      "sitePath": "/images/concepts/workspace-before.webp",
+      "file": "public/images/concepts/workspace-before.webp",
+      "original": "../generated-concepts/workspace-before.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 125266,
+      "tool": "Built-in imagegen",
+      "kind": "AI-generated concept — not an actual studio project",
+      "operation": "edit",
+      "prompt": "Use case: precise-object-edit\nAsset type: matching bare-shell BEFORE view for a website before/after comparison.\nInput image 1 is the EDIT TARGET, a fictional furnished contemporary Indian workspace. Edit this exact supplied photograph. This is not a request to create a new room, new angle, similar room, or reinterpretation.\nPrimary request: Remove the interior fit-out so this becomes the matching empty bare-shell stage of precisely the same room, with geometrically registered before/after imagery.\nChange only the removable fit-out: remove the long oak communal table on the right, every woven chair, the rear lounge armchair, rear little tables, rug, branch arrangement, plants, desk lamps, laptop screens, books, accessories, art, decorative objects and any pendants. Strip the dark timber cabinetry/joinery finishes on the left, leaving the underlying plain unfinished neutral warm-gray plaster wall plane. No cabinetry, furniture or decorative fixtures should remain. Continue the existing limestone floor naturally only where the removed objects occlude it; do not replace or redesign the floor.\nCritical invariants: Preserve the EXACT camera position, lens, crop, image dimensions and architectural registration of the edit target. Preserve all room proportions, left wall recess and opening, columns, ceiling plane and ceiling height, back window opening, right window opening, every window mullion and transom and their exact screen positions, glazing reflections, the same hazy city view and skyline, floor plane and visible limestone joints/texture, walls, skirtings and structural details. Preserve the existing photographic exposure, light color, natural lateral sunlight, window-cast shadows and sunlit floor patches in the same positions. Remove only shadows belonging to removed furniture and fit-out; do not invent a new sunlight direction or time of day. Keep every architectural vertical and horizontal in exact alignment with the supplied target.\nAppearance: The exact same calm, premium photograph of the exact same empty shell, with intact limestone floor, lime-plaster walls/ceiling and large dark-grid glazing, plausible modest unfinished surfaces where fitted timber has been removed. High photorealism, tactile materials, natural imperfections, quiet warm-neutral tone. Preserve darker left side naturally. No construction clutter.\nConstraints: Single original wide landscape image in the same 16:9 framing as input; no side-by-side layout, comparison label or border. No people, text, logo, watermark, landmarks, stadium, new decor, alternative furnishings, glossy CGI, changed architecture, changed floor, reoriented view, moved window grid or relighting. This remains a fictional design concept, not a real project photograph.",
+      "qa": [
+        "Viewed the saved local furnished image before using referenced_image_paths for this edit.",
+        "Inspected generated output and the saved local bare-shell image.",
+        "Furniture, desks, lamps, accessories and left timber cabinetry removed; plaster shell, floor and glazing remain.",
+        "Camera, crop, window grid, columns and ceiling are closely aligned with the furnished version.",
+        "Usable as a concept transformation pair, but the generative edit is not pixel-identical: minor floor/exterior texture, exposure and edge differences remain.",
+        "A small woven-pattern shadow remnant remains near the lower central foreground.",
+        "Both outputs are approximately 16:9 at 1672 x 941, rather than the requested 1920 x 1080."
+      ]
+    },
+    {
+      "name": "living-room",
+      "sitePath": "/images/concepts/living-room.webp",
+      "file": "public/images/concepts/living-room.webp",
+      "original": "../generated-concepts/living-room.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 211206,
+      "tool": "Built-in imagegen",
+      "kind": "AI-generated concept — not an actual studio project",
+      "operation": "generate",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: premium architectural website concept image; the site will label this AI concept imagery, so do not put that label or any typography into the image itself.\nPrimary request: A wide 16:9 photorealistic editorial photograph of a quiet boutique-luxury Indian contemporary residential living room.\nScene/materials: warm limestone flooring with subtle real stone variation, tactile off-white lime plaster walls, deep teak panelled fitted joinery, a generously proportioned oatmeal linen sofa, a low sculptural stone coffee table, courtyard greenery visible through tall glazing at right, and a sheer linen curtain. Natural lived-in restraint.\nComposition/framing: exactly landscape 16:9; perspective-correct 28mm architectural camera at natural eye level, straight verticals, calm architectural negative space, main furniture and room features arranged center/right to allow website crops. Expensive architecture-magazine quality with extremely convincing tactile surfaces.\nLighting/mood: soft late-morning lateral daylight, natural shadows, quietly warm and serene. Keep window geometry simple and clearly legible because a registered before/after image of this exact architecture will be needed.\nAvoid: people, text, logos, artwork lettering, watermarks, cartoon rendering, glossy CGI, impossible geometry, over-decoration.",
+      "qa": "Visually inspected. Warm limestone, tactile plaster, teak joinery, oatmeal linen sofa, stone table and right-hand courtyard glazing. Straight perspective and quiet editorial light. No people, lettering, logos or watermarks visible."
+    },
+    {
+      "name": "living-room-before",
+      "sitePath": "/images/concepts/living-room-before.webp",
+      "file": "public/images/concepts/living-room-before.webp",
+      "original": "../generated-concepts/living-room-before.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 172182,
+      "tool": "Built-in imagegen",
+      "kind": "AI-generated concept — not an actual studio project",
+      "operation": "edit",
+      "prompt": "Use case: precise-object-edit.\nAsset type: registered before/after architectural concept comparison for a premium website.\nInput images: Image 1 is the exact edit target. Edit this image, do not create a redesigned room or a new viewpoint.\nPrimary request: Show the exact same living room as a bare unfinished architectural shell, before the furnishings and fitted interior finishes were installed.\nChange only: remove the sofa, rug, stone coffee table, accessories and vase, books, loose chairs including the cropped foreground chair and the chair down the corridor, linen curtains, and all fitted teak cabinetry and decorative teak panelling/louvres. Where fitted joinery and panelling was, reveal plain unpainted raw plaster or concrete substrate, following the same underlying wall planes. Change the finished limestone floor surface to unpolished raw concrete, retaining the exact continuous floor elevation and all floor boundaries. Expose subtle raw plaster and concrete texture on walls with plausible small construction surface marks. Keep the shell empty, clean and free of debris, tools, new objects, or furniture.\nCRITICAL INVARIANTS: Preserve the original image camera location, field of view, lens perspective, crop, framing, image dimensions and landscape aspect ratio exactly. Preserve every structural wall, ceiling, beam, column, doorway, opening, corner, intersection and floor level at precisely its original screen position. Preserve all existing glazing and its frames and mullions exactly. Preserve the courtyard, exterior walls, tree, shrubs and every visible outdoor element, position and perspective. Keep the same late-morning daylight direction, exposure, color balance and outdoor shadows; only naturally remove shadows caused by furnishings that are removed. Do not reposition or resize anything architectural. The before image must register geometrically with the supplied after image in an interactive comparison slider.\nStyle/medium: extremely convincing photorealistic architectural magazine photograph of a raw shell with tactile natural materials, same quietly warm color rendering as the reference.\nAvoid: people, text, logos, lettering, watermarks, render/CGI look, new architecture, altered view, shifted geometry, new windows or doors, demolition damage.",
+      "qa": "Visually inspected. All visible furniture, accessories, rug, curtains and fitted teak paneling removed. Raw plaster/concrete shell follows the same major wall, column, doorway, ceiling and glazing positions. Camera and framing visually aligned to after image. Small generated texture/foliage variations remain possible; pixel-perfect registration is not claimed."
+    },
+    {
+      "name": "courtyard-residence",
+      "sitePath": "/images/concepts/courtyard-residence.webp",
+      "file": "public/images/concepts/courtyard-residence.webp",
+      "original": "../generated-concepts/courtyard-residence.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 476676,
+      "tool": "Built-in imagegen",
+      "kind": "AI-generated concept — not an actual studio project",
+      "operation": "generate",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium architecture website concept photograph, clearly fictional design study rather than documentation of a completed client project.\nPrimary request: a boutique two-storey tropical courtyard residence in India, long horizontal limestone volumes, deeply recessed glazed openings, dark teak slatted screens, one sculptural native tree, and a planted stone court.\nStyle/medium: original photorealistic architectural editorial photograph, elegant Indian contemporary architecture, quiet confidence. 35mm architectural photography with straight verticals, physically plausible details, honest texture and scale.\nComposition/framing: landscape 3:2 image. Strong centered composition with the main courtyard, tree, and architecture concentrated in the central area so a 4:5 center crop remains a beautiful portfolio cover; show the full architectural scene in the wide frame.\nLighting/mood: soft natural morning daylight, neutral and calm, realistic shadows.\nColor palette and materials: warm limestone and lime plaster, dark teak, muted green tropical plants, tactile stone grain, understated details.\nConstraints: no people, text, signs, logos or watermarks. No opulent golden lighting, repetitive arches, glossy CGI look, exaggerated ornament, distorted construction, impossible structural details. One coherent photograph, not a collage or website mockup.",
+      "qa": "Visually inspected. Two-storey courtyard with warm limestone volumes, teak screens, centered native tree, planted court and morning shadows. Plausible materials and geometry; no visible people, text, logos, watermark or glossy CGI artifacts. Centered tree and courtyard retain meaning in a 4:5 cover crop. Fictional AI-generated design study, not a Trayaksh project photograph."
+    },
+    {
+      "name": "hospitality-court",
+      "sitePath": "/images/concepts/hospitality-court.webp",
+      "file": "public/images/concepts/hospitality-court.webp",
+      "original": "../generated-concepts/hospitality-court.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 253652,
+      "tool": "Built-in imagegen",
+      "kind": "AI-generated concept — not an actual studio project",
+      "operation": "generate",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium architecture website concept photograph, clearly fictional design study rather than documentation of a completed client project.\nPrimary request: an intimate contemporary boutique hotel arrival courtyard in India, tactile pale local limestone walls, a covered walkway with simple rectangular openings, a slender colonnade, a small reflecting water channel, dark teak guest doors, and one low planted green focal point.\nStyle/medium: original photorealistic architectural editorial photograph, elegant Indian contemporary architecture, quiet confidence, a premium architecture publication shot, physically plausible details, true material grain, honest scale, straight verticals.\nComposition/framing: landscape 3:2, elegant symmetry and depth along the courtyard and covered walkway; strong useful central composition.\nLighting/mood: calm soft late-afternoon natural daylight without orange or opulent golden grading, quiet and inviting.\nColor palette and materials: warm pale limestone and lime plaster, dark teak, muted green tropical planting; understated natural materials coordinated as one design language.\nConstraints: no people, text, hotel names, signs, logos or watermarks. No arches, glossy CGI appearance, exaggerated opulence, clutter, distorted construction or impossible structural details. One coherent photograph, not a collage or website mockup.",
+      "qa": "Visually inspected. Tactile pale-stone arrival court, rectangular walkway, colonnade, timber doors, water channel, planted focus and calm daylight. Realistic reflections and structural rhythm; no visible people, text, branding or watermark. Plant focal point includes a small tree rather than exclusively low planting. Fictional AI-generated design study, not a Trayaksh project photograph."
+    },
+    {
+      "name": "material-detail",
+      "sitePath": "/images/concepts/material-detail.webp",
+      "file": "public/images/concepts/material-detail.webp",
+      "original": "../generated-concepts/material-detail.png",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 143396,
+      "tool": "Built-in imagegen",
+      "kind": "AI-generated concept — not an actual studio project",
+      "operation": "generate",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium architecture website editorial material-detail concept photograph, a fictional design study rather than documentation of completed client work.\nPrimary request: an editorial interior close-up of a beautifully resolved junction: a sculptural warm limestone bench, dark teak fluted joinery, the edge of restrained natural linen seating, and a softly lit lime-plaster wall, with a single subtle brushed-brass detail.\nStyle/medium: original photorealistic interior editorial photography, elegant Indian contemporary architecture, quiet confidence, 50mm lens, refined and physically plausible joinery, abundant authentic material grain and microtexture, subtle tonal variation.\nComposition/framing: portrait 4:5 composition, carefully composed close view of the stone bench and material junction, tangible depth, clean edges, enough context to understand how the materials meet. One coherent photograph, not a collage or website mockup.\nLighting/mood: soft natural side sunlight, gentle shadows and quiet neutral warmth, no theatrical lighting.\nColor palette and materials: warm limestone, cream lime plaster, dark teak, natural oatmeal linen, one restrained brushed-brass accent. Coordinate with a warm limestone, dark teak and muted tropical-green contemporary Indian architecture palette without adding decor clutter.\nConstraints: no people, text, signs, logos, watermarks, decor clutter, repeated metallic accents, opulent golden lighting, arches, glossy CGI surfaces, floating objects or impossible construction details.",
+      "qa": "Visually inspected. Refined limestone/teak/linen/plaster junction with one brass fitting, detailed material grain and natural side light. No visible people, text, branding, watermark or decor clutter. Delivered portrait is approximately 4:5 (1122×1402); CSS object-fit:cover at 4:5 trims negligible edge area. Fictional AI-generated design study, not a Trayaksh project photograph."
+    }
+  ]
+}

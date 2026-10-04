@@ -1,0 +1,138 @@
+{
+  "laptopInitial": {
+    "cards": [
+      {
+        "position": "sticky",
+        "title": "Understand",
+        "top": 341.9624938964844,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Observe",
+        "top": 861.2945556640625,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Envision",
+        "top": 1302.873291015625,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Develop",
+        "top": 1746.5625,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Coordinate",
+        "top": 2181.296142578125,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Realise",
+        "top": 2707.473388671875,
+        "transform": "none"
+      }
+    ],
+    "conditions": true,
+    "overflow": false,
+    "scroll": 4360,
+    "viewport": [
+      1366,
+      768
+    ],
+    "visibleHeadings": 1
+  },
+  "laptopScrolled": {
+    "cards": [
+      {
+        "position": "sticky",
+        "title": "Understand",
+        "top": 45,
+        "transform": "matrix(0.9709, 0, 0, 0.9709, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Observe",
+        "top": 300.4944763183594,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Envision",
+        "top": 742.0732421875,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Develop",
+        "top": 1185.7625732421875,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Coordinate",
+        "top": 1620.49609375,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "position": "sticky",
+        "title": "Realise",
+        "top": 2146.67333984375,
+        "transform": "none"
+      }
+    ],
+    "scroll": 4920.7998046875
+  },
+  "phone": {
+    "mainHeight": 4316.92529296875,
+    "overflow": false,
+    "processHeight": 512.2000122070312,
+    "viewport": [
+      375,
+      667
+    ],
+    "visibleCards": 0,
+    "visibleHeadings": 1,
+    "visibleRows": 6
+  },
+  "breakpoints": [
+    {
+      "cards": 0,
+      "gridSteps": 6,
+      "headings": 1,
+      "overflow": false,
+      "rows": 0,
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "cards": 0,
+      "gridSteps": 6,
+      "headings": 1,
+      "overflow": false,
+      "rows": 0,
+      "viewport": [
+        900,
+        768
+      ]
+    },
+    {
+      "cards": 6,
+      "gridSteps": 0,
+      "headings": 1,
+      "overflow": false,
+      "rows": 0,
+      "viewport": [
+        902,
+        768
+      ]
+    }
+  ]
+}

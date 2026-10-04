@@ -1,0 +1,93 @@
+[
+  {
+    "clippedText": [],
+    "mainHeight": 5148.60009765625,
+    "overflow": false,
+    "phoneRows": 6,
+    "processCards": 0,
+    "viewport": [
+      320,
+      568
+    ],
+    "visibleFounder": 230,
+    "visionHeight": 697.5
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 4985.22509765625,
+    "overflow": false,
+    "phoneRows": 6,
+    "processCards": 0,
+    "viewport": [
+      375,
+      667
+    ],
+    "visibleFounder": 230,
+    "visionHeight": 697.5
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 4688.5751953125,
+    "overflow": false,
+    "phoneRows": 6,
+    "processCards": 0,
+    "viewport": [
+      599,
+      800
+    ],
+    "visibleFounder": 230,
+    "visionHeight": 641.5
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 7576.5126953125,
+    "overflow": false,
+    "phoneRows": 0,
+    "processCards": 0,
+    "viewport": [
+      600,
+      960
+    ],
+    "visibleFounder": 360,
+    "visionHeight": 1274.7750244140625
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 6763.36279296875,
+    "overflow": false,
+    "phoneRows": 0,
+    "processCards": 0,
+    "viewport": [
+      768,
+      1024
+    ],
+    "visibleFounder": 360,
+    "visionHeight": 1118.125
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 7451.02490234375,
+    "overflow": false,
+    "phoneRows": 0,
+    "processCards": 6,
+    "viewport": [
+      1024,
+      768
+    ],
+    "visibleFounder": 360,
+    "visionHeight": 740.8125
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 7561.72509765625,
+    "overflow": false,
+    "phoneRows": 0,
+    "processCards": 6,
+    "viewport": [
+      1366,
+      768
+    ],
+    "visibleFounder": 360,
+    "visionHeight": 684.2125244140625
+  }
+]

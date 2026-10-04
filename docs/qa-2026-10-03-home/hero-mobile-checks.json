@@ -1,0 +1,80 @@
+[
+  {
+    "buttonBottom": 460.75,
+    "clippedButtons": false,
+    "heroBottom": 478.75,
+    "pageWidth": 305,
+    "photoHeight": 215,
+    "photoTop": 72,
+    "size": [
+      320,
+      500
+    ],
+    "title": "Design that sees beyond the obvious."
+  },
+  {
+    "buttonBottom": 478.625,
+    "clippedButtons": false,
+    "heroBottom": 496.625,
+    "pageWidth": 305,
+    "photoHeight": 232.875,
+    "photoTop": 72,
+    "size": [
+      320,
+      568
+    ],
+    "title": "Design that sees beyond the obvious."
+  },
+  {
+    "buttonBottom": 450.1625061035156,
+    "clippedButtons": false,
+    "heroBottom": 472.1625061035156,
+    "pageWidth": 360,
+    "photoHeight": 225.6625061035156,
+    "photoTop": 72,
+    "size": [
+      375,
+      550
+    ],
+    "title": "Design that sees beyond the obvious."
+  },
+  {
+    "buttonBottom": 511.3875122070313,
+    "clippedButtons": false,
+    "heroBottom": 533.3875122070312,
+    "pageWidth": 360,
+    "photoHeight": 286.88751220703125,
+    "photoTop": 72,
+    "size": [
+      375,
+      667
+    ],
+    "title": "Design that sees beyond the obvious."
+  },
+  {
+    "buttonBottom": 587.4125366210938,
+    "clippedButtons": false,
+    "heroBottom": 609.4125366210938,
+    "pageWidth": 375,
+    "photoHeight": 362.9125061035156,
+    "photoTop": 72,
+    "size": [
+      390,
+      844
+    ],
+    "title": "Design that sees beyond the obvious."
+  },
+  {
+    "buttonBottom": 581.25,
+    "clippedButtons": false,
+    "heroBottom": 603.25,
+    "pageWidth": 753,
+    "photoHeight": 380,
+    "photoTop": 72,
+    "size": [
+      768,
+      1024
+    ],
+    "title": "Design that sees beyond the obvious."
+  }
+]

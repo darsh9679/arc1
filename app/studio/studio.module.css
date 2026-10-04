@@ -1,0 +1,1292 @@
+.studio {
+  --studio-space: clamp(40px, 4.4vw, 60px);
+  --color-paper: #f7f6f1;
+  --color-ink: #293126;
+  --color-ink-soft: #565f50;
+  --color-accent: #815d24;
+  --color-line: #d9ddd3;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+.studio + :global(.site-footer) {
+  --color-ink: #293126;
+  --color-ink-soft: #565f50;
+  --color-accent: #815d24;
+  --color-line: #d9ddd3;
+}
+.mobileOnly {
+  display: none;
+}
+.studio.studio :global(.section-pad) {
+  padding: var(--studio-space) var(--gutter);
+}
+.studio.studio h2 {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: clamp(34px, 3.4vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+.studio h2 em,
+.studio h1 em {
+  color: var(--color-accent);
+}
+.studio.studio :global(.eyebrow) {
+  margin: 0 0 12px;
+  color: var(--color-ink-soft);
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+.studio.studio :global(.section-heading) {
+  align-items: end;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+.studio.studio :global(.section-aside) {
+  max-width: 320px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--color-ink-soft);
+}
+.studio.studio :global(.text-link) {
+  gap: 24px;
+  min-height: 44px;
+  padding: 8px 0;
+  color: var(--color-ink);
+  font-size: 13px;
+  line-height: 1.4;
+  border-color: var(--color-accent);
+}
+.studio :global(.text-link span) {
+  font-size: 18px;
+  line-height: 1;
+}
+.studio :global(section[id]) {
+  scroll-margin-top: 24px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 64px);
+  padding: 36px var(--gutter);
+}
+.heroCopy h1 {
+  max-width: 540px;
+  margin: 0 0 20px;
+  font-size: clamp(42px, 4.1vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+.heroDescription {
+  max-width: 430px;
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 16px;
+  line-height: 1.65;
+}
+.heroCopy :global(.text-link) {
+  margin-top: 20px;
+}
+.heroImage {
+  position: relative;
+  height: clamp(340px, 32vw, 440px);
+  overflow: hidden;
+}
+.studio .heroImage > :global(.placeholder-image),
+.studio .calmImage > :global(.placeholder-image),
+.studio :global(.principal-image > .placeholder-image) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.jumpLinks {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin: 0 var(--gutter);
+  padding: 8px 0;
+  border-block: 1px solid var(--color-line);
+}
+.jumpLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 6px 10px;
+  color: var(--color-ink-soft);
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+}
+.jumpLinks a:hover {
+  color: var(--color-accent);
+}
+.jumpLinks a[aria-current='location'] {
+  color: var(--color-ink);
+  background: #fefefe;
+  box-shadow: inset 0 -2px var(--color-accent);
+}
+.practiceHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: 48px;
+}
+.practiceLead {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.6;
+  letter-spacing: -0.015em;
+}
+.objective {
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid #bba16c;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.practiceTopics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+  margin-top: 28px;
+}
+.practiceTopics article {
+  padding: 22px;
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+  background: #fefefe;
+}
+.topicIcon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 18px;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  color: var(--color-accent);
+}
+.topicIcon svg {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.25;
+}
+.practiceTopics .disclosure {
+  margin-top: 18px;
+}
+.practiceTopics .disclosureTitle {
+  font-size: 12px;
+}
+.practiceTopics .disclosure summary {
+  min-height: 44px;
+}
+.practiceTopics h3 {
+  margin: 0 0 12px;
+  font:
+    500 18px/1.4 var(--font-body),
+    sans-serif;
+  letter-spacing: -0.02em;
+}
+.practiceTopics p {
+  margin: 0 0 12px;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.studio.studio :global(.principal-section) {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: 48px;
+  border-top: 1px solid var(--color-line);
+  background: #fefefe;
+}
+.founderVisual {
+  min-width: 0;
+  margin: 0;
+}
+.portraitCaption {
+  padding: 9px 12px;
+  color: var(--color-ink-soft);
+  background: #efeee7;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.studio.studio :global(.principal-image) {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+.studio :global(.principal-image) > :global(.placeholder-image) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.founderCard {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  min-height: 360px;
+  padding: 32px;
+  color: #f7f6f1;
+  background: #29372d;
+}
+.founderCard::before,
+.founderCard::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  right: -60px;
+  bottom: -65px;
+  width: 220px;
+  height: 320px;
+  border: 1px solid #bba16c;
+  border-radius: 120px 120px 0 0;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.founderCard::after {
+  right: -28px;
+  width: 156px;
+  height: 286px;
+}
+.founderMonogram {
+  margin-bottom: 24px;
+  font-family: var(--font-display), serif;
+  font-size: 100px;
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  color: #e7c785;
+}
+.studio.studio .founderCard :global(.eyebrow) {
+  color: #d4dccf;
+  margin-bottom: 10px;
+}
+.founderName {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.founderRule {
+  width: 44px;
+  height: 1px;
+  margin: 20px 0 14px;
+  background: #bba16c;
+}
+.founderCredentials {
+  margin: 0;
+  color: #d4dccf;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.studio.studio :global(.principal-copy h2) {
+  font-size: 40px;
+}
+.credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 18px 0;
+  padding: 0;
+  list-style: none;
+}
+.credentials li {
+  padding: 4px 8px;
+  border: 1px solid var(--color-line);
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
+}
+.studio.studio :global(.principal-copy > p:not(.eyebrow)) {
+  max-width: 650px;
+  margin: 16px 0;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.studio :global(.principal-copy .text-link) {
+  margin-top: 16px;
+}
+.disclosure {
+  border-top: 1px solid var(--color-line);
+}
+.disclosure:last-child {
+  border-bottom: 1px solid var(--color-line);
+}
+.disclosure summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 12px 0;
+  cursor: pointer;
+  list-style: none;
+}
+.disclosure summary::-webkit-details-marker {
+  display: none;
+}
+.disclosure summary:focus-visible,
+.studio a:focus-visible {
+  outline: 2px solid #a17b33;
+  outline-offset: 4px;
+}
+.disclosureTitle {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.disclosureIcon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  color: var(--color-accent);
+}
+.disclosureIcon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.25;
+}
+.number {
+  flex: none;
+  width: 22px;
+  color: var(--color-accent);
+  font-size: 10px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+.toggle {
+  position: relative;
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+.toggle::before,
+.toggle::after {
+  content: '';
+  position: absolute;
+  inset: 8px 3px auto;
+  height: 1px;
+  background: currentColor;
+}
+.toggle::after {
+  transform: rotate(90deg);
+  transition: transform 180ms ease;
+}
+.disclosure[open] .toggle::after {
+  transform: rotate(0);
+}
+.disclosureBody {
+  padding: 0 24px 16px 0;
+}
+.disclosureBody p {
+  margin: 0 0 12px;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.disclosureBody p:last-child {
+  margin-bottom: 0;
+}
+.disclosureBody ul {
+  padding-left: 18px;
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.disclosureBody li + li {
+  margin-top: 8px;
+}
+.biography {
+  margin-top: 20px;
+  border-bottom: 1px solid var(--color-line);
+}
+.studio.studio :global(.philosophy) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 48px;
+  background: #29372d;
+  color: #f7f6f1;
+}
+.studio.studio :global(.philosophy > .eyebrow),
+.studio :global(.philosophy > .values-grid),
+.studio :global(.philosophy > .philosophy-caption) {
+  grid-column: 1 / -1;
+}
+.studio.studio :global(.philosophy h2),
+.studio.studio :global(.philosophy h3),
+.studio.studio :global(.philosophy em) {
+  color: #f7f6f1;
+}
+.studio.studio :global(.philosophy > .eyebrow) {
+  color: #d4dccf;
+}
+.studio.studio :global(.philosophy > h2) {
+  margin: 0;
+}
+.studio.studio :global(.philosophy-lead) {
+  max-width: 560px;
+  margin: 0;
+  align-self: center;
+  color: #d4dccf;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.studio.studio :global(.values-grid) {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 28px;
+  padding: 0;
+  border: 0;
+}
+.studio.studio :global(.values-grid article) {
+  display: block;
+  padding-top: 16px;
+  border-top: 1px solid #64745e;
+}
+.studio.studio :global(.values-grid article > span) {
+  color: #e7c785;
+  font-size: 10px;
+}
+.studio.studio :global(.values-grid h3) {
+  margin: 10px 0;
+  font-size: 28px;
+}
+.perspectiveHeading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0;
+}
+.perspectiveIcon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #64745e;
+  border-radius: 50%;
+  color: #e7c785;
+}
+.perspectiveIcon svg {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.25;
+}
+.studio.studio .perspectiveHeading h3 {
+  margin: 0;
+}
+.studio.studio :global(.values-grid p) {
+  max-width: none;
+  margin: 0;
+  color: #d4dccf;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.studio.studio :global(.values-grid .perspective-subtitle) {
+  min-height: 46px;
+  margin-bottom: 12px;
+  color: #f7f6f1;
+  font-size: 14px;
+}
+.studio.studio :global(.philosophy-caption) {
+  margin: 24px 0 0;
+  color: #d4dccf;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+.studio.studio .visionMission {
+  display: block;
+  background: #efeee7;
+}
+.visionGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: 24px;
+  align-items: stretch;
+}
+.visionCard,
+.missionCard {
+  min-width: 0;
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+}
+.visionCard {
+  overflow: hidden;
+  background: #fdfcf8;
+}
+.visionPhoto {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+.visionPhoto > :global(.placeholder-image) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.visionBody,
+.missionCard {
+  padding: 24px;
+}
+.missionCard {
+  --color-ink: #f7f6f1;
+  --color-ink-soft: #d4dccf;
+  --color-line: #63705d;
+  --color-accent: #e7c785;
+  background: #29372d;
+  color: var(--color-ink);
+}
+.cardHeading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.cardIcon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 48px;
+  height: 48px;
+  color: var(--color-accent);
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+}
+.cardIcon svg {
+  width: 25px;
+  height: 25px;
+  stroke-width: 1.25;
+}
+.studio.studio .cardHeading :global(.eyebrow) {
+  margin-bottom: 6px;
+  color: var(--color-ink-soft);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.studio.studio .cardHeading h2 {
+  font-size: 36px;
+}
+.visionBody p,
+.studio.studio .missionCard p {
+  margin: 0 0 14px;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.studio.studio p.visionLead,
+.studio.studio p.missionLead {
+  margin: 0 0 22px;
+  font-family: var(--font-display), serif;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: var(--color-ink);
+}
+.studio .missionPerspectives {
+  display: grid;
+  gap: 0;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+.studio .missionPerspectives li {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 16px;
+  padding: 12px 0;
+  margin: 0;
+  border-top: 1px solid var(--color-line);
+}
+.studio .missionPerspectives li:last-child {
+  border-bottom: 1px solid var(--color-line);
+}
+.studio .missionPerspectives svg {
+  width: 22px;
+  height: 22px;
+  margin-top: 3px;
+  color: var(--color-accent);
+  stroke-width: 1.25;
+}
+.studio.studio .missionPerspectives h3 {
+  margin: 0 0 4px;
+  color: var(--color-ink);
+  font:
+    500 16px/1.4 var(--font-body),
+    sans-serif;
+}
+.studio.studio .missionPerspectives p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.studio.studio p.missionClosing {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-accent);
+  font-style: italic;
+}
+.studio.studio :global(.design-philosophy) {
+  border-top: 1px solid var(--color-line);
+}
+.studio.studio :global(.editorial-columns) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+}
+.calmVisual {
+  position: relative;
+  display: flex;
+  align-items: end;
+  min-height: 360px;
+  isolation: isolate;
+}
+.calmFigure {
+  min-width: 0;
+}
+.projectCaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 44px;
+  padding: 10px 0;
+  color: var(--color-ink-soft);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.projectCaption > span:last-child {
+  color: var(--color-accent);
+}
+.calmImage {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.calmImage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #17241eee, transparent 80%);
+}
+.studio.studio .calmVisual blockquote {
+  margin: 0;
+  padding: 24px;
+  font-size: 28px;
+  line-height: 1.25;
+  color: #f7f6f1;
+}
+.studio.studio .calmVisual blockquote em {
+  color: #f7f6f1;
+}
+.calmCopy p {
+  margin: 0 0 14px;
+  color: var(--color-ink-soft);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.studio.studio :global(.principles-title) {
+  margin: 32px 0 20px;
+  font-size: 28px;
+}
+.studio.studio :global(.principle-grid) {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0 24px;
+}
+.studio.studio :global(.principle-grid article) {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-content: start;
+  gap: 8px 12px;
+  padding: 18px 0;
+  border-top: 1px solid var(--color-line);
+}
+.studio.studio :global(.principle-grid article:last-child) {
+  grid-column: auto;
+}
+.principleIcon {
+  color: var(--color-accent);
+}
+.principleIcon svg {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  stroke-width: 1.25;
+}
+.studio.studio :global(.principle-grid .eyebrow) {
+  margin: 2px 0 0;
+  color: var(--color-accent);
+}
+.studio.studio :global(.principle-grid h3) {
+  margin: 0;
+  font:
+    500 18px/1.4 var(--font-body),
+    sans-serif;
+}
+.studio.studio :global(.principle-grid p) {
+  grid-column: 2;
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.studio.studio :global(.practice-services) {
+  background: #efeee7;
+}
+.studio.studio :global(.service-list) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 28px;
+}
+.studio.studio :global(.service-list article) {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-content: start;
+  gap: 8px 12px;
+  padding: 20px;
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+  background: #fdfcf8;
+}
+.studio.studio :global(.service-list article > .eyebrow) {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  color: var(--color-accent);
+}
+.studio :global(.service-icon) {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  color: var(--color-accent);
+}
+.studio :global(.service-icon svg) {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.25;
+}
+.studio.studio :global(.service-list h3) {
+  grid-column: 2;
+  margin: 0;
+  padding-right: 24px;
+  font:
+    500 21px/1.3 var(--font-body),
+    sans-serif;
+  letter-spacing: -0.02em;
+}
+.studio.studio :global(.service-list p) {
+  grid-column: 2;
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.studio :global(.service-scope) {
+  display: none;
+}
+.studio :global(.service-scope summary) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 0;
+  border-top: 1px solid var(--color-line);
+  list-style: none;
+  color: var(--color-accent);
+  font-size: 12px;
+  cursor: pointer;
+}
+.studio :global(.service-scope summary::-webkit-details-marker) {
+  display: none;
+}
+.studio :global(.service-scope summary:focus-visible) {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+.studio :global(.service-scope summary span) {
+  position: relative;
+  flex: none;
+  width: 14px;
+  height: 14px;
+}
+.studio :global(.service-scope summary span)::before,
+.studio :global(.service-scope summary span)::after {
+  content: '';
+  position: absolute;
+  inset: 6px 2px auto;
+  height: 1px;
+  background: currentColor;
+}
+.studio :global(.service-scope summary span)::after {
+  transform: rotate(90deg);
+}
+.studio :global(.service-scope[open] summary span)::after {
+  transform: rotate(0deg);
+}
+.processRegion {
+  scroll-margin-top: 24px;
+}
+.compactProcess {
+  display: none;
+}
+.process {
+  background: #fefefe;
+}
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.processGrid li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  align-content: start;
+  gap: 10px 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-line);
+}
+.processGrid .number {
+  margin-top: 5px;
+}
+.processGrid h3 {
+  margin: 0;
+  font:
+    500 22px/1.35 var(--font-body),
+    sans-serif;
+  letter-spacing: -0.02em;
+}
+.processGrid p {
+  grid-column: 2;
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+  line-height: 1.65;
+}
+@media (max-width: 1000px) {
+  .practiceHeader {
+    gap: 28px;
+  }
+  .practiceTopics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .practiceTopics article:last-child {
+    grid-column: 1 / -1;
+  }
+  .studio.studio :global(.principal-section) {
+    gap: 28px;
+  }
+  .founderCard {
+    padding: 24px;
+  }
+  .studio.studio :global(.principle-grid) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .processGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .desktopProcess {
+    display: none;
+  }
+  .compactProcess {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .perspectiveHeading {
+    gap: 8px;
+  }
+  .perspectiveIcon {
+    width: 32px;
+    height: 32px;
+  }
+  .studio.studio .perspectiveHeading h3 {
+    font-size: 25px;
+  }
+  .visionGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .visionCard {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  }
+  .visionPhoto {
+    height: 100%;
+    min-height: 280px;
+  }
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .heroCopy h1 {
+    max-width: 600px;
+  }
+  .heroImage {
+    height: 320px;
+  }
+  .studio.studio :global(.philosophy) {
+    gap: 0 28px;
+  }
+  .studio.studio :global(.values-grid) {
+    gap: 20px;
+  }
+  .studio.studio :global(.values-grid .perspective-subtitle) {
+    min-height: 70px;
+  }
+  .studio.studio :global(.editorial-columns) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .calmVisual {
+    min-height: 300px;
+  }
+}
+@media (width < 600px) {
+  .studio {
+    --gutter: 20px;
+    --studio-space: 28px;
+  }
+  .studio.studio .desktopOnly {
+    display: none;
+  }
+  .studio.studio .mobileOnly {
+    display: block;
+  }
+  .studio.studio h2 {
+    font-size: 30px;
+    line-height: 1.12;
+  }
+  .studio.studio :global(.eyebrow) {
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+  .studio.studio :global(.section-heading) {
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .hero {
+    gap: 0;
+    padding: 0;
+  }
+  .heroImage {
+    grid-row: 1;
+    height: clamp(170px, 52vw, 230px);
+  }
+  .heroCopy {
+    grid-row: 2;
+    padding: 24px 20px 20px;
+  }
+  .heroCopy h1 {
+    font-size: 34px;
+    line-height: 1.08;
+    margin-bottom: 14px;
+  }
+  .heroDescription {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .heroCopy :global(.text-link) {
+    margin-top: 12px;
+  }
+  .jumpLinks {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0 20px;
+    padding: 6px 0;
+  }
+  .jumpLinks a {
+    padding: 6px;
+    font-size: 11px;
+  }
+  .practiceHeader {
+    display: block;
+  }
+  .practiceLead {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .objective {
+    margin: 12px 0 20px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .studio.studio :global(.principal-section) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .founderCard {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    align-content: center;
+    align-items: center;
+    column-gap: 16px;
+    min-height: 152px;
+    padding: 20px;
+  }
+  .founderMonogram {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    margin: 0;
+    font-size: 76px;
+  }
+  .studio.studio .founderCard :global(.eyebrow) {
+    grid-column: 2;
+    align-self: end;
+    margin-bottom: 8px;
+    font-size: 9px;
+  }
+  .founderName {
+    grid-column: 2;
+    align-self: start;
+    font-size: 23px;
+  }
+  .founderRule,
+  .founderCredentials {
+    display: none;
+  }
+  .founderVisual {
+    grid-row: 1;
+  }
+  .studio.studio :global(.principal-image) {
+    height: 230px;
+  }
+  .studio.studio :global(.principal-copy h2) {
+    font-size: 32px;
+  }
+  .credentials {
+    margin: 14px 0;
+    gap: 5px;
+  }
+  .credentials li {
+    font-size: 10px;
+  }
+  .studio.studio :global(.principal-copy > p:not(.eyebrow)) {
+    margin: 14px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .biography {
+    margin-top: 16px;
+  }
+  .studio.studio :global(.philosophy) {
+    display: block;
+  }
+  .studio.studio :global(.philosophy-lead) {
+    margin: 14px 0 20px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .studio.studio :global(.philosophy-caption) {
+    margin-top: 18px;
+    font-size: 9px;
+  }
+  .studio :global(.philosophy) .disclosure {
+    border-color: #64745e;
+  }
+  .studio :global(.philosophy) .number {
+    color: #e7c785;
+  }
+  .studio :global(.philosophy) .disclosureIcon {
+    color: #e7c785;
+  }
+  .studio :global(.philosophy) .disclosureBody p {
+    color: #d4dccf;
+  }
+  .visionGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .visionCard {
+    display: block;
+  }
+  .visionPhoto {
+    height: 100px;
+    min-height: 0;
+  }
+  .visionBody,
+  .missionCard {
+    padding: 16px;
+  }
+  .cardHeading {
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .cardIcon {
+    width: 38px;
+    height: 38px;
+  }
+  .cardIcon svg {
+    width: 21px;
+    height: 21px;
+  }
+  .studio.studio .cardHeading h2 {
+    font-size: 28px;
+  }
+  .studio.studio .cardHeading :global(.eyebrow) {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+  .studio.studio p.visionLead,
+  .studio.studio p.missionLead {
+    margin: 0 0 16px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .studio .missionPerspectives {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin: 18px 0;
+  }
+  .studio .missionPerspectives li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-line);
+  }
+  .studio .missionPerspectives svg {
+    margin: 0;
+  }
+  .studio.studio .missionPerspectives h3 {
+    margin: 0;
+    font-size: 12px;
+  }
+  .missionCard .disclosureBody p,
+  .missionCard .disclosureBody ul {
+    color: var(--color-ink-soft);
+  }
+  .studio.studio :global(.design-philosophy .section-heading) {
+    margin-bottom: 18px;
+  }
+  .calmVisual {
+    display: block;
+    min-height: 0;
+  }
+  .calmImage {
+    position: relative;
+    height: 180px;
+    z-index: auto;
+  }
+  .calmImage::after {
+    display: none;
+  }
+  .studio.studio .calmVisual blockquote {
+    padding: 14px 0 0;
+    font-size: 19px;
+    line-height: 1.35;
+    color: var(--color-ink);
+  }
+  .studio.studio .calmVisual blockquote em {
+    color: var(--color-accent);
+  }
+  .calmCopy p {
+    margin: 0 0 14px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .studio.studio :global(.principles-title) {
+    margin: 24px 0 14px;
+    font-size: 24px;
+  }
+  .studio.studio :global(.service-list) {
+    gap: 18px 16px;
+  }
+  .studio.studio :global(.service-list article) {
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    gap: 0;
+    align-items: stretch;
+  }
+  .studio.studio :global(.service-list .service-scope-full) {
+    display: none;
+  }
+  .studio :global(.service-scope) {
+    display: block;
+    margin-top: auto;
+    padding-top: 8px;
+  }
+  .studio :global(.service-icon) {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+    align-self: start;
+  }
+  .studio :global(.service-icon svg) {
+    width: 18px;
+    height: 18px;
+  }
+  .studio.studio :global(.service-list article > .eyebrow) {
+    top: 18px;
+    right: 14px;
+  }
+  .studio.studio :global(.service-list h3) {
+    font-size: 16px;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    padding-right: 0;
+  }
+  .studio.studio :global(.service-list p) {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .process .mobileOnly {
+    margin-top: 20px;
+  }
+  .studio.studio :global(.section-aside) {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .toggle::after {
+    transition: none;
+  }
+}
+@media (max-width: 360px) {
+  .studio.studio :global(.service-list h3) {
+    font-size: 15px;
+  }
+  .heroCopy h1 {
+    font-size: 30px;
+  }
+  .heroCopy {
+    padding-top: 20px;
+  }
+}

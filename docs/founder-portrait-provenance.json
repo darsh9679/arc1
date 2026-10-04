@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-04",
+  "method": "Built-in imagegen, identity-preserving edit of a user-supplied founder photograph",
+  "input": "C:/Users/KAIFSH~1/AppData/Local/Temp/codex-clipboard-c8187776-219e-4420-978e-3083164e0728.png",
+  "preservedInput": "docs/source-assets/founder-original.png",
+  "generatedOriginal": "C:/Users/KAIF SHAIKH/.codex/generated_images/01a0ffa4-b4d1-7791-9c7e-0e8610bddb53/exec-a0f0d263-58cb-400d-8d0d-c115342ae77b.png",
+  "output": "public/images/studio/founder-sharvari-portrait-v1.webp",
+  "prompt": "Use case: identity-preserve.\nAsset type: professional founder portrait for Trayaksh Architeqts Studio page, realistic vertical 4:5 photograph.\nInput image 1 is the EDIT TARGET and the sole identity reference. The person is the actual founder; do not invent, substitute or redraw a different person.\nPrimary request: make this existing portrait look like a polished, understated professional editorial photograph by changing the background and refining the presentation, while preserving the founder's face and expression.\nIdentity invariants (highest priority): preserve her original face exactly: same facial proportions, eyes and gaze, brows, nose, lips, broad smile and teeth, skin texture, age and recognisable identity. Keep the existing head tilt, hairstyle, hairline and dark hair. Do not beautify, slim, reshape, change makeup, change facial expression or generate an alternative face. Reuse the source facial appearance as faithfully as possible; only gentle overall exposure/white balance correction, with no face retouch.\nPose and clothing: retain the original relaxed standing pose, clasped hands, royal-blue blazer, white inner top, visible watch, earrings and bracelet. Keep realistic fabric and hand anatomy. Remove the brown shoulder bag and strap cleanly; preserve the blazer beneath naturally. Frame from slightly above the head to just below the clasped hands/upper hips, leaving comfortable breathing space around her hair and shoulders.\nBackground: replace the busy floral-pattern wall with a simple softly lit warm ivory/stone-gray plaster studio backdrop, very subtle natural texture and gentle depth, no furniture, props, logos or artificial office. Clean professional presentation suitable for an architect.\nLighting and finish: soft natural window-style light, balanced exposure, neutral realistic color, natural shadows, crisp clothing/hair details, no orange color cast, no plastic skin, no dramatic glamour or blur.\nOutput: one finished photograph, vertical 4:5, no text, borders, badges, watermark or graphic elements. The real founder's face must remain recognizable and unchanged from the original.",
+  "notes": "Actual founder photo supplied by user; background simplified, bag removed, portrait color balance refined. Facial identity, expression, pose, blue blazer and jewellery were constrained to the source; visually checked for consistency, not claimed to be pixel-identical.",
+  "dimensions": {
+    "width": 1122,
+    "height": 1402
+  },
+  "bytes": 130442,
+  "encoding": {
+    "quality": 92,
+    "resized": false
+  }
+}

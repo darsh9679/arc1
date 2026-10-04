@@ -1,0 +1,62 @@
+[
+  {
+    "method": "click",
+    "elapsedMs": 547,
+    "before": {
+      "focus": "Enter the studio ↗",
+      "inert": true,
+      "overflow": "hidden"
+    },
+    "after": {
+      "dialog": false,
+      "focus": "Replay the introduction ↗",
+      "inert": false,
+      "overflow": ""
+    }
+  },
+  {
+    "method": "Escape",
+    "elapsedMs": 230,
+    "before": {
+      "focus": "Enter the studio ↗",
+      "inert": true,
+      "overflow": "hidden"
+    },
+    "after": {
+      "dialog": false,
+      "focus": "Replay the introduction ↗",
+      "inert": false,
+      "overflow": ""
+    }
+  },
+  {
+    "method": "Tab",
+    "elapsedMs": 202,
+    "before": {
+      "focus": "Enter the studio ↗",
+      "inert": true,
+      "overflow": "hidden"
+    },
+    "after": {
+      "dialog": false,
+      "focus": "Replay the introduction ↗",
+      "inert": false,
+      "overflow": ""
+    }
+  },
+  {
+    "method": "natural",
+    "elapsedMs": 2819,
+    "before": {
+      "focus": "Enter the studio ↗",
+      "inert": true,
+      "overflow": "hidden"
+    },
+    "after": {
+      "dialog": false,
+      "focus": "Replay the introduction ↗",
+      "inert": false,
+      "overflow": ""
+    }
+  }
+]

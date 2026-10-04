@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-04",
+  "method": "Built-in imagegen, edited from five supplied project photographs",
+  "disclosure": "AI portrait interpretations, not documentary project photographs",
+  "placement": "Home slideshow only when viewport width is below 600px",
+  "originalPhotosChanged": false,
+  "records": [
+    {
+      "slug": "thane-apartment",
+      "input": "C:/Users/KAIF SHAIKH/OneDrive/Desktop/ARC-codex-trayaksh-site/public/images/projects/thane-apartment/gallery/01-living-and-media-wall.png",
+      "generatedOriginal": "C:/Users/KAIF SHAIKH/.codex/generated_images/01a0ffa4-b4d1-7791-9c7e-0e8610bddb53/exec-26922048-a731-4fb3-b861-b57873a12669.png",
+      "prompt": "Use case: compositing — portrait reframing and generative canvas extension.\nAsset type: mobile hero background for Trayaksh Architeqts, tall portrait approximately 9:19 (roughly 1080×2280), full-bleed photograph, not a webpage mockup.\nInput image 1 is the edit target and the architectural reference. Use this specific room, not a generic luxury interior.\nPrimary request: produce a premium, photorealistic architectural editorial portrait composition based closely on the reference. Reframe from slightly farther back and extend the ceiling and foreground floor where needed, so the room's main features fit together in a vertical phone screen. Do not merely crop a narrow slice from the existing landscape image.\nComposition: important furniture and architectural details belong within the central 75% of the width and the 18–62% vertical area; retain breathing space at the sides. The lower 30% should be coherent, quiet foreground floor suitable for HTML headline and buttons over it. Natural perspective, straight verticals, believable scale, a restrained 24–28mm interior photography viewpoint. No blank panels, letterboxing, collages, frames, typography or UI.\nLighting and finish: bright soft daylight, realistic warm indirect light, restrained luxurious editorial photography, detailed fabric and wood grain, balanced highlights, gentle authentic shadows; crisp and inviting, not overprocessed CGI, not heavy orange tint.\nInvariants: retain the reference's recognizable design language, palette, main furniture types and relative arrangement. Extend coherently rather than adding unrelated rooms, furnishings or architectural features. No people, new decorative clutter, watermarks, signatures, readable text, logos or fabricated awards. This is an AI portrait interpretation inspired by the original photo, not a documentary replacement.\nSpecific room constraints: Thane: preserve the warm walnut slatted media wall, ivory marble-look TV panel, softly lit paneled ceiling, teal sofa and floral ivory armchairs, carved compact puja niche and pale marble floor. Recompose the main seating, TV wall and ring pendant together in the upper central portion. Clean editorial styling: omit loose children's toys and small personal photograph clutter, retain the actual architectural features and furniture character.",
+      "output": "public/images/mobile-hero/thane-apartment-portrait-v1.webp",
+      "dimensions": {
+        "width": 864,
+        "height": 1821
+      },
+      "format": "webp",
+      "bytes": 244790,
+      "encoding": {
+        "quality": 88,
+        "resized": false
+      }
+    },
+    {
+      "slug": "andheri-apartment",
+      "input": "C:/Users/KAIF SHAIKH/OneDrive/Desktop/ARC-codex-trayaksh-site/public/images/projects/andheri-apartment/gallery/01-living-room.jpeg",
+      "generatedOriginal": "C:/Users/KAIF SHAIKH/.codex/generated_images/01a0ffa4-b4d1-7791-9c7e-0e8610bddb53/exec-b90e526b-4af6-4169-8454-575e473c2dd1.png",
+      "prompt": "Use case: compositing — portrait reframing and generative canvas extension.\nAsset type: mobile hero background for Trayaksh Architeqts, tall portrait approximately 9:19 (roughly 1080×2280), full-bleed photograph, not a webpage mockup.\nInput image 1 is the edit target and the architectural reference. Use this specific room, not a generic luxury interior.\nPrimary request: produce a premium, photorealistic architectural editorial portrait composition based closely on the reference. Reframe from slightly farther back and extend the ceiling and foreground floor where needed, so the room's main features fit together in a vertical phone screen. Do not merely crop a narrow slice from the existing landscape image.\nComposition: important furniture and architectural details belong within the central 75% of the width and the 18–62% vertical area; retain breathing space at the sides. The lower 30% should be coherent, quiet foreground floor suitable for HTML headline and buttons over it. Natural perspective, straight verticals, believable scale, a restrained 24–28mm interior photography viewpoint. No blank panels, letterboxing, collages, frames, typography or UI.\nLighting and finish: bright soft daylight, realistic warm indirect light, restrained luxurious editorial photography, detailed fabric and wood grain, balanced highlights, gentle authentic shadows; crisp and inviting, not overprocessed CGI, not heavy orange tint.\nInvariants: retain the reference's recognizable design language, palette, main furniture types and relative arrangement. Extend coherently rather than adding unrelated rooms, furnishings or architectural features. No people, new decorative clutter, watermarks, signatures, readable text, logos or fabricated awards. This is an AI portrait interpretation inspired by the original photo, not a documentary replacement.\nSpecific room constraints: Andheri: preserve the cream sofa and bench, warm timber-and-white media cabinet, ivory marble-look TV wall, geometric glowing ceiling, large apartment window, small round white-and-brass tables, calm sage wall and pale polished floor. Show sofa, window, table and TV wall together in a carefully composed portrait view; no fisheye.",
+      "output": "public/images/mobile-hero/andheri-apartment-portrait-v1.webp",
+      "dimensions": {
+        "width": 864,
+        "height": 1820
+      },
+      "format": "webp",
+      "bytes": 144962,
+      "encoding": {
+        "quality": 88,
+        "resized": false
+      }
+    },
+    {
+      "slug": "ghatkopar-apartment",
+      "input": "C:/Users/KAIF SHAIKH/OneDrive/Desktop/ARC-codex-trayaksh-site/public/images/projects/ghatkopar-apartment/gallery/01-living-and-dining.jpeg",
+      "generatedOriginal": "C:/Users/KAIF SHAIKH/.codex/generated_images/01a0ffa4-b4d1-7791-9c7e-0e8610bddb53/exec-e5da9ef4-0d5d-4193-8e0c-893543105cfc.png",
+      "prompt": "Use case: compositing — portrait reframing and generative canvas extension.\nAsset type: mobile hero background for Trayaksh Architeqts, tall portrait approximately 9:19 (roughly 1080×2280), full-bleed photograph, not a webpage mockup.\nInput image 1 is the edit target and the architectural reference. Use this specific room, not a generic luxury interior.\nPrimary request: produce a premium, photorealistic architectural editorial portrait composition based closely on the reference. Reframe from slightly farther back and extend the ceiling and foreground floor where needed, so the room's main features fit together in a vertical phone screen. Do not merely crop a narrow slice from the existing landscape image.\nComposition: important furniture and architectural details belong within the central 75% of the width and the 18–62% vertical area; retain breathing space at the sides. The lower 30% should be coherent, quiet foreground floor suitable for HTML headline and buttons over it. Natural perspective, straight verticals, believable scale, a restrained 24–28mm interior photography viewpoint. No blank panels, letterboxing, collages, frames, typography or UI.\nLighting and finish: bright soft daylight, realistic warm indirect light, restrained luxurious editorial photography, detailed fabric and wood grain, balanced highlights, gentle authentic shadows; crisp and inviting, not overprocessed CGI, not heavy orange tint.\nInvariants: retain the reference's recognizable design language, palette, main furniture types and relative arrangement. Extend coherently rather than adding unrelated rooms, furnishings or architectural features. No people, new decorative clutter, watermarks, signatures, readable text, logos or fabricated awards. This is an AI portrait interpretation inspired by the original photo, not a documentary replacement.\nSpecific room constraints: Ghatkopar: preserve the warm wood-and-ivory TV cabinet, ivory marble-look wall, cream recliner seating, glass coffee table, compact carved puja unit, translucent curtains, adjoining dining area and pale floor. Keep the room intimate and realistic; ensure both seating and media wall remain visible in the central upper half.",
+      "output": "public/images/mobile-hero/ghatkopar-apartment-portrait-v1.webp",
+      "dimensions": {
+        "width": 864,
+        "height": 1821
+      },
+      "format": "webp",
+      "bytes": 148526,
+      "encoding": {
+        "quality": 88,
+        "resized": false
+      }
+    },
+    {
+      "slug": "ratnagiri-apartment",
+      "input": "C:/Users/KAIF SHAIKH/OneDrive/Desktop/ARC-codex-trayaksh-site/public/images/projects/ratnagiri-apartment/gallery/01-window-seat.jpeg",
+      "generatedOriginal": "C:/Users/KAIF SHAIKH/.codex/generated_images/01a0ffa4-b4d1-7791-9c7e-0e8610bddb53/exec-4ced6308-ce5f-42a2-a6bf-5425c826e598.png",
+      "prompt": "Use case: compositing — portrait reframing and generative canvas extension.\nAsset type: mobile hero background for Trayaksh Architeqts, tall portrait approximately 9:19 (roughly 1080×2280), full-bleed photograph, not a webpage mockup.\nInput image 1 is the edit target and the architectural reference. Use this specific room, not a generic luxury interior.\nPrimary request: produce a premium, photorealistic architectural editorial portrait composition based closely on the reference. Reframe from slightly farther back and extend the ceiling and foreground floor where needed, so the room's main features fit together in a vertical phone screen. Do not merely crop a narrow slice from the existing landscape image.\nComposition: important furniture and architectural details belong within the central 75% of the width and the 18–62% vertical area; retain breathing space at the sides. The lower 30% should be coherent, quiet foreground floor suitable for HTML headline and buttons over it. Natural perspective, straight verticals, believable scale, a restrained 24–28mm interior photography viewpoint. No blank panels, letterboxing, collages, frames, typography or UI.\nLighting and finish: bright soft daylight, realistic warm indirect light, restrained luxurious editorial photography, detailed fabric and wood grain, balanced highlights, gentle authentic shadows; crisp and inviting, not overprocessed CGI, not heavy orange tint.\nInvariants: retain the reference's recognizable design language, palette, main furniture types and relative arrangement. Extend coherently rather than adding unrelated rooms, furnishings or architectural features. No people, new decorative clutter, watermarks, signatures, readable text, logos or fabricated awards. This is an AI portrait interpretation inspired by the original photo, not a documentary replacement.\nSpecific room constraints: Ratnagiri: preserve the white rolled-arm window seat, two deep-teal cushions, white-framed bright balcony window, green trees outside, warm timber floor, potted plants and terracotta seating edge. Keep the small cat as a naturally resting detail on the seat, not a focal portrait. Extend the window architecture and floor naturally into the vertical frame; do not invent a grand mansion.",
+      "output": "public/images/mobile-hero/ratnagiri-apartment-portrait-v1.webp",
+      "dimensions": {
+        "width": 864,
+        "height": 1821
+      },
+      "format": "webp",
+      "bytes": 140874,
+      "encoding": {
+        "quality": 88,
+        "resized": false
+      }
+    },
+    {
+      "slug": "anagha-salon",
+      "input": "C:/Users/KAIF SHAIKH/OneDrive/Desktop/ARC-codex-trayaksh-site/public/images/projects/anagha-salon/gallery/01-salon-floor.jpeg",
+      "generatedOriginal": "C:/Users/KAIF SHAIKH/.codex/generated_images/01a0ffa4-b4d1-7791-9c7e-0e8610bddb53/exec-2caba909-aa5d-4cb9-901a-80da7b6eb02c.png",
+      "prompt": "Use case: compositing — portrait reframing and generative canvas extension.\nAsset type: mobile hero background for Trayaksh Architeqts, tall portrait approximately 9:19 (roughly 1080×2280), full-bleed photograph, not a webpage mockup.\nInput image 1 is the edit target and the architectural reference. Use this specific room, not a generic luxury interior.\nPrimary request: produce a premium, photorealistic architectural editorial portrait composition based closely on the reference. Reframe from slightly farther back and extend the ceiling and foreground floor where needed, so the room's main features fit together in a vertical phone screen. Do not merely crop a narrow slice from the existing landscape image.\nComposition: important furniture and architectural details belong within the central 75% of the width and the 18–62% vertical area; retain breathing space at the sides. The lower 30% should be coherent, quiet foreground floor suitable for HTML headline and buttons over it. Natural perspective, straight verticals, believable scale, a restrained 24–28mm interior photography viewpoint. No blank panels, letterboxing, collages, frames, typography or UI.\nLighting and finish: bright soft daylight, realistic warm indirect light, restrained luxurious editorial photography, detailed fabric and wood grain, balanced highlights, gentle authentic shadows; crisp and inviting, not overprocessed CGI, not heavy orange tint.\nInvariants: retain the reference's recognizable design language, palette, main furniture types and relative arrangement. Extend coherently rather than adding unrelated rooms, furnishings or architectural features. No people, new decorative clutter, watermarks, signatures, readable text, logos or fabricated awards. This is an AI portrait interpretation inspired by the original photo, not a documentary replacement.\nSpecific room constraints: Anagha salon: preserve the teal salon chairs with fine brass piping, black shampoo bowl, timber floor, white-and-wood product shelving, vertical mirrors, small green accent panel and floor-to-ceiling street-facing glazing. Create an unoccupied interior view: omit the seated person and her mirrored reflection. Keep the foreground chair, wash station and mirror wall together, with realistic reflections.",
+      "output": "public/images/mobile-hero/anagha-salon-portrait-v1.webp",
+      "dimensions": {
+        "width": 864,
+        "height": 1821
+      },
+      "format": "webp",
+      "bytes": 236588,
+      "encoding": {
+        "quality": 88,
+        "resized": false
+      }
+    }
+  ]
+}

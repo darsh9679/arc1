@@ -1,0 +1,268 @@
+[
+  {
+    "clippedText": [],
+    "mainHeight": 5132.2001953125,
+    "overflow": false,
+    "phoneProcessRows": 6,
+    "processCards": 0,
+    "scopeControls": 4,
+    "sections": [
+      {
+        "height": 476.6000061035156,
+        "id": "practice"
+      },
+      {
+        "height": 828.6749877929688,
+        "id": "founder"
+      },
+      {
+        "height": 414.8999938964844,
+        "id": "philosophy"
+      },
+      {
+        "height": 697.5,
+        "id": "vision"
+      },
+      {
+        "height": 1042.0250244140625,
+        "id": "design"
+      },
+      {
+        "height": 631.7999877929688,
+        "id": "services"
+      }
+    ],
+    "viewport": [
+      320,
+      568
+    ]
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 5038.8251953125,
+    "overflow": false,
+    "phoneProcessRows": 6,
+    "processCards": 0,
+    "scopeControls": 4,
+    "sections": [
+      {
+        "height": 455.8000183105469,
+        "id": "practice"
+      },
+      {
+        "height": 776.6749877929688,
+        "id": "founder"
+      },
+      {
+        "height": 392.5,
+        "id": "philosophy"
+      },
+      {
+        "height": 697.5,
+        "id": "vision"
+      },
+      {
+        "height": 1019.625,
+        "id": "design"
+      },
+      {
+        "height": 610.2000122070312,
+        "id": "services"
+      }
+    ],
+    "viewport": [
+      375,
+      667
+    ]
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 4760.875,
+    "overflow": false,
+    "phoneProcessRows": 6,
+    "processCards": 0,
+    "scopeControls": 4,
+    "sections": [
+      {
+        "height": 431.8000183105469,
+        "id": "practice"
+      },
+      {
+        "height": 679.875,
+        "id": "founder"
+      },
+      {
+        "height": 370.1000061035156,
+        "id": "philosophy"
+      },
+      {
+        "height": 641.5,
+        "id": "vision"
+      },
+      {
+        "height": 971.5750122070312,
+        "id": "design"
+      },
+      {
+        "height": 567,
+        "id": "services"
+      }
+    ],
+    "viewport": [
+      599,
+      800
+    ]
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 7484.5751953125,
+    "overflow": false,
+    "phoneProcessRows": 0,
+    "processCards": 0,
+    "scopeControls": 0,
+    "sections": [
+      {
+        "height": 951.1000366210938,
+        "id": "practice"
+      },
+      {
+        "height": 601.7999877929688,
+        "id": "founder"
+      },
+      {
+        "height": 617.5,
+        "id": "philosophy"
+      },
+      {
+        "height": 1274.7750244140625,
+        "id": "vision"
+      },
+      {
+        "height": 1727,
+        "id": "design"
+      },
+      {
+        "height": 757.75,
+        "id": "services"
+      }
+    ],
+    "viewport": [
+      600,
+      960
+    ]
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 6751.22509765625,
+    "overflow": false,
+    "phoneProcessRows": 0,
+    "processCards": 0,
+    "scopeControls": 0,
+    "sections": [
+      {
+        "height": 867.9000244140625,
+        "id": "practice"
+      },
+      {
+        "height": 544.9500122070312,
+        "id": "founder"
+      },
+      {
+        "height": 569.6500244140625,
+        "id": "philosophy"
+      },
+      {
+        "height": 1118.125,
+        "id": "vision"
+      },
+      {
+        "height": 1512.5,
+        "id": "design"
+      },
+      {
+        "height": 652.75,
+        "id": "services"
+      }
+    ],
+    "viewport": [
+      768,
+      1024
+    ]
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 7289.78759765625,
+    "overflow": false,
+    "phoneProcessRows": 0,
+    "processCards": 6,
+    "scopeControls": 0,
+    "sections": [
+      {
+        "height": 577,
+        "id": "practice"
+      },
+      {
+        "height": 498.2000122070313,
+        "id": "founder"
+      },
+      {
+        "height": 517.75,
+        "id": "philosophy"
+      },
+      {
+        "height": 740.8125,
+        "id": "vision"
+      },
+      {
+        "height": 1140.175048828125,
+        "id": "design"
+      },
+      {
+        "height": 519.1749877929688,
+        "id": "services"
+      }
+    ],
+    "viewport": [
+      1024,
+      768
+    ]
+  },
+  {
+    "clippedText": [],
+    "mainHeight": 7490.6875,
+    "overflow": false,
+    "phoneProcessRows": 0,
+    "processCards": 6,
+    "scopeControls": 0,
+    "sections": [
+      {
+        "height": 531,
+        "id": "practice"
+      },
+      {
+        "height": 513.7999877929688,
+        "id": "founder"
+      },
+      {
+        "height": 501.6125183105469,
+        "id": "philosophy"
+      },
+      {
+        "height": 684.2125244140625,
+        "id": "vision"
+      },
+      {
+        "height": 1090.9749755859375,
+        "id": "design"
+      },
+      {
+        "height": 551.0250244140625,
+        "id": "services"
+      }
+    ],
+    "viewport": [
+      1366,
+      768
+    ]
+  }
+]

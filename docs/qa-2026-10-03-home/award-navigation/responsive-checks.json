@@ -1,0 +1,116 @@
+[
+  {
+    "awardHeight": 361.1000061035156,
+    "brandWidth": 142,
+    "headerChildren": [
+      {
+        "left": 16,
+        "right": 158
+      },
+      {
+        "left": 179.58750915527344,
+        "right": 288.80001068115234
+      }
+    ],
+    "headerHeight": 72,
+    "height": 500,
+    "overflow": false,
+    "titleFont": "24px",
+    "width": 320
+  },
+  {
+    "awardHeight": 312.625,
+    "brandWidth": 165.08750915527344,
+    "headerChildren": [
+      {
+        "left": 20,
+        "right": 185.08750915527344
+      },
+      {
+        "left": 209.4375,
+        "right": 340
+      }
+    ],
+    "headerHeight": 72,
+    "height": 667,
+    "overflow": false,
+    "titleFont": "24px",
+    "width": 375
+  },
+  {
+    "awardHeight": 312.625,
+    "brandWidth": 189.375,
+    "headerChildren": [
+      {
+        "left": 20,
+        "right": 209.375
+      },
+      {
+        "left": 264.63751220703125,
+        "right": 395.2000122070313
+      }
+    ],
+    "headerHeight": 72,
+    "height": 932,
+    "overflow": false,
+    "titleFont": "24px",
+    "width": 430
+  },
+  {
+    "awardHeight": 306.82501220703125,
+    "brandWidth": 168,
+    "headerChildren": [
+      {
+        "left": 39.92499923706055,
+        "right": 207.92499923706055
+      },
+      {
+        "left": 580.3125,
+        "right": 712.875
+      }
+    ],
+    "headerHeight": 72,
+    "height": 1024,
+    "overflow": false,
+    "titleFont": "23px",
+    "width": 768
+  },
+  {
+    "awardHeight": 306.82501220703125,
+    "brandWidth": 166,
+    "headerChildren": [
+      {
+        "left": 46.875,
+        "right": 212.875
+      },
+      {
+        "left": 293.76251220703125,
+        "right": 839.5250244140625
+      }
+    ],
+    "headerHeight": 82,
+    "height": 768,
+    "overflow": false,
+    "titleFont": "23px",
+    "width": 902
+  },
+  {
+    "awardHeight": 255.5500030517578,
+    "brandWidth": 190,
+    "headerChildren": [
+      {
+        "left": 71.05000305175781,
+        "right": 261.0500030517578
+      },
+      {
+        "left": 734.3875122070312,
+        "right": 1280.1500244140625
+      }
+    ],
+    "headerHeight": 82,
+    "height": 768,
+    "overflow": false,
+    "titleFont": "27.328px",
+    "width": 1366
+  }
+]

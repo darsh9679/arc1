@@ -1,0 +1,361 @@
+.page {
+  --color-ink: #293126;
+  --color-ink-soft: #565f50;
+  --color-accent: #815d24;
+  --color-line: #d9ddd3;
+  --enquiry-control-bg: #fafaf7;
+  --enquiry-button: #23372e;
+  --enquiry-button-hover: #344d3f;
+  --enquiry-button-text: #f7f6ef;
+  --map-panel-bg: #efeee6;
+  color: var(--color-ink);
+  background: #f7f6f1;
+}
+.page + :global(.site-footer) {
+  --color-ink: #293126;
+  --color-ink-soft: #565f50;
+  --color-accent: #815d24;
+  --color-line: #d9ddd3;
+}
+/* Visitors are already at the enquiry form; retain the directory without a repeated invitation. */
+.page + :global(.site-footer [data-footer-part='invitation']) {
+  display: none;
+}
+.opening {
+  padding: 32px var(--gutter) 40px;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  max-width: 1400px;
+  margin-inline: auto;
+  border: 1px solid var(--color-line);
+  background: #fefefe;
+}
+.introduction {
+  --contact-surface: #eeeae1;
+  --contact-ink: #30312c;
+  --contact-muted: #5c5b53;
+  --contact-accent: #806037;
+  --contact-line: #c7c1b4;
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(30px, 3.5vw, 48px);
+  overflow: hidden;
+  color: var(--contact-ink);
+  background: var(--contact-surface);
+}
+.eyebrow {
+  color: var(--color-ink-soft);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+.introduction .eyebrow {
+  color: var(--contact-muted);
+  padding-top: 14px;
+  border-top: 1px solid var(--contact-line);
+}
+.introduction h2 {
+  margin-block: 18px 22px;
+  font-size: clamp(44px, 4.7vw, 66px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+.introduction h2 em {
+  color: var(--contact-accent);
+  font-style: normal;
+}
+.lead {
+  max-width: 36ch;
+  color: var(--contact-muted);
+  font-size: 14px;
+  line-height: 1.85;
+}
+.directContact {
+  margin-top: 30px;
+}
+.directContact > p {
+  color: var(--contact-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.contactActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+.contactActions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 11px 14px;
+  border: 1px solid var(--contact-line);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.contactActions .phone {
+  background: var(--contact-ink);
+  color: #fdfcf8;
+  border-color: var(--contact-ink);
+}
+.contactActions svg {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+}
+.contactActions a:focus-visible {
+  outline-color: var(--contact-accent);
+}
+.practice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+  color: var(--contact-muted);
+  font-size: 10px;
+  line-height: 1.7;
+}
+.practice svg {
+  flex: 0 0 auto;
+}
+.formPanel {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  padding: 28px 32px;
+  border-top: 3px solid var(--color-accent);
+  background: #fefefe;
+  scroll-margin-top: 0;
+}
+.formPanel:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 5px;
+}
+.formHeading {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--color-line);
+}
+.formIndex {
+  flex: 0 0 auto;
+  color: var(--color-accent);
+  font-size: 10px;
+}
+.formHeading h1 {
+  margin-bottom: 6px;
+  font-size: 30px;
+  line-height: 1.15;
+}
+.formHeading p {
+  color: var(--color-ink-soft);
+  font-size: 11px;
+  line-height: 1.7;
+}
+.visit {
+  padding: 36px var(--gutter) 40px;
+  border-top: 1px solid var(--color-line);
+  background: #fefefe;
+}
+.visitGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(30px, 6vw, 80px);
+  align-items: center;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.studioInformation h2 {
+  margin-block: 12px 16px;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1.18;
+}
+.studioInformation h2 em {
+  color: var(--color-accent);
+  font-style: normal;
+}
+.invitation {
+  max-width: 42ch;
+  color: var(--color-ink-soft);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.studioIdentity {
+  margin-block: 20px 10px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.studioIdentity > span {
+  color: var(--color-ink-soft);
+  font-size: 11px;
+}
+.studioLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.studioLinks a {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 44px;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.regions {
+  max-width: 46ch;
+  margin-top: 16px;
+  color: var(--color-ink-soft);
+  font-size: 10px;
+  line-height: 1.8;
+}
+.mapPanel {
+  min-width: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .contactActions a,
+  .studioLinks a svg {
+    transition:
+      background-color 220ms ease,
+      transform 220ms ease;
+  }
+  .contactActions .phone:hover {
+    background: #4a493f;
+    border-color: #4a493f;
+  }
+  .contactActions .instagram:hover {
+    background: #fdfcf8;
+  }
+  .studioLinks a:hover svg {
+    transform: translate(2px, -2px);
+  }
+}
+@media (max-width: 900px) {
+  .opening {
+    padding-block: 28px 32px;
+  }
+  .layout {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  }
+  .introduction {
+    padding: 28px;
+  }
+  .introduction h2 {
+    font-size: 44px;
+  }
+  .lead {
+    font-size: 12px;
+  }
+  .formPanel {
+    padding: 24px;
+  }
+  .visitGrid {
+    gap: 28px;
+  }
+}
+@media (max-width: 700px) {
+  .opening {
+    padding-block: 20px 30px;
+  }
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .introduction {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 24px;
+    border-top: 1px solid var(--contact-line);
+  }
+  .introduction h2 {
+    margin-block: 12px 14px;
+    font-size: clamp(34px, 9vw, 44px);
+  }
+  .introduction h2 br {
+    display: none;
+  }
+  .lead {
+    font-size: 12px;
+    line-height: 1.75;
+    max-width: 44ch;
+  }
+  .directContact {
+    margin-top: 18px;
+  }
+  .directContact > p {
+    display: none;
+  }
+  .contactActions {
+    flex-wrap: nowrap;
+    margin-top: 0;
+    gap: 8px;
+  }
+  .contactActions a {
+    font-size: 11px;
+    padding-inline: 11px;
+    gap: 7px;
+  }
+  .contactActions .instagram {
+    width: 44px;
+    padding: 10px;
+  }
+  .instagram > span {
+    display: none;
+  }
+  .practice {
+    margin-top: 16px;
+    font-size: 9px;
+  }
+  .eyebrow {
+    font-size: 9px;
+  }
+  .formPanel {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 20px;
+  }
+  .formHeading {
+    gap: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+  .formHeading h1 {
+    font-size: 28px;
+  }
+  .formHeading p {
+    display: none;
+  }
+  .visit {
+    padding-block: 28px 32px;
+  }
+  .visitGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .studioInformation h2 {
+    font-size: 30px;
+  }
+  .invitation {
+    font-size: 12px;
+  }
+  .studioIdentity {
+    margin-top: 16px;
+  }
+  .regions {
+    margin-top: 12px;
+  }
+}

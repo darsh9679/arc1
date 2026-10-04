@@ -1,0 +1,23 @@
+[
+  {
+    "height": 700,
+    "imageHeight": 364.22222900390625,
+    "maxCardHeight": 529.7916870117188,
+    "overflow": false,
+    "width": 1366
+  },
+  {
+    "height": 811,
+    "imageHeight": 421.5416564941406,
+    "maxCardHeight": 589.1111450195312,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "height": 864,
+    "imageHeight": 449.27777099609375,
+    "maxCardHeight": 619,
+    "overflow": false,
+    "width": 1536
+  }
+]

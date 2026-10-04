@@ -1,0 +1,129 @@
+{
+  "viewports": [
+    {
+      "buttonBottom": 482,
+      "captionOverlap": false,
+      "clippedButtons": false,
+      "overflow": false,
+      "photoHeight": 165.90000915527344,
+      "photoOverlay": "none",
+      "size": [
+        320,
+        500
+      ],
+      "studioTop": 500,
+      "textOverPhoto": false
+    },
+    {
+      "buttonBottom": 550,
+      "captionOverlap": false,
+      "clippedButtons": false,
+      "overflow": false,
+      "photoHeight": 233.90000915527344,
+      "photoOverlay": "none",
+      "size": [
+        320,
+        568
+      ],
+      "studioTop": 568,
+      "textOverPhoto": false
+    },
+    {
+      "buttonBottom": 532.3999938964844,
+      "captionOverlap": false,
+      "clippedButtons": false,
+      "overflow": false,
+      "photoHeight": 214.8000030517578,
+      "photoOverlay": "none",
+      "size": [
+        375,
+        550
+      ],
+      "studioTop": 550.4000244140625,
+      "textOverPhoto": false
+    },
+    {
+      "buttonBottom": 659.2000122070312,
+      "captionOverlap": false,
+      "clippedButtons": false,
+      "overflow": false,
+      "photoHeight": 276.0249938964844,
+      "photoOverlay": "none",
+      "size": [
+        375,
+        667
+      ],
+      "studioTop": 667.2000122070312,
+      "textOverPhoto": false
+    },
+    {
+      "buttonBottom": 836,
+      "captionOverlap": false,
+      "clippedButtons": false,
+      "overflow": false,
+      "photoHeight": 450.0750122070313,
+      "photoOverlay": "none",
+      "size": [
+        390,
+        844
+      ],
+      "studioTop": 844,
+      "textOverPhoto": false
+    },
+    {
+      "buttonBottom": 909.9830322265624,
+      "captionOverlap": false,
+      "clippedButtons": false,
+      "overflow": false,
+      "photoHeight": 530.875,
+      "photoOverlay": "none",
+      "size": [
+        430,
+        932
+      ],
+      "studioTop": 932,
+      "textOverPhoto": false
+    },
+    {
+      "buttonBottom": 1000,
+      "captionOverlap": false,
+      "clippedButtons": false,
+      "overflow": false,
+      "photoHeight": 608.1000366210938,
+      "photoOverlay": "none",
+      "size": [
+        768,
+        1024
+      ],
+      "studioTop": 1024,
+      "textOverPhoto": false
+    }
+  ],
+  "captions": [
+    {
+      "overlap": false,
+      "slide": "1",
+      "text": "01 / 05Ghatkopar, MumbaiSwipe or tap to explore"
+    },
+    {
+      "overlap": false,
+      "slide": "2",
+      "text": "02 / 05Ratnagiri, MaharashtraSwipe or tap to explore"
+    },
+    {
+      "overlap": false,
+      "slide": "3",
+      "text": "03 / 05Juinagar, Navi MumbaiSwipe or tap to explore"
+    },
+    {
+      "overlap": false,
+      "slide": "4",
+      "text": "04 / 05Andheri, MumbaiSwipe or tap to explore"
+    },
+    {
+      "overlap": false,
+      "slide": "5",
+      "text": "05 / 05Thane, MaharashtraSwipe or tap to explore"
+    }
+  ]
+}

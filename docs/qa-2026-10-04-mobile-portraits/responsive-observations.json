@@ -1,0 +1,677 @@
+[
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 482,
+          "height": 46,
+          "left": 16,
+          "right": 145.40000915527344,
+          "top": 436,
+          "width": 129.40000915527344,
+          "x": 16,
+          "y": 436
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 482,
+          "height": 46,
+          "left": 159.40000915527344,
+          "right": 288.8000183105469,
+          "top": 436,
+          "width": 129.40000915527344,
+          "x": 159.40000915527344,
+          "y": 436
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "AI portrait visualRatnagiri, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 568,
+      "height": 496,
+      "top": 72,
+      "width": 304.8000183105469
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "none",
+    "imagePosition": "50% 65%",
+    "images": [
+      {
+        "alt": "AI portrait visualization inspired by the Thane apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/thane-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Andheri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/andheri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ghatkopar apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ghatkopar-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ratnagiri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ratnagiri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Anagha’s Salon & Academy interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/anagha-salon-portrait-v1.webp"
+      }
+    ],
+    "scene": "ratnagiri-apartment",
+    "scrollY": 0,
+    "slideshow": "playing",
+    "viewport": {
+      "height": 568,
+      "width": 320
+    }
+  },
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 758,
+          "height": 46,
+          "left": 20,
+          "right": 180.6000061035156,
+          "top": 712,
+          "width": 160.60000610351562,
+          "x": 20,
+          "y": 712
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 758,
+          "height": 46,
+          "left": 194.6000061035156,
+          "right": 355.20001220703125,
+          "top": 712,
+          "width": 160.60000610351562,
+          "x": 194.6000061035156,
+          "y": 712
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "AI portrait visualThane, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 844,
+      "height": 772,
+      "top": 72,
+      "width": 375.2000122070313
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "none",
+    "imagePosition": "50% 65%",
+    "images": [
+      {
+        "alt": "AI portrait visualization inspired by the Thane apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/thane-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Andheri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/andheri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ghatkopar apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ghatkopar-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ratnagiri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ratnagiri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Anagha’s Salon & Academy interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/anagha-salon-portrait-v1.webp"
+      }
+    ],
+    "scene": "thane-apartment",
+    "scrollY": 0,
+    "slideshow": "paused",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 932,
+          "height": 50,
+          "left": 24,
+          "right": 210.8125,
+          "top": 882,
+          "width": 186.8125,
+          "x": 24,
+          "y": 882
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 932,
+          "height": 50,
+          "left": 232.8125,
+          "right": 386.5124969482422,
+          "top": 882,
+          "width": 153.6999969482422,
+          "x": 232.8125,
+          "y": 882
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "In focusThane, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 1024,
+      "height": 952,
+      "top": 72,
+      "width": 752.7999877929688
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "spotlight-hero_cameraDrift__zQHsA",
+    "imagePosition": "54% 50%",
+    "images": [
+      {
+        "alt": "A Modern Classic living room with teal seating, marble-look detailing, warm timber and layered lighting.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fthane-apartment%2Fgallery%2F01-living-and-media-wall.png%3Fv%3D098ae50b7663&w=828&q=75"
+      },
+      {
+        "alt": "A warm, understated living room with light upholstery and timber finishes in an Andheri apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fandheri-apartment%2Fgallery%2F01-living-room.jpeg%3Fv%3Dd3f1e31f6dcb&w=828&q=75"
+      },
+      {
+        "alt": "Warm timber joinery and a calm living and dining space in a Ghatkopar apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fghatkopar-apartment%2Fgallery%2F01-living-and-dining.jpeg%3Fv%3D7536c13b4e06&w=828&q=75"
+      },
+      {
+        "alt": "A window seat with teal cushions, plants and natural daylight in a Ratnagiri apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fratnagiri-apartment%2Fgallery%2F01-window-seat.jpeg%3Fv%3D42d3ece6fa3a&w=828&q=75"
+      },
+      {
+        "alt": "Teal salon chairs, mirrors and open shelving arranged across the bright salon floor.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fanagha-salon%2Fgallery%2F01-salon-floor.jpeg%3Fv%3D134656fee76f&w=828&q=75"
+      }
+    ],
+    "scene": "thane-apartment",
+    "scrollY": 0,
+    "slideshow": "paused",
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 800,
+          "height": 50,
+          "left": 71.05000305175781,
+          "right": 257.8625030517578,
+          "top": 750,
+          "width": 186.8125,
+          "x": 71.05000305175781,
+          "y": 750
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 800,
+          "height": 50,
+          "left": 279.8625183105469,
+          "right": 433.56251525878906,
+          "top": 750,
+          "width": 153.6999969482422,
+          "x": 279.8625183105469,
+          "y": 750
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "In focusThane, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 900,
+      "height": 818,
+      "top": 82,
+      "width": 1351.2000732421875
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "spotlight-hero_cameraDrift__zQHsA",
+    "imagePosition": "50% 55%",
+    "images": [
+      {
+        "alt": "A Modern Classic living room with teal seating, marble-look detailing, warm timber and layered lighting.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fthane-apartment%2Fgallery%2F01-living-and-media-wall.png%3Fv%3D098ae50b7663&w=1920&q=75"
+      },
+      {
+        "alt": "A warm, understated living room with light upholstery and timber finishes in an Andheri apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fandheri-apartment%2Fgallery%2F01-living-room.jpeg%3Fv%3Dd3f1e31f6dcb&w=1920&q=75"
+      },
+      {
+        "alt": "Warm timber joinery and a calm living and dining space in a Ghatkopar apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fghatkopar-apartment%2Fgallery%2F01-living-and-dining.jpeg%3Fv%3D7536c13b4e06&w=1920&q=75"
+      },
+      {
+        "alt": "A window seat with teal cushions, plants and natural daylight in a Ratnagiri apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fratnagiri-apartment%2Fgallery%2F01-window-seat.jpeg%3Fv%3D42d3ece6fa3a&w=1920&q=75"
+      },
+      {
+        "alt": "Teal salon chairs, mirrors and open shelving arranged across the bright salon floor.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fanagha-salon%2Fgallery%2F01-salon-floor.jpeg%3Fv%3D134656fee76f&w=1920&q=75"
+      }
+    ],
+    "scene": "thane-apartment",
+    "scrollY": 0,
+    "slideshow": "paused",
+    "viewport": {
+      "height": 900,
+      "width": 1366
+    }
+  },
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 581.2000122070312,
+          "height": 46,
+          "left": 20,
+          "right": 173,
+          "top": 535.2000122070312,
+          "width": 153,
+          "x": 20,
+          "y": 535.2000122070312
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 581.2000122070312,
+          "height": 46,
+          "left": 187,
+          "right": 340,
+          "top": 535.2000122070312,
+          "width": 153,
+          "x": 187,
+          "y": 535.2000122070312
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "AI portrait visualThane, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 667.2000122070312,
+      "height": 595.2000122070312,
+      "top": 72,
+      "width": 360
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "none",
+    "imagePosition": "50% 65%",
+    "images": [
+      {
+        "alt": "AI portrait visualization inspired by the Thane apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/thane-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Andheri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/andheri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ghatkopar apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ghatkopar-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ratnagiri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ratnagiri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Anagha’s Salon & Academy interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/anagha-salon-portrait-v1.webp"
+      }
+    ],
+    "scene": "thane-apartment",
+    "scrollY": 0,
+    "slideshow": "paused",
+    "viewport": {
+      "height": 667,
+      "width": 375
+    }
+  },
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 708,
+          "height": 50,
+          "left": 24,
+          "right": 210.8125,
+          "top": 658,
+          "width": 186.8125,
+          "x": 24,
+          "y": 658
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 708,
+          "height": 50,
+          "left": 232.8125,
+          "right": 386.5124969482422,
+          "top": 658,
+          "width": 153.6999969482422,
+          "x": 232.8125,
+          "y": 658
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "In focusThane, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 800,
+      "height": 728,
+      "top": 72,
+      "width": 584.7999877929688
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "spotlight-hero_cameraDrift__zQHsA",
+    "imagePosition": "54% 50%",
+    "images": [
+      {
+        "alt": "A Modern Classic living room with teal seating, marble-look detailing, warm timber and layered lighting.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fthane-apartment%2Fgallery%2F01-living-and-media-wall.png%3Fv%3D098ae50b7663&w=640&q=75"
+      },
+      {
+        "alt": "A warm, understated living room with light upholstery and timber finishes in an Andheri apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fandheri-apartment%2Fgallery%2F01-living-room.jpeg%3Fv%3Dd3f1e31f6dcb&w=1920&q=75"
+      },
+      {
+        "alt": "Warm timber joinery and a calm living and dining space in a Ghatkopar apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fghatkopar-apartment%2Fgallery%2F01-living-and-dining.jpeg%3Fv%3D7536c13b4e06&w=1920&q=75"
+      },
+      {
+        "alt": "A window seat with teal cushions, plants and natural daylight in a Ratnagiri apartment.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fratnagiri-apartment%2Fgallery%2F01-window-seat.jpeg%3Fv%3D42d3ece6fa3a&w=1920&q=75"
+      },
+      {
+        "alt": "Teal salon chairs, mirrors and open shelving arranged across the bright salon floor.",
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fprojects%2Fanagha-salon%2Fgallery%2F01-salon-floor.jpeg%3Fv%3D134656fee76f&w=1920&q=75"
+      }
+    ],
+    "scene": "thane-apartment",
+    "scrollY": 0,
+    "slideshow": "paused",
+    "viewport": {
+      "height": 800,
+      "width": 600
+    }
+  },
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 714,
+          "height": 46,
+          "left": 20,
+          "right": 285,
+          "top": 668,
+          "width": 265,
+          "x": 20,
+          "y": 668
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 714,
+          "height": 46,
+          "left": 299,
+          "right": 564,
+          "top": 668,
+          "width": 265,
+          "x": 299,
+          "y": 668
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "AI portrait visualThane, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 800,
+      "height": 728,
+      "top": 72,
+      "width": 584
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "none",
+    "imagePosition": "50% 35%",
+    "images": [
+      {
+        "alt": "AI portrait visualization inspired by the Thane apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/thane-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Andheri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/andheri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ghatkopar apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ghatkopar-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ratnagiri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ratnagiri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Anagha’s Salon & Academy interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/anagha-salon-portrait-v1.webp"
+      }
+    ],
+    "scene": "thane-apartment",
+    "scrollY": 0,
+    "slideshow": "paused",
+    "viewport": {
+      "height": 800,
+      "width": 599
+    }
+  },
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 581.2000122070312,
+          "height": 46,
+          "left": 20,
+          "right": 173,
+          "top": 535.2000122070312,
+          "width": 153,
+          "x": 20,
+          "y": 535.2000122070312
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 581.2000122070312,
+          "height": 46,
+          "left": 187,
+          "right": 340,
+          "top": 535.2000122070312,
+          "width": 153,
+          "x": 187,
+          "y": 535.2000122070312
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "AI portrait visualThane, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 667.2000122070312,
+      "height": 595.2000122070312,
+      "top": 72,
+      "width": 360
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "none",
+    "imagePosition": "50% 35%",
+    "images": [
+      {
+        "alt": "AI portrait visualization inspired by the Thane apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/thane-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Andheri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/andheri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ghatkopar apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ghatkopar-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ratnagiri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ratnagiri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Anagha’s Salon & Academy interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/anagha-salon-portrait-v1.webp"
+      }
+    ],
+    "scene": "thane-apartment",
+    "scrollY": 0,
+    "slideshow": "paused",
+    "viewport": {
+      "height": 667,
+      "width": 375
+    }
+  },
+  {
+    "actions": [
+      {
+        "bounds": {
+          "bottom": 758,
+          "height": 46,
+          "left": 20,
+          "right": 180.6000061035156,
+          "top": 712,
+          "width": 160.60000610351562,
+          "x": 20,
+          "y": 712
+        },
+        "label": "Explore our work"
+      },
+      {
+        "bounds": {
+          "bottom": 758,
+          "height": 46,
+          "left": 194.6000061035156,
+          "right": 355.20001220703125,
+          "top": 712,
+          "width": 160.60000610351562,
+          "x": 194.6000061035156,
+          "y": 712
+        },
+        "label": "Begin your project"
+      }
+    ],
+    "caption": "AI portrait visualThane, Maharashtra Choose a featured project image",
+    "dotButtons": 5,
+    "hero": {
+      "bottom": 844,
+      "height": 772,
+      "top": 72,
+      "width": 375.2000122070313
+    },
+    "horizontalOverflow": false,
+    "imageAnimation": "none",
+    "imagePosition": "50% 35%",
+    "images": [
+      {
+        "alt": "AI portrait visualization inspired by the Thane apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/thane-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Andheri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/andheri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ghatkopar apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ghatkopar-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Ratnagiri apartment interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/ratnagiri-apartment-portrait-v1.webp"
+      },
+      {
+        "alt": "AI portrait visualization inspired by the Anagha’s Salon & Academy interior; extended and recomposed from the original project photograph.",
+        "loaded": true,
+        "src": "http://localhost:3000/images/mobile-hero/anagha-salon-portrait-v1.webp"
+      }
+    ],
+    "scene": "thane-apartment",
+    "scrollY": 0,
+    "slideshow": "paused",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  }
+]

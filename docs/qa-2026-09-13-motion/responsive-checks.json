@@ -1,0 +1,245 @@
+[
+  {
+    "path": "/",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "Design that seesbeyond the obvious.",
+    "scroll": 305
+  },
+  {
+    "path": "/studio",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "Architecture witha deeper perspective.",
+    "scroll": 305
+  },
+  {
+    "path": "/work",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "Spaces with perspective.",
+    "scroll": 305
+  },
+  {
+    "path": "/recognition",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "A practice of care.Recognised.",
+    "scroll": 305
+  },
+  {
+    "path": "/contact",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "Start yourproject.",
+    "scroll": 305
+  },
+  {
+    "path": "/work/nerul-workspace",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "A different perspective.",
+    "scroll": 305
+  },
+  {
+    "path": "/work/residential-architecture",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "A place to belong.",
+    "scroll": 305
+  },
+  {
+    "path": "/work/residential-interiors",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "Room for the everyday.",
+    "scroll": 305
+  },
+  {
+    "path": "/work/hospitality-architecture",
+    "width": 320,
+    "height": 740,
+    "brokenImages": 0,
+    "client": 305,
+    "heading": "The art of gathering.",
+    "scroll": 305
+  },
+  {
+    "path": "/",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "Design that seesbeyond the obvious.",
+    "scroll": 753
+  },
+  {
+    "path": "/studio",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "Architecture witha deeper perspective.",
+    "scroll": 753
+  },
+  {
+    "path": "/work",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "Spaces with perspective.",
+    "scroll": 753
+  },
+  {
+    "path": "/recognition",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "A practice of care.Recognised.",
+    "scroll": 753
+  },
+  {
+    "path": "/contact",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "Start yourproject.",
+    "scroll": 753
+  },
+  {
+    "path": "/work/nerul-workspace",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "A different perspective.",
+    "scroll": 753
+  },
+  {
+    "path": "/work/residential-architecture",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "A place to belong.",
+    "scroll": 753
+  },
+  {
+    "path": "/work/residential-interiors",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "Room for the everyday.",
+    "scroll": 753
+  },
+  {
+    "path": "/work/hospitality-architecture",
+    "width": 768,
+    "height": 1024,
+    "brokenImages": 0,
+    "client": 753,
+    "heading": "The art of gathering.",
+    "scroll": 753
+  },
+  {
+    "path": "/",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "Design that seesbeyond the obvious.",
+    "scroll": 1351
+  },
+  {
+    "path": "/studio",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "Architecture witha deeper perspective.",
+    "scroll": 1351
+  },
+  {
+    "path": "/work",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "Spaces with perspective.",
+    "scroll": 1351
+  },
+  {
+    "path": "/recognition",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "A practice of care.Recognised.",
+    "scroll": 1351
+  },
+  {
+    "path": "/contact",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "Start yourproject.",
+    "scroll": 1351
+  },
+  {
+    "path": "/work/nerul-workspace",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "A different perspective.",
+    "scroll": 1351
+  },
+  {
+    "path": "/work/residential-architecture",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "A place to belong.",
+    "scroll": 1351
+  },
+  {
+    "path": "/work/residential-interiors",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "Room for the everyday.",
+    "scroll": 1351
+  },
+  {
+    "path": "/work/hospitality-architecture",
+    "width": 1366,
+    "height": 700,
+    "brokenImages": 0,
+    "client": 1351,
+    "heading": "The art of gathering.",
+    "scroll": 1351
+  }
+]
