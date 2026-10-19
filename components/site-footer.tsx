@@ -51,7 +51,7 @@ export function SiteFooter() {
             Three-Eyed Vision<span aria-hidden="true"> · </span>
             <span>Space. People. Possibility.</span>
           </p>
-          <SocialIcons className={styles.socials} />
+          <SocialIcons className={styles.socials} branded />
         </div>
 
         <nav className={styles.navigation} aria-label="Footer navigation">

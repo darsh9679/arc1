@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { socialProfiles } from '@/lib/social-profiles';
 import styles from './social-icons.module.css';
 
@@ -48,7 +49,13 @@ export function SocialIcon({
   );
 }
 
-export function SocialIcons({ className = '' }: { className?: string }) {
+export function SocialIcons({
+  className = '',
+  branded = false,
+}: {
+  className?: string;
+  branded?: boolean;
+}) {
   return (
     <ul className={`${styles.icons} ${className}`} aria-label="Social media">
       {socialProfiles.map(({ name, key, url }) => (
@@ -62,7 +69,17 @@ export function SocialIcons({ className = '' }: { className?: string }) {
               aria-label={`${name} (opens in a new tab)`}
               title={name}
             >
-              <SocialIcon platform={key} />
+              {branded ? (
+                <Image
+                  src={`/images/social/${key}.svg`}
+                  width={24}
+                  height={24}
+                  alt=""
+                  aria-hidden="true"
+                />
+              ) : (
+                <SocialIcon platform={key} />
+              )}
             </a>
           ) : (
             <span className={`${styles.icon} ${styles.unlinked}`} title={name}>

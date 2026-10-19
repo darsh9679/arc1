@@ -118,9 +118,8 @@
   color: var(--footer-muted);
 }
 .socials.socials :global(li > a:hover) {
-  background: var(--brand-button);
-  border-color: var(--brand-button);
-  color: var(--brand-button-ink);
+  background: color-mix(in srgb, var(--footer-paper) 95%, var(--footer-accent));
+  border-color: var(--footer-accent);
 }
 .socials.socials :global(li > a:focus-visible) {
   outline-color: var(--footer-accent);

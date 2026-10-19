@@ -32,6 +32,12 @@
   height: 18px;
 }
 
+.icon img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
 .icons a.icon:hover {
   color: var(--brand-button-ink);
   background: var(--brand-button);
