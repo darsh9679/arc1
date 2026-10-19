@@ -1,5 +1,11 @@
 'use client';
-import { useEffect, useRef, useState, type SubmitEvent } from 'react';
+import {
+  useEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+  type SubmitEvent,
+} from 'react';
 import { ArrowUpRight, MapPin } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -8,10 +14,19 @@ import { NativeSelect } from '@/components/ui/native-select';
 import { studio } from '@/lib/content';
 import styles from './enquiry-form.module.css';
 
+const subscribeToHydration = () => () => {};
+const clientReady = () => true;
+const serverReady = () => false;
+
 export function EnquiryForm({ deliveryEnabled }: { deliveryEnabled: boolean }) {
   const [draft, setDraft] = useState('');
   const [status, setStatus] = useState('');
   const [busy, setBusy] = useState(false);
+  const ready = useSyncExternalStore(
+    subscribeToHydration,
+    clientReady,
+    serverReady,
+  );
   const resultRef = useRef<HTMLOutputElement>(null);
 
   useEffect(() => {
@@ -55,9 +70,9 @@ export function EnquiryForm({ deliveryEnabled }: { deliveryEnabled: boolean }) {
         throw new Error(
           result.error || 'Unable to send your enquiry. Please try again.',
         );
-      setStatus('Your enquiry has been sent. Thank you for getting in touch.');
       form.reset();
       setDraft('');
+      setStatus('Your enquiry has been sent. Thank you for getting in touch.');
     } catch (error) {
       setDraft(message);
       setStatus(
@@ -97,6 +112,7 @@ export function EnquiryForm({ deliveryEnabled }: { deliveryEnabled: boolean }) {
       className={`enquiry-form ${styles.form}`}
       aria-label="Project enquiry"
       aria-describedby="enquiry-notice"
+      method="post"
       onSubmit={submit}
     >
       <div className={styles.row}>
@@ -163,7 +179,7 @@ export function EnquiryForm({ deliveryEnabled }: { deliveryEnabled: boolean }) {
           <input name="website" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
-      <Button type="submit" className={styles.submit} disabled={busy}>
+      <Button type="submit" className={styles.submit} disabled={busy || !ready}>
         {busy
           ? 'Sending…'
           : deliveryEnabled

@@ -54,6 +54,12 @@ Approved practice copy lives in `lib/client-copy.ts`; project records, process s
 
 ## Enquiry delivery
 
+Google Sheets integration is available in
+[`integrations/google-sheets`](integrations/google-sheets/README.md). Configure
+`GOOGLE_SHEETS_WEB_APP_URL` and `GOOGLE_SHEETS_WEB_APP_TOKEN` on the server after
+deploying its Apps Script receiver. The form confirms success only after the
+sheet acknowledges the write; without configuration it remains in draft mode.
+
 By default, submitting prepares a local text draft from the entered fields. Copy and download actions work; the interface explicitly states **not sent**. The site does not submit the details to a server or persist them in this mode. The visitor can call the supplied phone number or send the draft to the confirmed Instagram account.
 
 The form was simplified at the user's request on 3 October 2026 to four fields: name, email, service and project brief. Visitors include their location and other useful details in the brief. The API retains support for earlier optional fields for compatibility, but they are no longer presented as separate questions.

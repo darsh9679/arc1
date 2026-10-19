@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
 export async function POST(request: Request) {
-  const webhook = process.env.ENQUIRY_WEBHOOK_URL;
-  if (!webhook)
+  const sheetsUrl = process.env.GOOGLE_SHEETS_WEB_APP_URL;
+  const sheetsToken = process.env.GOOGLE_SHEETS_WEB_APP_TOKEN;
+  const webhook = sheetsUrl || process.env.ENQUIRY_WEBHOOK_URL;
+  if (!webhook || (sheetsUrl && (!sheetsToken || sheetsToken.length < 32)))
     return NextResponse.json(
       {
         error:
@@ -90,13 +92,26 @@ export async function POST(request: Request) {
         },
         { status: 400 },
       );
-    if (new URL(webhook).protocol !== 'https:')
+    const destination = new URL(webhook);
+    if (destination.protocol !== 'https:')
       throw new Error('Delivery endpoint must use HTTPS');
-    const response = await fetch(webhook, {
+    if (
+      sheetsUrl &&
+      (destination.hostname !== 'script.google.com' ||
+        !/^\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(destination.pathname) ||
+        destination.username ||
+        destination.password ||
+        destination.port ||
+        destination.search ||
+        destination.hash)
+    )
+      throw new Error('Invalid Google Sheets deployment URL');
+    const signal = AbortSignal.timeout(sheetsUrl ? 20000 : 8000);
+    let response = await fetch(webhook, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        ...(process.env.ENQUIRY_WEBHOOK_TOKEN
+        ...(!sheetsUrl && process.env.ENQUIRY_WEBHOOK_TOKEN
           ? { Authorization: `Bearer ${process.env.ENQUIRY_WEBHOOK_TOKEN}` }
           : {}),
       },
@@ -112,11 +127,42 @@ export async function POST(request: Request) {
         projectStage,
         approximateBudget,
         source: 'Trayaksh Architeqts website',
+        ...(sheetsUrl ? { token: sheetsToken } : {}),
       }),
-      signal: AbortSignal.timeout(8000),
-      redirect: 'error',
+      signal,
+      redirect: sheetsUrl ? 'manual' : 'error',
     });
+    if (sheetsUrl && [302, 303].includes(response.status)) {
+      // ContentService returns the result through a one-time Google URL.
+      // Retrieve it without forwarding the submission or its shared secret.
+      const location = response.headers.get('location');
+      if (!location) throw new Error('Missing Google response location');
+      const resultUrl = new URL(location);
+      if (
+        resultUrl.origin !== 'https://script.googleusercontent.com' ||
+        resultUrl.pathname !== '/macros/echo' ||
+        resultUrl.username ||
+        resultUrl.password
+      )
+        throw new Error('Unexpected Google response location');
+      response = await fetch(resultUrl.href, {
+        method: 'GET',
+        headers: { Accept: 'application/json' },
+        redirect: 'error',
+        signal,
+      });
+    }
     if (!response.ok) throw new Error('Delivery unavailable');
+    if (sheetsUrl) {
+      const confirmation: unknown = await response.json();
+      if (
+        !confirmation ||
+        typeof confirmation !== 'object' ||
+        !('ok' in confirmation) ||
+        confirmation.ok !== true
+      )
+        throw new Error('Google Sheets did not confirm saving the enquiry');
+    }
     return NextResponse.json({ ok: true });
   } catch {
     return NextResponse.json(

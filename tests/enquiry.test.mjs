@@ -52,6 +52,11 @@ const enabled = {
   ENQUIRY_WEBHOOK_URL: 'https://example.com/enquiry',
   ENQUIRY_WEBHOOK_TOKEN: 'test-token-only',
 };
+const sheetsEnabled = {
+  GOOGLE_SHEETS_WEB_APP_URL:
+    'https://script.google.com/macros/s/test-deployment/exec',
+  GOOGLE_SHEETS_WEB_APP_TOKEN: 'test-only-shared-token-at-least-32-characters',
+};
 const optionalProjectFields = [
   'contactNumber',
   'projectType',
@@ -245,4 +250,107 @@ void test('a non-HTTPS destination is rejected without sending personal data', a
     request(valid),
   );
   assert.equal(response.status, 502);
+});
+
+void test('Google Sheets follows only its result redirect and keeps the token out of the GET', async () => {
+  const calls = [];
+  const resultUrl =
+    'https://script.googleusercontent.com/macros/echo?user_content_key=test-only';
+  const response = await handler(sheetsEnabled, async (url, options) => {
+    calls.push({ url, options });
+    return calls.length === 1
+      ? new Response(null, { status: 302, headers: { Location: resultUrl } })
+      : Response.json({ ok: true });
+  })(request(valid));
+  assert.equal(response.status, 200);
+  assert.equal(calls.length, 2);
+  assert.equal(calls[0].url, sheetsEnabled.GOOGLE_SHEETS_WEB_APP_URL);
+  assert.equal(calls[0].options.redirect, 'manual');
+  assert.equal(calls[0].options.headers.Authorization, undefined);
+  assert.equal(
+    JSON.parse(calls[0].options.body).token,
+    sheetsEnabled.GOOGLE_SHEETS_WEB_APP_TOKEN,
+  );
+  assert.equal(calls[1].url, resultUrl);
+  assert.equal(calls[1].options.method, 'GET');
+  assert.equal(calls[1].options.body, undefined);
+  assert.equal(calls[1].options.headers.Authorization, undefined);
+  assert.equal(calls[1].options.redirect, 'error');
+  assert.equal(calls[0].options.signal, calls[1].options.signal);
+  assert.deepEqual(await response.json(), { ok: true });
+});
+
+void test('Google Sheets never reports success for error acknowledgements or a login page', async () => {
+  for (const upstream of [
+    () => Response.json({ ok: false }),
+    () => Response.json({ accepted: true }),
+    () => Response.json(null),
+    () => new Response('<html>Sign in to Google</html>'),
+    () => new Response(null, { status: 204 }),
+  ]) {
+    const response = await handler(sheetsEnabled, async () => upstream())(
+      request(valid),
+    );
+    assert.equal(response.status, 502);
+    assert.ok(
+      !JSON.stringify(await response.json()).includes('test-only-shared'),
+    );
+  }
+});
+
+void test('Google Sheets rejects unexpected redirects without transmitting a second request', async () => {
+  for (const location of [
+    'https://accounts.google.com/login',
+    'https://example.com/macros/echo',
+    'https://script.googleusercontent.com.example.com/macros/echo',
+    'https://script.googleusercontent.com/unexpected',
+    'http://script.googleusercontent.com/macros/echo',
+    'https://user:password@script.googleusercontent.com/macros/echo',
+  ]) {
+    let calls = 0;
+    const response = await handler(sheetsEnabled, async () => {
+      calls += 1;
+      return new Response(null, {
+        status: 302,
+        headers: { Location: location },
+      });
+    })(request(valid));
+    assert.equal(response.status, 502, location);
+    assert.equal(calls, 1, location);
+  }
+});
+
+void test('Google Sheets requires a valid deployment URL and strong shared token', async () => {
+  for (const patch of [
+    { GOOGLE_SHEETS_WEB_APP_TOKEN: '' },
+    { GOOGLE_SHEETS_WEB_APP_TOKEN: 'too-short' },
+    { GOOGLE_SHEETS_WEB_APP_URL: 'https://example.com/macros/s/test/exec' },
+    {
+      GOOGLE_SHEETS_WEB_APP_URL: 'https://script.google.com/macros/s/test/dev',
+    },
+    {
+      GOOGLE_SHEETS_WEB_APP_URL:
+        'https://script.google.com/macros/s/test/exec?token=secret',
+    },
+  ]) {
+    const response = await handler({ ...sheetsEnabled, ...patch })(
+      request(valid),
+    );
+    assert.ok([502, 503].includes(response.status));
+  }
+});
+
+void test('Google Sheets takes priority without leaking generic webhook credentials', async () => {
+  let delivered;
+  const response = await handler(
+    { ...enabled, ...sheetsEnabled },
+    async (url, options) => {
+      delivered = { url, options };
+      return Response.json({ ok: true });
+    },
+  )(request(valid));
+  assert.equal(response.status, 200);
+  assert.equal(delivered.url, sheetsEnabled.GOOGLE_SHEETS_WEB_APP_URL);
+  assert.equal(delivered.options.headers.Authorization, undefined);
+  assert.ok(!delivered.options.body.includes(enabled.ENQUIRY_WEBHOOK_TOKEN));
 });

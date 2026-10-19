@@ -42,7 +42,12 @@ export default function Contact() {
               </div>
             </div>
             <EnquiryForm
-              deliveryEnabled={Boolean(process.env.ENQUIRY_WEBHOOK_URL)}
+              deliveryEnabled={Boolean(
+                process.env.GOOGLE_SHEETS_WEB_APP_URL
+                  ? process.env.GOOGLE_SHEETS_WEB_APP_TOKEN &&
+                      process.env.GOOGLE_SHEETS_WEB_APP_TOKEN.length >= 32
+                  : process.env.ENQUIRY_WEBHOOK_URL,
+              )}
             />
           </section>
           <section

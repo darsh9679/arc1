@@ -14,7 +14,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "oxlint",
     "format": "oxfmt",
-    "test:server": "node --test tests/enquiry.test.mjs",
+    "test:server": "node --test tests/enquiry.test.mjs tests/google-sheets-receiver.test.mjs",
     "test:smoke": "node tests/smoke.mjs",
     "images:sync": "node scripts/sync-project-images.mjs",
     "test:images": "node --test tests/project-images.test.mjs",
