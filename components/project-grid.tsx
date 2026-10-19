@@ -42,7 +42,8 @@ export function ProjectCard({
           ) : (
             <div className="project-editorial-cover" aria-hidden="true">
               <span className="project-cover-kicker">
-                {project.propertyType} / {project.area}
+                {project.propertyType}
+                {project.area && ` / ${project.area}`}
               </span>
               <strong>{project.coverLabel || 'Interior'}</strong>
               <span className="project-cover-style">{project.style}</span>
@@ -67,7 +68,13 @@ export function ProjectCard({
             </p>
             <h3>{project.title}</h3>
             <p className="project-location">
-              {project.location} <span>·</span> {project.area}
+              {project.location}
+              {project.area && (
+                <>
+                  {' '}
+                  <span>·</span> {project.area}
+                </>
+              )}
             </p>
           </div>
           <span className="project-arrow" aria-hidden="true">

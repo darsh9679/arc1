@@ -1,1 +1,18 @@
-{}
+{
+  "01-open-workstations.webp": {
+    "title": "Open workstations",
+    "alt": "Shared office workstations with grey task chairs, timber panels and stone-effect finishes in Nerul."
+  },
+  "02-executive-cabin.webp": {
+    "title": "Executive cabin",
+    "alt": "A private office cabin with a white desk, timber detailing, shelving and full-height curtains."
+  },
+  "03-meeting-room.webp": {
+    "title": "Meeting room",
+    "alt": "A compact meeting room with a pale conference table, brown chairs and warm concealed lighting."
+  },
+  "04-reception-lounge.webp": {
+    "title": "Reception lounge",
+    "alt": "A blue reception sofa set against a patterned wall beside the office entrance."
+  }
+}

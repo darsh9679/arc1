@@ -9,10 +9,15 @@ Each project already has its own gallery. Place client-approved photos in the ma
 | Anagha’s Salon & Academy | `public/images/projects/anagha-salon/gallery/` |
 | A quieter kind of home — Andheri apartment | `public/images/projects/andheri-apartment/gallery/` |
 | Modern Classic, made livable — Thane apartment | `public/images/projects/thane-apartment/gallery/` |
-| Japandi, with a bohemian edge — Dahisar 3BHK | `public/images/projects/dahisar-3bhk/gallery/` |
-| A more welcoming branch — Vikhroli bank | `public/images/projects/vikhroli-bank/gallery/` |
+| Ratnagiri 1BHK residence | `public/images/projects/ratnagiri-1bhk/gallery/` |
+| Wakad 3BHK residence | `public/images/projects/wakad-3bhk/gallery/` |
+| Plan S office — Nerul | `public/images/projects/nerul-workspace/gallery/` |
 
-The Ghatkopar, Ratnagiri, salon, Andheri and Thane photos were supplied inside `3BHK Residential Interior.docx` and are kept with the matching descriptions from that document. Dahisar’s 3BHK and the Vikhroli bank interior have empty gallery folders ready for photographs. They currently have documented project copy but no matching photography in the supplied files, so their pages use editorial title cards. The Nerul and reserved folders remain supported for existing content, but are not part of the current selected-work index.
+The Ghatkopar, Ratnagiri, salon, Andheri and Thane starting photographs came from `3BHK Residential Interior.docx`. The October 15 import adds curated photographs to Ghatkopar, Ratnagiri and Andheri, plus separate Ratnagiri 1BHK, Wakad 3BHK and Nerul office projects. The Amol Pawar source folder matches the existing Ratnagiri apartment, while the Pawaskar 1BHK is a separate home. A later salon import replaces Anagha’s original photograph with six selected interior views, as explicitly requested after clarifying the Welcome Beauty signage; see `docs/SALON-PHOTO-CURATION-2026-10-15.md`. The Dahisar and Vikhroli projects were removed from the public portfolio on 19 October 2026. Their empty folders are retained for local staging only; adding photographs there does not publish a project.
+
+The initial imported collection selected 19 of 26 images; its originals remain in `docs/source-assets/project-imports-2026-10-15/`. The complete re-uploaded Ghatkopar, Andheri and Amol Pawar shoots were then reviewed: 219 images became 17 selected views across those three galleries, with six, six and five images respectively. People/pet portrait sequences, repeated angles, weak fragments and distracting reflections were excluded from the public galleries.
+
+All 219 second-round originals remain recoverable in `docs/source-assets/project-imports-2026-10-15-round2/originals/`; the previous website galleries and captions are backed up in its `previous-website/` folder. These archives are outside `public/`. See `docs/PHOTO-CURATION-2026-10-15-ROUND2.md` for the current choices, source filenames and reasons. The original first-round report is retained as history.
 
 ## Quick start
 
@@ -50,7 +55,7 @@ Keep one file per optional role: for example, use `hero.jpg` **or** `hero.webp`,
 ### Automatic fallbacks
 
 - With no project photographs, the current concept images and drawing placeholders remain in use.
-- Once `gallery/` contains photos, they replace that project's fallback gallery. Separately configured stock references remain appended and labelled as references; these are managed in `lib/project-references.generated.json`.
+- Once `gallery/` contains photos, they replace that project's fallback gallery and suppress illustrative stock references. References from `lib/project-references.generated.json` are used only when the project has no supplied photography.
 - If you omit `hero`, the first gallery photo becomes the project cover.
 - If you omit `thumbnail`, the cover also becomes the project card image.
 - If you omit `hover`, the second gallery photo is used when available; otherwise, the cover is used.
@@ -94,7 +99,7 @@ For polished captions and meaningful descriptions, edit this file. The supplied 
 
 Only use keys for photos you have actually placed in `gallery/`. All three fields are optional. Do not add comments or trailing commas in JSON. `objectPosition` accepts values such as `center`, `center top`, or `50% 35%`; it applies to the gallery image only.
 
-The filenames determine gallery order. Rename them to change the order, then update any matching metadata keys. This workflow has no arbitrary photo limit, but choose a considered selection and use reasonably compressed images so visitors do not need to download unnecessary files.
+The filenames determine gallery order. Rename them to change the order, then update any matching metadata keys. This workflow has no arbitrary photo limit, but choose a considered selection and use reasonably compressed images so visitors do not need to download unnecessary files. A useful starting point is 3–6 strong, distinct views per project: a clear overview followed by different rooms and one useful detail. Keep weaker alternates, temporary clutter and repeated angles in a source archive outside `public/`.
 
 ## Photo preparation and privacy
 

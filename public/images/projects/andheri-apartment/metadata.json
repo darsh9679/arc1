@@ -1,6 +1,26 @@
 {
-  "01-living-room.jpeg": {
+  "01-living-room.webp": {
     "title": "Living room",
-    "alt": "A warm, understated living room with light upholstery and timber finishes in an Andheri apartment."
+    "alt": "Cream seating and marble-look nesting tables face a timber and marble-look media wall, with muted olive walls and warm ceiling lighting."
+  },
+  "02-dining-and-display.webp": {
+    "title": "Dining and display storage",
+    "alt": "A white dining table with timber chairs sits beside a matching sideboard, open shelves and an illuminated glass display cabinet."
+  },
+  "03-kitchen.webp": {
+    "title": "Kitchen and textured backsplash",
+    "alt": "Glossy pale upper cabinets and wood-look base units frame a grey geometric backsplash and a clear stone worktop."
+  },
+  "04-grey-bedroom.webp": {
+    "title": "Grey bedroom in daylight",
+    "alt": "A grey upholstered headboard and blue patterned bedding sit beside a full-height window with layered curtains."
+  },
+  "05-teal-bedroom.webp": {
+    "title": "Teal bedroom",
+    "alt": "A teal upholstered headboard, matching overhead cabinets and warm timber finishes define the second bedroom."
+  },
+  "06-prayer-alcove.webp": {
+    "title": "Prayer alcove detail",
+    "alt": "A backlit Ganesha motif and geometric latticework frame a compact prayer alcove with red stepped platforms."
   }
 }

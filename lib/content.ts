@@ -135,7 +135,7 @@ const projectRecords: Project[] = [
     area: '550 sq. ft. duplex',
     style: 'Contemporary',
     description:
-      'A compact duplex salon where colour, warmth and function work together. Deep teal furniture brings character, balanced by warm wood and a soft neutral palette. Open shelving, mirrors and carefully planned lighting keep the space bright and practical.',
+      'A duplex salon where warm timber, sculptural screens and illuminated arched mirrors bring the spaces together. Terracotta styling chairs and soft pink details give each service area its own character. Integrated display shelves and dedicated nail, pedicure, wash and treatment areas balance a welcoming atmosphere with everyday function.',
     drawing: 'perspective',
     hero: null,
     thumbnail: null,
@@ -144,8 +144,8 @@ const projectRecords: Project[] = [
     after: null,
     gallery: [
       {
-        title: 'Salon floor',
-        alt: 'Teal salon chairs, mirrors and open shelving arranged across the bright salon floor.',
+        title: 'Reception and styling floor',
+        alt: 'Salon reception with a fluted timber counter, orange styling chairs and illuminated arched mirrors.',
         src: null,
         variant: 'perspective',
         aspect: 'landscape',
@@ -209,19 +209,19 @@ const projectRecords: Project[] = [
     ],
   },
   {
-    slug: 'dahisar-3bhk',
+    slug: 'ratnagiri-1bhk',
     number: '06',
-    title: 'Japandi, with a bohemian edge',
+    title: 'Ratnagiri 1BHK residence',
     category: 'Interiors',
     typology: 'Residential',
-    propertyType: '3BHK apartment',
-    location: 'Dahisar East, Mumbai',
-    area: '910 sq. ft. carpet area',
-    style: 'Japandi · Boho · Minimal',
-    coverLabel: '3BHK',
+    propertyType: '1BHK apartment',
+    location: 'Ratnagiri, Maharashtra',
+    area: '',
+    style: 'Warm contemporary',
+    coverLabel: '1BHK',
     description:
-      'A three-bedroom home bringing the calm simplicity of Japandi design together with the warmth of Boho elements. A neutral base, natural textures and carefully selected materials create interest without overwhelming the rooms. Personal artefacts, artwork and client-specific touches give the home its own character.',
-    drawing: 'plan',
+      'Cream cabinetry, warm timber accents and layered lighting connect the living, dining and kitchen spaces of this one-bedroom home. A timber-framed kitchen opening brings definition to the shared spaces, while soft pink textiles and integrated storage give the bedroom a warm, settled character.',
+    drawing: 'perspective',
     hero: null,
     thumbnail: null,
     hover: null,
@@ -230,19 +230,40 @@ const projectRecords: Project[] = [
     gallery: [],
   },
   {
-    slug: 'vikhroli-bank',
+    slug: 'wakad-3bhk',
     number: '07',
-    title: 'A more welcoming branch',
+    title: 'Wakad 3BHK residence',
+    category: 'Interiors',
+    typology: 'Residential',
+    propertyType: '3BHK apartment',
+    location: 'Wakad, Pune',
+    area: '',
+    style: 'Contemporary',
+    coverLabel: '3BHK',
+    description:
+      'A light palette runs through this three-bedroom home, with pale tiled floors, grey seating and warm timber framing. White kitchen cabinetry and a peninsula with a fluted timber face continue the material language, while recessed ceiling lighting adds definition to the living space.',
+    drawing: 'perspective',
+    hero: null,
+    thumbnail: null,
+    hover: null,
+    before: null,
+    after: null,
+    gallery: [],
+  },
+  {
+    slug: 'nerul-workspace',
+    number: '08',
+    title: 'Plan S office',
     category: 'Interiors',
     typology: 'Workplace',
-    propertyType: 'Bank interior',
-    location: 'Vikhroli, Mumbai',
-    area: '550 sq. ft.',
+    propertyType: 'Office interior',
+    location: 'Nerul, Navi Mumbai',
+    area: '',
     style: 'Contemporary',
-    coverLabel: 'Bank',
+    coverLabel: 'Office',
     description:
-      'A contemporary bank interior designed to feel professional, welcoming and vibrant. A bright white and marble-look base is balanced with teal accents and warm oak tones, bringing clarity and comfort to the compact space.',
-    drawing: 'detail',
+      'Warm timber finishes and stone-effect surfaces bring a consistent character to the shared workstations, private cabin and meeting room. A blue sofa marks the reception area, while glass partitions, pale floors and integrated lighting connect the spaces throughout the office.',
+    drawing: 'perspective',
     hero: null,
     thumbnail: null,
     hover: null,
@@ -261,7 +282,7 @@ type ProjectPhotoSet = {
 };
 
 // The project-photo manifest is shared by server pages and interactive portfolio cards.
-// Illustrative stock references are appended from their own separate manifest below.
+// Illustrative stock references are used only when project photography is unavailable.
 const photoSets = projectImages as Record<string, ProjectPhotoSet>;
 const referenceSets = projectReferences as Record<
   string,
@@ -306,7 +327,7 @@ export const projects: Project[] = projectRecords.map((project) => {
     photographyAdded: hasPhotography,
     gallery: [
       ...projectGallery,
-      ...references.map((image) => ({
+      ...(hasPhotography ? [] : references).map((image) => ({
         ...image,
         variant: project.drawing,
         isReference: true,

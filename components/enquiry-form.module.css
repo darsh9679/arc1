@@ -104,10 +104,10 @@
   gap: 16px;
   margin-top: 2px;
   padding: 12px 16px;
-  border: 1px solid var(--enquiry-button, #23372e);
+  border: 1px solid var(--enquiry-button, #d9a666);
   border-radius: 2px;
-  background: var(--enquiry-button, #23372e);
-  color: var(--enquiry-button-text, #f7f6ef);
+  background: var(--enquiry-button, #d9a666);
+  color: var(--enquiry-button-text, #202117);
   font-size: 13px;
   font-weight: 500;
   transition:
@@ -115,8 +115,8 @@
     border-color 180ms ease;
 }
 .form .submit:hover {
-  border-color: var(--enquiry-button-hover, #344d3f);
-  background: var(--enquiry-button-hover, #344d3f);
+  border-color: var(--enquiry-button-hover, #e8b30b);
+  background: var(--enquiry-button-hover, #e8b30b);
 }
 .form .submit:disabled {
   opacity: 0.65;

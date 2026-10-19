@@ -118,9 +118,9 @@
   color: var(--footer-muted);
 }
 .socials.socials :global(li > a:hover) {
-  background: #344133;
-  border-color: #344133;
-  color: var(--footer-paper);
+  background: var(--brand-button);
+  border-color: var(--brand-button);
+  color: var(--brand-button-ink);
 }
 .socials.socials :global(li > a:focus-visible) {
   outline-color: var(--footer-accent);

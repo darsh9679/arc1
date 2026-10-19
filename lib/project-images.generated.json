@@ -1,30 +1,142 @@
 {
+  "nerul-workspace": {
+    "gallery": [
+      {
+        "src": "/images/projects/nerul-workspace/gallery/01-open-workstations.webp?v=df521163b451",
+        "title": "Open workstations",
+        "alt": "Shared office workstations with grey task chairs, timber panels and stone-effect finishes in Nerul.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/nerul-workspace/gallery/02-executive-cabin.webp?v=f24b1accfbe7",
+        "title": "Executive cabin",
+        "alt": "A private office cabin with a white desk, timber detailing, shelving and full-height curtains.",
+        "aspect": "portrait"
+      },
+      {
+        "src": "/images/projects/nerul-workspace/gallery/03-meeting-room.webp?v=801004cf77e3",
+        "title": "Meeting room",
+        "alt": "A compact meeting room with a pale conference table, brown chairs and warm concealed lighting.",
+        "aspect": "portrait"
+      },
+      {
+        "src": "/images/projects/nerul-workspace/gallery/04-reception-lounge.webp?v=d91f2a01c816",
+        "title": "Reception lounge",
+        "alt": "A blue reception sofa set against a patterned wall beside the office entrance.",
+        "aspect": "portrait"
+      }
+    ]
+  },
   "ghatkopar-apartment": {
     "gallery": [
       {
-        "src": "/images/projects/ghatkopar-apartment/gallery/01-living-and-dining.jpeg?v=7536c13b4e06",
-        "title": "Living and dining",
-        "alt": "Warm timber joinery and a calm living and dining space in a Ghatkopar apartment.",
+        "src": "/images/projects/ghatkopar-apartment/gallery/01-living-room-and-millwork.webp?v=a2b7ed302af9",
+        "title": "Living room and custom millwork",
+        "alt": "Cream seating faces a timber and pale stone-look television wall beside a carved prayer niche, with dining beyond.",
         "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/ghatkopar-apartment/gallery/02-dining-and-prayer-area.webp?v=590f4f732def",
+        "title": "Dining and prayer area",
+        "alt": "A timber dining table sits beside the carved prayer cabinet and full-height pale curtains.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/ghatkopar-apartment/gallery/03-kitchen-storage.webp?v=5eddf6afdff5",
+        "title": "Kitchen cabinetry and storage",
+        "alt": "Mint-green cabinets and a dark roller shutter organize the compact kitchen's storage and appliance area.",
+        "aspect": "portrait"
+      },
+      {
+        "src": "/images/projects/ghatkopar-apartment/gallery/04-blue-bedroom.webp?v=81b3a78bb304",
+        "title": "Bedroom with blue accents",
+        "alt": "A blue upholstered headboard, blue wardrobe fronts and warm timber storage frame the bedroom.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/ghatkopar-apartment/gallery/05-blush-daybed-room.webp?v=5a27da0e0de0",
+        "title": "Blush daybed room",
+        "alt": "A blush upholstered daybed with patterned cushions sits beside pink curtains in a compact room.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/ghatkopar-apartment/gallery/06-built-in-study.webp?v=ac81c4cab294",
+        "title": "Built-in study nook",
+        "alt": "A timber study desk, illuminated display shelves and full-height storage create an integrated work nook.",
+        "aspect": "portrait"
       }
     ]
   },
   "ratnagiri-apartment": {
     "gallery": [
       {
-        "src": "/images/projects/ratnagiri-apartment/gallery/01-window-seat.jpeg?v=42d3ece6fa3a",
-        "title": "A quiet place by the window",
-        "alt": "A window seat with teal cushions, plants and natural daylight in a Ratnagiri apartment.",
+        "src": "/images/projects/ratnagiri-apartment/gallery/01-window-seating.webp?v=9ce1bb699733",
+        "title": "Window seating with teal accents",
+        "alt": "A sculptural cream window bench with teal cushions, a resident cat and planting sits beside the broad living-room window.",
         "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/ratnagiri-apartment/gallery/02-timber-media-wall.webp?v=04907036ae71",
+        "title": "Timber and stone media wall",
+        "alt": "A television framed by pale stone-look panels and dark timber sits beside a window swing.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/ratnagiri-apartment/gallery/03-window-swing.webp?v=636f0f7fb202",
+        "title": "A swing beside the window",
+        "alt": "A timber swing is suspended beside the window, with timber wall panels, ceiling lighting and planting.",
+        "aspect": "portrait"
+      },
+      {
+        "src": "/images/projects/ratnagiri-apartment/gallery/04-window-bench-detail.webp?v=d70cdad93a2a",
+        "title": "Sculptural window seating",
+        "alt": "A cream bench with teal cushions sits beside a timber column, potted plants and detailed ceiling treatment.",
+        "aspect": "portrait"
+      },
+      {
+        "src": "/images/projects/ratnagiri-apartment/gallery/05-illuminated-artwork.webp?v=faa75aae7db8",
+        "title": "Illuminated artwork and timber console",
+        "alt": "Illuminated artwork hangs above a timber console with sculptural seating and warm interior lighting.",
+        "aspect": "portrait"
       }
     ]
   },
   "anagha-salon": {
     "gallery": [
       {
-        "src": "/images/projects/anagha-salon/gallery/01-salon-floor.jpeg?v=134656fee76f",
-        "title": "Salon floor",
-        "alt": "Teal salon chairs, mirrors and open shelving arranged across the bright salon floor.",
+        "src": "/images/projects/anagha-salon/gallery/01-reception-and-styling.webp?v=795651bd8669",
+        "title": "Reception and styling floor",
+        "alt": "Salon reception with a fluted timber counter, orange styling chairs and illuminated arched mirrors.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/anagha-salon/gallery/02-staircase-and-display.webp?v=f78b25fc753b",
+        "title": "Staircase and display joinery",
+        "alt": "Timber staircase with integrated illuminated product shelves, small planters and suspended black rods.",
+        "aspect": "portrait"
+      },
+      {
+        "src": "/images/projects/anagha-salon/gallery/03-pedicure-lounge.webp?v=aee889967100",
+        "title": "Pedicure lounge",
+        "alt": "Two cream pedicure chairs on a terrazzo platform beside a sculptural timber screen.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/anagha-salon/gallery/04-nail-studio.webp?v=cfb2f62dbaed",
+        "title": "Nail studio",
+        "alt": "Pink manicure chairs and a fluted timber desk beneath an arched nail-polish display.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/anagha-salon/gallery/05-shampoo-area.webp?v=033acd2393e2",
+        "title": "Shampoo area",
+        "alt": "Two caramel upholstered shampoo chairs with white wash basins and an illuminated product cabinet.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/anagha-salon/gallery/06-treatment-room.webp?v=dc63cd3a6fdb",
+        "title": "Private treatment room",
+        "alt": "Pink treatment room with a white treatment bed, timber cabinetry and a blue glass enclosure.",
         "aspect": "landscape"
       }
     ]
@@ -32,10 +144,40 @@
   "andheri-apartment": {
     "gallery": [
       {
-        "src": "/images/projects/andheri-apartment/gallery/01-living-room.jpeg?v=d3f1e31f6dcb",
+        "src": "/images/projects/andheri-apartment/gallery/01-living-room.webp?v=7d6cc2a2ab10",
         "title": "Living room",
-        "alt": "A warm, understated living room with light upholstery and timber finishes in an Andheri apartment.",
+        "alt": "Cream seating and marble-look nesting tables face a timber and marble-look media wall, with muted olive walls and warm ceiling lighting.",
         "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/andheri-apartment/gallery/02-dining-and-display.webp?v=0f74aa93b907",
+        "title": "Dining and display storage",
+        "alt": "A white dining table with timber chairs sits beside a matching sideboard, open shelves and an illuminated glass display cabinet.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/andheri-apartment/gallery/03-kitchen.webp?v=bbfab57de5c8",
+        "title": "Kitchen and textured backsplash",
+        "alt": "Glossy pale upper cabinets and wood-look base units frame a grey geometric backsplash and a clear stone worktop.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/andheri-apartment/gallery/04-grey-bedroom.webp?v=93b1f85450f3",
+        "title": "Grey bedroom in daylight",
+        "alt": "A grey upholstered headboard and blue patterned bedding sit beside a full-height window with layered curtains.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/andheri-apartment/gallery/05-teal-bedroom.webp?v=098078daadd6",
+        "title": "Teal bedroom",
+        "alt": "A teal upholstered headboard, matching overhead cabinets and warm timber finishes define the second bedroom.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/andheri-apartment/gallery/06-prayer-alcove.webp?v=368ba2ee7eaa",
+        "title": "Prayer alcove detail",
+        "alt": "A backlit Ganesha motif and geometric latticework frame a compact prayer alcove with red stepped platforms.",
+        "aspect": "portrait"
       }
     ]
   },
@@ -46,6 +188,44 @@
         "title": "Living and media wall",
         "alt": "A Modern Classic living room with teal seating, marble-look detailing, warm timber and layered lighting.",
         "aspect": "landscape"
+      }
+    ]
+  },
+  "ratnagiri-1bhk": {
+    "gallery": [
+      {
+        "src": "/images/projects/ratnagiri-1bhk/gallery/01-kitchen-and-breakfast-counter.webp?v=38716645b044",
+        "title": "Kitchen and breakfast counter",
+        "alt": "Cream kitchen cabinetry and a timber-framed breakfast counter with pendant lights in a Ratnagiri one-bedroom home.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/ratnagiri-1bhk/gallery/02-living-and-dining.webp?v=06e4a317f968",
+        "title": "Living and dining",
+        "alt": "Connected living and dining spaces with light upholstery, warm ceiling lighting and timber accents.",
+        "aspect": "portrait"
+      },
+      {
+        "src": "/images/projects/ratnagiri-1bhk/gallery/03-bedroom-and-storage.webp?v=92a85dbf157f",
+        "title": "Bedroom and integrated storage",
+        "alt": "A bedroom with a soft pink bedspread, upholstered headboard and full-height cream wardrobes.",
+        "aspect": "landscape"
+      }
+    ]
+  },
+  "wakad-3bhk": {
+    "gallery": [
+      {
+        "src": "/images/projects/wakad-3bhk/gallery/01-kitchen-and-timber-counter.webp?v=00f503e733db",
+        "title": "Kitchen and timber counter",
+        "alt": "A white kitchen with a timber-fronted peninsula, pale tiled floor and pendant lighting in a Wakad home.",
+        "aspect": "landscape"
+      },
+      {
+        "src": "/images/projects/wakad-3bhk/gallery/02-living-room.webp?v=7d846bac894d",
+        "title": "Living room in daylight",
+        "alt": "An open living area with grey seating, a reflective pale floor and large windows in a Wakad three-bedroom home.",
+        "aspect": "portrait"
       }
     ]
   }

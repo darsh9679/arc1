@@ -1,6 +1,26 @@
 {
-  "01-living-and-dining.jpeg": {
-    "title": "Living and dining",
-    "alt": "Warm timber joinery and a calm living and dining space in a Ghatkopar apartment."
+  "01-living-room-and-millwork.webp": {
+    "title": "Living room and custom millwork",
+    "alt": "Cream seating faces a timber and pale stone-look television wall beside a carved prayer niche, with dining beyond."
+  },
+  "02-dining-and-prayer-area.webp": {
+    "title": "Dining and prayer area",
+    "alt": "A timber dining table sits beside the carved prayer cabinet and full-height pale curtains."
+  },
+  "03-kitchen-storage.webp": {
+    "title": "Kitchen cabinetry and storage",
+    "alt": "Mint-green cabinets and a dark roller shutter organize the compact kitchen's storage and appliance area."
+  },
+  "04-blue-bedroom.webp": {
+    "title": "Bedroom with blue accents",
+    "alt": "A blue upholstered headboard, blue wardrobe fronts and warm timber storage frame the bedroom."
+  },
+  "05-blush-daybed-room.webp": {
+    "title": "Blush daybed room",
+    "alt": "A blush upholstered daybed with patterned cushions sits beside pink curtains in a compact room."
+  },
+  "06-built-in-study.webp": {
+    "title": "Built-in study nook",
+    "alt": "A timber study desk, illuminated display shelves and full-height storage create an integrated work nook."
   }
 }

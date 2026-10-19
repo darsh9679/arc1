@@ -76,8 +76,8 @@
   align-items: center;
   gap: 8px;
   padding: 10px 13px;
-  background: #19332a;
-  color: #fffdf5;
+  background: var(--brand-button);
+  color: var(--brand-button-ink);
   font-size: 11px;
 }
 .caption {
@@ -141,8 +141,8 @@
 }
 .arrows button:hover:not(:disabled),
 .thumbnailPager button:hover:not(:disabled) {
-  background: #19332a;
-  color: #fffdf5;
+  background: var(--brand-button);
+  color: var(--brand-button-ink);
 }
 .arrows button:disabled,
 .thumbnailPager button:disabled {
@@ -200,7 +200,7 @@
 }
 .thumbnails button[aria-pressed='true'] {
   opacity: 1;
-  border-color: #19332a;
+  border-color: var(--brand-copper);
 }
 .thumbnails button:hover,
 .thumbnails button:focus-visible {
@@ -215,8 +215,8 @@
   left: 5px;
   bottom: 5px;
   padding: 3px 5px;
-  background: #19332a;
-  color: #fffdf5;
+  background: var(--brand-button);
+  color: var(--brand-button-ink);
   font-size: 10px;
   font-variant-numeric: tabular-nums;
 }

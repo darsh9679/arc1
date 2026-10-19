@@ -4,9 +4,9 @@
   --color-accent: #815d24;
   --color-line: #d9ddd3;
   --enquiry-control-bg: #fafaf7;
-  --enquiry-button: #23372e;
-  --enquiry-button-hover: #344d3f;
-  --enquiry-button-text: #f7f6ef;
+  --enquiry-button: var(--brand-button);
+  --enquiry-button-hover: var(--brand-button-hover);
+  --enquiry-button-text: var(--brand-button-ink);
   --map-panel-bg: #efeee6;
   color: var(--color-ink);
   background: #f7f6f1;
@@ -106,9 +106,9 @@
   line-height: 1.5;
 }
 .contactActions .phone {
-  background: var(--contact-ink);
-  color: #fdfcf8;
-  border-color: var(--contact-ink);
+  background: var(--brand-button);
+  color: var(--brand-button-ink);
+  border-color: var(--brand-button);
 }
 .contactActions svg {
   flex: 0 0 auto;
@@ -235,8 +235,8 @@
       transform 220ms ease;
   }
   .contactActions .phone:hover {
-    background: #4a493f;
-    border-color: #4a493f;
+    background: var(--brand-button-hover);
+    border-color: var(--brand-button-hover);
   }
   .contactActions .instagram:hover {
     background: #fdfcf8;

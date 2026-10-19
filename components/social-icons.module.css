@@ -33,9 +33,9 @@
 }
 
 .icons a.icon:hover {
-  color: #fdfcf8;
-  background: #344133;
-  border-color: #344133;
+  color: var(--brand-button-ink);
+  background: var(--brand-button);
+  border-color: var(--brand-button);
 }
 
 .icons a.icon:focus-visible {

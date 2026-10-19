@@ -1,6 +1,26 @@
 {
-  "01-salon-floor.jpeg": {
-    "title": "Salon floor",
-    "alt": "Teal salon chairs, mirrors and open shelving arranged across the bright salon floor."
+  "01-reception-and-styling.webp": {
+    "title": "Reception and styling floor",
+    "alt": "Salon reception with a fluted timber counter, orange styling chairs and illuminated arched mirrors."
+  },
+  "02-staircase-and-display.webp": {
+    "title": "Staircase and display joinery",
+    "alt": "Timber staircase with integrated illuminated product shelves, small planters and suspended black rods."
+  },
+  "03-pedicure-lounge.webp": {
+    "title": "Pedicure lounge",
+    "alt": "Two cream pedicure chairs on a terrazzo platform beside a sculptural timber screen."
+  },
+  "04-nail-studio.webp": {
+    "title": "Nail studio",
+    "alt": "Pink manicure chairs and a fluted timber desk beneath an arched nail-polish display."
+  },
+  "05-shampoo-area.webp": {
+    "title": "Shampoo area",
+    "alt": "Two caramel upholstered shampoo chairs with white wash basins and an illuminated product cabinet."
+  },
+  "06-treatment-room.webp": {
+    "title": "Private treatment room",
+    "alt": "Pink treatment room with a white treatment bed, timber cabinetry and a blue glass enclosure."
   }
 }

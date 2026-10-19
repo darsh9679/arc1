@@ -1,6 +1,22 @@
 {
-  "01-window-seat.jpeg": {
-    "title": "A quiet place by the window",
-    "alt": "A window seat with teal cushions, plants and natural daylight in a Ratnagiri apartment."
+  "01-window-seating.webp": {
+    "title": "Window seating with teal accents",
+    "alt": "A sculptural cream window bench with teal cushions, a resident cat and planting sits beside the broad living-room window."
+  },
+  "02-timber-media-wall.webp": {
+    "title": "Timber and stone media wall",
+    "alt": "A television framed by pale stone-look panels and dark timber sits beside a window swing."
+  },
+  "03-window-swing.webp": {
+    "title": "A swing beside the window",
+    "alt": "A timber swing is suspended beside the window, with timber wall panels, ceiling lighting and planting."
+  },
+  "04-window-bench-detail.webp": {
+    "title": "Sculptural window seating",
+    "alt": "A cream bench with teal cushions sits beside a timber column, potted plants and detailed ceiling treatment."
+  },
+  "05-illuminated-artwork.webp": {
+    "title": "Illuminated artwork and timber console",
+    "alt": "Illuminated artwork hangs above a timber console with sculptural seating and warm interior lighting."
   }
 }

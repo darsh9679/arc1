@@ -297,11 +297,11 @@
   align-items: start;
   justify-content: center;
   padding: clamp(26px, 3vw, 40px);
-  color: #f7f6ef;
-  background: #23372e;
+  color: var(--color-ink);
+  background: var(--brand-mist);
 }
 .enquiry .kicker {
-  color: #d0d7cb;
+  color: var(--brand-olive);
   font-size: 9px;
 }
 .enquiry h3 {
@@ -312,10 +312,10 @@
   text-wrap: balance;
 }
 .enquiry h3 em {
-  color: #e7c985;
+  color: #8a3a02;
 }
 .enquiryCopy {
-  color: #dce1d6;
+  color: #505746;
   font-size: 12px;
   line-height: 1.7;
 }
@@ -332,7 +332,7 @@
   font-size: 12px;
 }
 .enquiry > a:focus-visible {
-  outline-color: #f7f6ef;
+  outline-color: var(--brand-copper);
 }
 @media (prefers-reduced-motion: no-preference) {
   .backLink svg,

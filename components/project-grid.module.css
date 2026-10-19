@@ -91,8 +91,8 @@
     color 0.25s;
 }
 .filters button[aria-pressed='true'] {
-  background: #19332a;
-  color: #fffdf5;
+  background: var(--brand-button);
+  color: var(--brand-button-ink);
 }
 .filters button span {
   font-size: 10px;
@@ -217,9 +217,9 @@
   background: #efeee7;
 }
 .pagination button[aria-current='page'] {
-  background: #19332a;
-  border-color: #19332a;
-  color: #fffdf5;
+  background: var(--brand-button);
+  border-color: var(--brand-button);
+  color: var(--brand-button-ink);
 }
 .pagination button:disabled {
   opacity: 0.4;
@@ -322,8 +322,8 @@
     min-height: 44px;
     padding: 10px 8px;
     border: 1px solid var(--color-line);
-    background: #19332a;
-    color: #fffdf5;
+    background: var(--brand-button);
+    color: var(--brand-button-ink);
     font-size: 12px;
   }
   .filters button {

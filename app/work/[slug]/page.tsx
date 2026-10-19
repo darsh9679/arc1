@@ -69,7 +69,12 @@ export default async function ProjectDetail({
                 {project.location}
               </p>
               <p className={styles.area}>
-                {project.area} <span aria-hidden="true">·</span> {project.style}
+                {project.area && (
+                  <>
+                    {project.area} <span aria-hidden="true">·</span>{' '}
+                  </>
+                )}
+                {project.style}
               </p>
             </div>
             <figure className={styles.hero} data-project-hero>
@@ -93,7 +98,7 @@ export default async function ProjectDetail({
                 >
                   <p className={styles.kicker}>{project.typology}</p>
                   <span className={styles.coverLabel}>
-                    {project.coverLabel || project.area}
+                    {project.coverLabel || project.area || project.propertyType}
                   </span>
                   <p className={styles.coverStyle}>{project.style}</p>
                 </div>
@@ -161,13 +166,15 @@ export default async function ProjectDetail({
                 </dt>
                 <dd>{project.location}</dd>
               </div>
-              <div>
-                <dt>
-                  <Ruler size={17} aria-hidden="true" />
-                  Area
-                </dt>
-                <dd>{project.area}</dd>
-              </div>
+              {project.area && (
+                <div>
+                  <dt>
+                    <Ruler size={17} aria-hidden="true" />
+                    Area
+                  </dt>
+                  <dd>{project.area}</dd>
+                </div>
+              )}
               <div>
                 <dt>
                   <Palette size={17} aria-hidden="true" />

@@ -66,14 +66,14 @@
   min-width: 0;
   padding: 40px 26px;
   overflow: hidden;
-  color: #f7f6ef;
-  background: #23372e;
+  color: var(--brand-ivory);
+  background: #8a3a02;
 }
 .awardGraphic::before {
   content: '';
   position: absolute;
   inset: 22px;
-  border: 1px solid #e7c98555;
+  border: 1px solid #e8b30b66;
   border-radius: 180px 180px 0 0;
   pointer-events: none;
 }
@@ -82,7 +82,7 @@
   align-items: center;
   gap: 10px;
   z-index: 1;
-  color: #e7c985;
+  color: var(--brand-ivory);
   font-size: 9px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -98,7 +98,7 @@
 .monogram > span {
   display: block;
   margin-top: 12px;
-  color: #e7c985;
+  color: var(--brand-gold);
   font-size: 0.6em;
   font-style: italic;
 }
@@ -111,8 +111,8 @@
 .winner {
   z-index: 1;
   padding: 8px 12px;
-  border: 1px solid #e7c98555;
-  color: #e7c985;
+  border: 1px solid #e8b30b88;
+  color: var(--brand-ivory);
   font-size: 9px;
   letter-spacing: 0.09em;
   text-transform: uppercase;

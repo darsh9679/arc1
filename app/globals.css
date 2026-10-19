@@ -3,6 +3,14 @@
 /* UI palette derived from the supplied gold-and-olive logo.
    Original SVG fills are preserved; the darker UI gold meets AA on both bases. */
 :root {
+  --brand-olive: #556b2f;
+  --brand-gold: #e8b30b;
+  --brand-copper: #bb7327;
+  --brand-mist: #eceee8;
+  --brand-ivory: #fcf8ed;
+  --brand-button: #d9a666;
+  --brand-button-hover: #e8b30b;
+  --brand-button-ink: #202117;
   --color-paper: #fefefe;
   --color-ink: #020301;
   --color-ink-soft: #556b2f;
@@ -757,8 +765,8 @@ main:focus {
   color: var(--color-paper);
 }
 .project-grid > .project-card:nth-child(4n + 4) .placeholder-image {
-  background: var(--color-ink-soft);
-  color: var(--color-paper);
+  background: var(--brand-mist);
+  color: var(--color-ink);
 }
 .project-grid .placeholder-image svg {
   padding: 0;
@@ -1209,8 +1217,8 @@ main:focus {
   max-height: 720px;
 }
 .film-frame.frame-portrait > .placeholder-image {
-  background: var(--color-ink-soft);
-  color: var(--color-paper);
+  background: var(--brand-mist);
+  color: var(--color-ink);
 }
 .film-frame.frame-square > .placeholder-image {
   background: var(--color-paper);
@@ -1264,8 +1272,8 @@ main:focus {
   inset: 0;
 }
 .comparison > .placeholder-image {
-  background: var(--color-ink-soft);
-  color: var(--color-paper);
+  background: var(--brand-mist);
+  color: var(--color-ink);
 }
 .comparison-before > .placeholder-image {
   background: var(--color-paper);
@@ -1476,8 +1484,8 @@ main:focus {
   height: 100%;
 }
 .instagram-grid > a:nth-child(2) .placeholder-image {
-  background: var(--color-ink-soft);
-  color: var(--color-paper);
+  background: var(--brand-mist);
+  color: var(--color-ink);
 }
 .instagram-grid > a > span {
   position: absolute;
@@ -1590,7 +1598,8 @@ main:focus {
   font-weight: 400;
 }
 .solid-button:hover {
-  background: var(--color-ink-soft);
+  background: var(--brand-button-hover);
+  color: var(--brand-button-ink);
 }
 .solid-button > span {
   font-size: 20px;

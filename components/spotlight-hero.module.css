@@ -224,6 +224,11 @@
     transform: scale(1.035);
   }
 }
+@media (min-width: 901px) {
+  .photograph {
+    object-position: var(--desktop-hero-position);
+  }
+}
 @media (max-width: 800px) {
   .shade {
     --side-shade: transparent;

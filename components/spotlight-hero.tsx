@@ -55,6 +55,12 @@ const sceneProjects = [
 const scenes = sceneProjects.map((project) => ({
   ...projectImages[project.slug].gallery[0],
   ...project,
+  desktopSrc: `/images/desktop-hero/${project.slug}-landscape-${project.slug === 'anagha-salon' ? 'v3' : 'v1'}.webp`,
+  desktopHeroPosition: '50% 50%',
+  desktopAlt:
+    project.slug === 'anagha-salon'
+      ? 'AI-refined landscape visualization of Anagha’s Salon & Academy, with empty teal chairs and mirrors, recomposed from the original project photograph.'
+      : `AI-refined landscape visualization of the ${project.title} interior, recomposed from the original project photograph for the desktop hero.`,
   mobileSrc: `/images/mobile-hero/${project.slug}-portrait-v1.webp`,
   portraitPosition: project.slug === 'thane-apartment' ? '50% 35%' : '50% 65%',
   mobileAlt: `AI portrait visualization inspired by the ${project.title} interior; extended and recomposed from the original project photograph.`,
@@ -71,6 +77,7 @@ export function SpotlightHero() {
   const [inView, setInView] = useState(true);
   const [visible, setVisible] = useState(true);
   const [isPhone, setIsPhone] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
   const [loaded, setLoaded] = useState(() => scenes.map(() => false));
   const ready = loaded.every(Boolean);
   const motionPlaying = !paused && !reduced && inView && visible;
@@ -78,14 +85,18 @@ export function SpotlightHero() {
   useEffect(() => {
     const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
     const phone = window.matchMedia('(width < 600px)');
+    const desktop = window.matchMedia('(min-width: 901px)');
     const updatePreference = () => setReduced(preference.matches);
     const updatePhone = () => setIsPhone(phone.matches);
+    const updateDesktop = () => setIsDesktop(desktop.matches);
     const updateVisibility = () => setVisible(!document.hidden);
     updatePreference();
     updatePhone();
+    updateDesktop();
     updateVisibility();
     preference.addEventListener('change', updatePreference);
     phone.addEventListener('change', updatePhone);
+    desktop.addEventListener('change', updateDesktop);
     document.addEventListener('visibilitychange', updateVisibility);
     const observer = new IntersectionObserver(
       ([entry]) =>
@@ -96,6 +107,7 @@ export function SpotlightHero() {
     return () => {
       preference.removeEventListener('change', updatePreference);
       phone.removeEventListener('change', updatePhone);
+      desktop.removeEventListener('change', updateDesktop);
       document.removeEventListener('visibilitychange', updateVisibility);
       observer.disconnect();
     };
@@ -197,6 +209,7 @@ export function SpotlightHero() {
             style={
               {
                 '--desktop-position': image.desktopPosition,
+                '--desktop-hero-position': image.desktopHeroPosition,
                 '--mobile-position': image.mobilePosition,
                 '--portrait-position': image.portraitPosition,
               } as CSSProperties
@@ -208,9 +221,20 @@ export function SpotlightHero() {
                 type="image/webp"
                 srcSet={image.mobileSrc}
               />
+              <source
+                media="(min-width: 901px)"
+                type="image/webp"
+                srcSet={image.desktopSrc}
+              />
               <Image
                 src={image.src}
-                alt={isPhone ? image.mobileAlt : image.alt}
+                alt={
+                  isPhone
+                    ? image.mobileAlt
+                    : isDesktop
+                      ? image.desktopAlt
+                      : image.alt
+                }
                 fill
                 sizes="100vw"
                 loading={index === 0 ? 'eager' : 'lazy'}
@@ -259,7 +283,11 @@ export function SpotlightHero() {
       <div className={styles.footer} data-hero-footer>
         <Link className={styles.projectCredit} href={scene.href}>
           <span className={styles.creditLabel}>
-            {isPhone ? 'AI portrait visual' : 'In focus'}
+            {isPhone
+              ? 'AI portrait visual'
+              : isDesktop
+                ? 'AI-refined visual'
+                : 'In focus'}
           </span>
           <span>
             {scene.location} <ArrowUpRight size={14} aria-hidden="true" />
