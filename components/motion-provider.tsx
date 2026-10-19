@@ -1,6 +1,12 @@
 'use client';
-import { useCallback, useEffect, useRef, type ReactNode } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from 'react';
+import { usePathname } from 'next/navigation';
 import Lenis from 'lenis';
 import { gsap, ScrollTrigger, desktopMotion } from '@/lib/motion';
 import { BrandLogo } from '@/components/brand-logo';
@@ -15,7 +21,7 @@ import {
 
 export function MotionProvider({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const router = useRouter();
+  const [introductionOnEntry] = useState(() => pathname !== '/');
   const routeMeter = useRef({ progress: 0 });
   const cancelRouteCompletion = useRef(() => {});
   const completionTimeout = useRef<ReturnType<typeof setTimeout> | undefined>(
@@ -89,6 +95,8 @@ export function MotionProvider({ children }: { children: ReactNode }) {
         clearTimeout(completionTimeout.current);
         cancelRouteCompletion.current();
         gsap.killTweensOf(node);
+        // Navigation may commit before the curtain has finished entering.
+        gsap.set(node, { y: 0, yPercent: 0 });
         gsap.killTweensOf(routeMeter.current);
         let completing = false;
         const complete = () => {
@@ -162,7 +170,6 @@ export function MotionProvider({ children }: { children: ReactNode }) {
         !curtain.current
       )
         return;
-      event.preventDefault();
       if (busy.current) return;
       busy.current = true;
       const generation = ++state.generation;
@@ -190,7 +197,6 @@ export function MotionProvider({ children }: { children: ReactNode }) {
               node
                 .querySelector('progress')
                 ?.setAttribute('aria-valuetext', 'Waiting for the next page');
-              router.push(url.pathname + url.search + url.hash);
             }
           },
         },
@@ -211,6 +217,8 @@ export function MotionProvider({ children }: { children: ReactNode }) {
         });
       }, 3500);
     };
+    // Observe navigation without cancelling Link's immediate client transition
+    // or the browser's normal navigation for plain anchors.
     document.addEventListener('click', click, true);
     return () => {
       state.generation++;
@@ -228,7 +236,7 @@ export function MotionProvider({ children }: { children: ReactNode }) {
         curtainNode.style.visibility = 'hidden';
       }
     };
-  }, [router]);
+  }, []);
   useEffect(() => {
     const media = gsap.matchMedia();
     media.add(
@@ -277,7 +285,7 @@ export function MotionProvider({ children }: { children: ReactNode }) {
   return (
     <ScrollLockContext.Provider value={acquireScrollLock}>
       <div data-site-surface>{children}</div>
-      <OpeningSequence autoPlay={pathname !== '/'} />
+      <OpeningSequence autoPlay={introductionOnEntry} />
       <ScrollReveals />
       <div
         ref={curtain}

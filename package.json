@@ -19,6 +19,8 @@
     "images:sync": "node scripts/sync-project-images.mjs",
     "test:images": "node --test tests/project-images.test.mjs",
     "test:gallery": "node --test tests/gallery-loading.test.mjs",
+    "test:navigation": "node --test tests/navigation-loading.test.mjs",
+    "test:cache": "node --experimental-strip-types --test tests/image-cache.test.mjs",
     "test:loader": "node --experimental-strip-types --test tests/loader-progress.test.mjs",
     "test:portfolio": "node --experimental-strip-types --test tests/portfolio.test.mjs",
     "test:work": "node tests/work-smoke.mjs"

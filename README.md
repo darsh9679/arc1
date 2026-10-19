@@ -76,6 +76,18 @@ data-saver connections skip speculative adjacent downloads. Original photos
 and their captions remain unchanged. `npm run test:gallery` checks the loading
 and retry behavior; `npm run test:images` verifies generated photo metadata.
 
+Project photos with an `images:sync` content hash (`?v=` followed by 12 hex
+characters) receive long browser caching. Replacing a photo generates a new
+hash on the next sync/build, so its new URL fetches the replacement. Unversioned
+files and HTML retain their existing cache policy. `npm run test:cache` checks
+that this rule cannot cache pages or unversioned assets.
+
+Page transitions observe links without cancelling Next's immediate navigation
+or waiting for the curtain entrance. The first internal link from Home does
+not add a second introduction; direct internal visits and manual replay retain
+the introduction. `npm run test:navigation` checks link handoff, exclusions,
+entry behavior and the existing completion hold.
+
 - Hero: five original project photographs (or labelled AI portrait interpretations below 600px) rotate every 6.5 seconds once loaded, with a 900ms crossfade. Gentle camera drift runs on tablets and laptops; the phone compositions remain static. Five small photo dots and a matching project link remain visible. The boxed arrow controls, numeric counter and pause/resume button have been removed. Selecting a dot or swiping changes the photograph and holds that selection. Dot buttons support keyboard operation; horizontal touch swipes do not block vertical scrolling. Reduced motion disables entrance animation, drift, crossfades and automatic switching; manual controls remain. Playback also stops when the hero leaves view or the tab is hidden. The home featured-project row scrolls horizontally below 600px, with snap points and automatic horizontal scrolling to keep keyboard-focused cards visible.
 - Image parallax: desktop fine pointers without reduced motion get a subtle vertical image shift inside a clipped, stationary frame. The headline, frame and captions do not move with the image. Mobile and reduced-motion layouts use the original static image.
 - Project tiles: restrained photo zoom on hover and visible text captions at every input mode. Photos are paired with the matching project copy; text-led editorial covers are used where the supplied project document has no photograph.

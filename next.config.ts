@@ -33,6 +33,18 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: '/images/projects/:path*',
+        has: [{ type: 'query', key: 'v', value: '[0-9a-f]{12}' }],
+        headers: [
+          {
+            key: 'Cache-Control',
+            // images:sync changes this content hash whenever the photo changes.
+            // Set the upstream TTL; unversioned URLs keep default revalidation.
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
     ];
   },
 };
