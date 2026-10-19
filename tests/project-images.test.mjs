@@ -129,6 +129,48 @@ void test('aspect follows EXIF orientation, with near-square photographs treated
     gallery.map((item) => item.aspect),
     ['portrait', 'square', 'square'],
   );
+  assert.deepEqual(
+    gallery.map(({ width, height }) => ({ width, height })),
+    [
+      { width: 40, height: 80 },
+      { width: 100, height: 100 },
+      { width: 100, height: 99 },
+    ],
+  );
+  const rotatedPreview = await sharp(
+    Buffer.from(gallery[0].blurDataURL.split(',')[1], 'base64'),
+  ).metadata();
+  assert.equal(rotatedPreview.width, 8);
+  assert.equal(rotatedPreview.height, 16);
+});
+
+void test('gallery previews are small decodable JPEGs and leave original image bytes unchanged', async (t) => {
+  const { projectsDir, image } = await fixture(t);
+  const sources = [];
+  for (const extension of ['jpg', 'png', 'webp']) {
+    const file = await image(`gallery/${extension}-room.${extension}`, {
+      width: 320,
+      height: 200,
+    });
+    sources.push({ file, bytes: await readFile(file) });
+  }
+  const gallery = (await scanProjectImages({ projectsDir }))[PROJECT_SLUGS[0]]
+    .gallery;
+  for (const item of gallery) {
+    assert.equal(item.width, 320);
+    assert.equal(item.height, 200);
+    assert.match(item.blurDataURL, /^data:image\/jpeg;base64,/);
+    assert.ok(Buffer.byteLength(item.blurDataURL) < 1024);
+    const bytes = Buffer.from(item.blurDataURL.split(',')[1], 'base64');
+    const preview = await sharp(bytes).metadata();
+    assert.equal(preview.format, 'jpeg');
+    assert.equal(preview.width, 16);
+    assert.equal(preview.height, 10);
+    await sharp(bytes).raw().toBuffer();
+  }
+  for (const { file, bytes } of sources) {
+    assert.deepEqual(await readFile(file), bytes);
+  }
 });
 
 void test('named roles are optional, case-insensitive, and independent of gallery files', async (t) => {
@@ -259,7 +301,8 @@ void test('sync writes generated data only when photos or metadata actually chan
   const first = await syncProjectImages({ projectsDir, outputFile });
   const firstStat = await stat(outputFile);
   assert.deepEqual(JSON.parse(await readFile(outputFile, 'utf8')), first);
-  await syncProjectImages({ projectsDir, outputFile });
+  const unchanged = await syncProjectImages({ projectsDir, outputFile });
+  assert.deepEqual(unchanged, first);
   assert.equal((await stat(outputFile)).mtimeMs, firstStat.mtimeMs);
   await image('gallery/2-detail.jpg');
   const updated = await syncProjectImages({ projectsDir, outputFile });
@@ -281,6 +324,9 @@ void test('replacing photo pixels under the same filename and dimensions refresh
   ];
   assert.equal(updated.gallery[0].title, first.gallery[0].title);
   assert.equal(updated.gallery[0].aspect, first.gallery[0].aspect);
+  assert.equal(updated.gallery[0].width, first.gallery[0].width);
+  assert.equal(updated.gallery[0].height, first.gallery[0].height);
+  assert.notEqual(updated.gallery[0].blurDataURL, first.gallery[0].blurDataURL);
   for (const [before, after] of [
     [first.hero, updated.hero],
     [first.gallery[0].src, updated.gallery[0].src],

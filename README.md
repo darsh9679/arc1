@@ -68,6 +68,14 @@ To enable delivery, set server-only `ENQUIRY_WEBHOOK_URL` to a trusted HTTPS ser
 
 ## Motion and accessibility
 
+Gallery loading now uses contained-image dimensions to request the appropriate
+resolution, generated 16px previews, and adjacent-photo preparation near the
+viewer. Selecting a photo keeps the current image visible until the new one
+has downloaded and decoded. Full-screen requests are prepared on hover/focus;
+data-saver connections skip speculative adjacent downloads. Original photos
+and their captions remain unchanged. `npm run test:gallery` checks the loading
+and retry behavior; `npm run test:images` verifies generated photo metadata.
+
 - Hero: five original project photographs (or labelled AI portrait interpretations below 600px) rotate every 6.5 seconds once loaded, with a 900ms crossfade. Gentle camera drift runs on tablets and laptops; the phone compositions remain static. Five small photo dots and a matching project link remain visible. The boxed arrow controls, numeric counter and pause/resume button have been removed. Selecting a dot or swiping changes the photograph and holds that selection. Dot buttons support keyboard operation; horizontal touch swipes do not block vertical scrolling. Reduced motion disables entrance animation, drift, crossfades and automatic switching; manual controls remain. Playback also stops when the hero leaves view or the tab is hidden. The home featured-project row scrolls horizontally below 600px, with snap points and automatic horizontal scrolling to keep keyboard-focused cards visible.
 - Image parallax: desktop fine pointers without reduced motion get a subtle vertical image shift inside a clipped, stationary frame. The headline, frame and captions do not move with the image. Mobile and reduced-motion layouts use the original static image.
 - Project tiles: restrained photo zoom on hover and visible text captions at every input mode. Photos are paired with the matching project copy; text-led editorial covers are used where the supplied project document has no photograph.

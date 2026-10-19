@@ -65,6 +65,9 @@ export type Project = {
     objectPosition?: string;
     variant: DrawingVariant;
     aspect: 'landscape' | 'portrait' | 'square';
+    width?: number;
+    height?: number;
+    blurDataURL?: string;
   }[];
 };
 const projectRecords: Project[] = [

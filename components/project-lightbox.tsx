@@ -4,11 +4,15 @@ import {
   useId,
   useLayoutEffect,
   useRef,
-  useState,
   type KeyboardEvent,
   type PointerEvent,
 } from 'react';
 import { PlaceholderImage } from '@/components/placeholder-image';
+import {
+  galleryImageSizes,
+  useGalleryNavigation,
+  useGalleryPreparation,
+} from '@/components/use-gallery-navigation';
 import { useScrollLock } from '@/components/scroll-lock-context';
 import type { Project } from '@/lib/content';
 import { getConceptImage } from '@/lib/imagery';
@@ -24,10 +28,15 @@ type Props = {
 export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
   const acquireScrollLock = useScrollLock();
   const count = project.gallery.length;
-  const [currentIndex, setCurrentIndex] = useState(() =>
-    Math.max(0, Math.min(initialIndex, count - 1)),
-  );
+  const {
+    active: currentIndex,
+    pending,
+    error,
+    select,
+    move,
+  } = useGalleryNavigation(project.gallery, initialIndex, 'fullscreen');
   const dialog = useRef<HTMLDialogElement>(null);
+  useGalleryPreparation(dialog, project.gallery, currentIndex, 'fullscreen');
   const closeButton = useRef<HTMLButtonElement>(null);
   const pointers = useRef(new Set<number>());
   const gesture = useRef<{
@@ -81,12 +90,6 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
     };
   }, [acquireScrollLock]);
 
-  const move = (direction: number) => {
-    setCurrentIndex((current) =>
-      Math.max(0, Math.min(count - 1, current + direction)),
-    );
-  };
-
   const keyboard = (event: KeyboardEvent<HTMLDialogElement>) => {
     if (event.altKey || event.ctrlKey || event.metaKey) return;
     // Keep the native select's arrow and Home/End behaviour intact.
@@ -98,7 +101,7 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
     } else if (event.key === 'Home' || event.key === 'End') {
       event.preventDefault();
       event.stopPropagation();
-      setCurrentIndex(event.key === 'Home' ? 0 : count - 1);
+      void select(event.key === 'Home' ? 0 : count - 1);
     }
   };
 
@@ -178,6 +181,7 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
 
       <div
         className={styles.stage}
+        aria-busy={pending !== null}
         onPointerDown={startSwipe}
         onPointerUp={finishSwipe}
         onPointerCancel={(event) => {
@@ -192,12 +196,18 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
           variant={item.variant}
           className={styles.image}
           priority
-          sizes="100vw"
+          sizes={galleryImageSizes(item, 'fullscreen')}
+          blurDataURL={item.blurDataURL}
           fit="contain"
         />
       </div>
 
       <footer className={styles.footer}>
+        {(pending !== null || error) && (
+          <output className={styles.loading}>
+            {error || 'Loading photo…'}
+          </output>
+        )}
         <div className={styles.caption} aria-live="polite" aria-atomic="true">
           <span className={styles.count}>
             {number(currentIndex)}{' '}
@@ -234,10 +244,8 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
               <span>Jump to image</span>
               <select
                 id={`${id}-jump`}
-                value={currentIndex}
-                onChange={(event) =>
-                  setCurrentIndex(Number(event.target.value))
-                }
+                value={pending ?? currentIndex}
+                onChange={(event) => void select(Number(event.target.value))}
               >
                 {project.gallery.map((image, index) => (
                   <option key={index} value={index}>
@@ -250,7 +258,7 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
               <button
                 type="button"
                 onClick={() => move(-1)}
-                disabled={currentIndex === 0}
+                disabled={(pending ?? currentIndex) === 0}
                 aria-label="Previous image"
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -260,7 +268,7 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
               <button
                 type="button"
                 onClick={() => move(1)}
-                disabled={currentIndex === count - 1}
+                disabled={(pending ?? currentIndex) === count - 1}
                 aria-label="Next image"
               >
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">

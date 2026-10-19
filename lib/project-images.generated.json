@@ -5,25 +5,37 @@
         "src": "/images/projects/nerul-workspace/gallery/01-open-workstations.webp?v=df521163b451",
         "title": "Open workstations",
         "alt": "Shared office workstations with grey task chairs, timber panels and stone-effect finishes in Nerul.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 1448,
+        "height": 1086,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQIE/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQREiEiBRRBYZH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABURAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIRAxEAPwCu4cxBxyGcYI3NEFxIblEZQNTAYBya1dUiUx6fDYBx8ptbeONQ4HJdgT6qYE1v/9k="
       },
       {
         "src": "/images/projects/nerul-workspace/gallery/02-executive-cabin.webp?v=f24b1accfbe7",
         "title": "Executive cabin",
         "alt": "A private office cabin with a white desk, timber detailing, shelving and full-height curtains.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1086,
+        "height": 1448,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAF/8QAIBAAAgEEAQUAAAAAAAAAAAAAAQIRAAMhIgQSMTJRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8A0rxLbGQFxEUGQLEpMifKmeLe2HXozSQc4+VNbnu7p6DETQwtf//Z"
       },
       {
         "src": "/images/projects/nerul-workspace/gallery/03-meeting-room.webp?v=801004cf77e3",
         "title": "Meeting room",
         "alt": "A compact meeting room with a pale conference table, brown chairs and warm concealed lighting.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1086,
+        "height": 1448,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAIhAAAQMDAwUAAAAAAAAAAAAAAQIDBAARIRITUQUiMWFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwB4s4PFLRSdfg8c4qzQ4vNkj7Wel9jp7W1sKckJOTkJPs00SRIkMlZUB3WskYoYV//Z"
       },
       {
         "src": "/images/projects/nerul-workspace/gallery/04-reception-lounge.webp?v=d91f2a01c816",
         "title": "Reception lounge",
         "alt": "A blue reception sofa set against a patterned wall beside the office entrance.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1086,
+        "height": 1448,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAIxAAAgECBAcAAAAAAAAAAAAAAQIDABEEBSEiBhIjUWJxwf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAYEQADAQEAAAAAAAAAAAAAAAAAAhEBA//aAAwDAQACEQMRAD8ARAbEIRddRfv9rTFFs3MAfQNAzNismn5QEkQroxBANUTiNAvUgIbxa9F5tKGfLD//2Q=="
       }
     ]
   },
@@ -33,37 +45,55 @@
         "src": "/images/projects/ghatkopar-apartment/gallery/01-living-room-and-millwork.webp?v=a2b7ed302af9",
         "title": "Living room and custom millwork",
         "alt": "Cream seating faces a timber and pale stone-look television wall beside a carved prayer niche, with dining beyond.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIF/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDEQAhBBIUIkHR/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAMAwEAAhEDEQA/ANHzhDxmSJe00YFx7F/MSPmAwd5QV1fVN1+5QRRcle1DeBx4kZmkZbYOd4JpI9v/2Q=="
       },
       {
         "src": "/images/projects/ghatkopar-apartment/gallery/02-dining-and-prayer-area.webp?v=590f4f732def",
         "title": "Dining and prayer area",
         "alt": "A timber dining table sits beside the carved prayer cabinet and full-height pale curtains.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAdEAEBAAMAAgMAAAAAAAAAAAABAgADEQQhIjJR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQADAQAAAAAAAAAAAAAAAAAAATEy/9oADAMBAAIRAxEAPwCzNybE4ay36vPzDnytdTcak+EL6OYsA1VJ1HncOtOuNe2pgFhO5J5Gqf/Z"
       },
       {
         "src": "/images/projects/ghatkopar-apartment/gallery/03-kitchen-storage.webp?v=5eddf6afdff5",
         "title": "Kitchen cabinetry and storage",
         "alt": "Mint-green cabinets and a dark roller shutter organize the compact kitchen's storage and appliance area.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1600,
+        "height": 2400,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAgEAABBAIDAAMAAAAAAAAAAAACAQMEEQASBSExE1Fh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQADAAAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhEDEQA/ALTORJqO0dARmqIqfV/mFd5RGXSa+DbVatS9xawAkRGyMbXpbTrzAyeNkOSXDDXUitLyFJDk/9k="
       },
       {
         "src": "/images/projects/ghatkopar-apartment/gallery/04-blue-bedroom.webp?v=81b3a78bb304",
         "title": "Bedroom with blue accents",
         "alt": "A blue upholstered headboard, blue wardrobe fronts and warm timber storage frame the bedroom.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEE/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIDEQAFEjETFTJRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAITH/2gAMAwEAAhEDEQA/AHTUHdylbiLoH5mruKxowEciMFJ8aBIF85Yo0jnCIoUMpuhzh6ozL0EU0rE2PeFNJX//2Q=="
       },
       {
         "src": "/images/projects/ghatkopar-apartment/gallery/05-blush-daybed-room.webp?v=5a27da0e0de0",
         "title": "Blush daybed room",
         "alt": "A blush upholstered daybed with patterned cushions sits beside pink curtains in a compact room.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAL/xAAfEAACAQQCAwAAAAAAAAAAAAABAgQAAxEhEjETImH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERMf/aAAwDAQACEQMRAD8AdFkcpUhLreqscfNmnW3V3PjJOBndDe2tpi1scS+2Oe6qK7GRsno0C0eVU//Z"
       },
       {
         "src": "/images/projects/ghatkopar-apartment/gallery/06-built-in-study.webp?v=ac81c4cab294",
         "title": "Built-in study nook",
         "alt": "A timber study desk, illuminated display shelves and full-height storage create an integrated work nook.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1600,
+        "height": 2400,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAsDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQT/xAAgEAACAQMEAwAAAAAAAAAAAAABAgMABBESEyFBUWGx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwBMCa3kG2kZhlbCk5ypxz8qzZPbmikhuJp0l0OkZYHk+PVK6jQwtf/Z"
       }
     ]
   },
@@ -73,37 +103,55 @@
         "src": "/images/projects/ratnagiri-apartment/gallery/01-window-seating.webp?v=9ce1bb699733",
         "title": "Window seating with teal accents",
         "alt": "A sculptural cream window bench with teal cushions, a resident cat and planting sits beside the broad living-room window.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1350,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAE/8QAJBAAAQIFAgcAAAAAAAAAAAAAAQACAwQFEXEGIRIyMzRBobH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/AKk1JkrKBvCXF9mm3gb7+1unqswQIocedhAAwULTemzBTWoeyg4H0KNgys//2Q=="
       },
       {
         "src": "/images/projects/ratnagiri-apartment/gallery/02-timber-media-wall.webp?v=04907036ae71",
         "title": "Timber and stone media wall",
         "alt": "A television framed by pale stone-look panels and dark timber sits beside a window swing.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1350,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAiEAABBAECBwAAAAAAAAAAAAABAgMEEQAhQRITIjNyc8H/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEhMVH/2gAMAwEAAhEDEQA/AAivJaceCuK+aoiheumJHW07JlqfUOpAqzvRyCR3T7FYGx8fmFGCuj//2Q=="
       },
       {
         "src": "/images/projects/ratnagiri-apartment/gallery/03-window-swing.webp?v=636f0f7fb202",
         "title": "A swing beside the window",
         "alt": "A timber swing is suspended beside the window, with timber wall panels, ceiling lighting and planting.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1350,
+        "height": 2400,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAkDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAIhAAAQMDAwUAAAAAAAAAAAAAAwABAgQREgUTIVFSU5GS/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwCBjKej3hDjZ4ylfpZA3Knvb0ycAlWDT5Dg4nbGTY355WblUeGXy6Ekf//Z"
       },
       {
         "src": "/images/projects/ratnagiri-apartment/gallery/04-window-bench-detail.webp?v=d70cdad93a2a",
         "title": "Sculptural window seating",
         "alt": "A cream bench with teal cushions sits beside a timber column, potted plants and detailed ceiling treatment.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1350,
+        "height": 2400,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAkDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwX/xAAlEAABAwIDCQAAAAAAAAAAAAABAAIDBBEFEjETFBVRVHGRodH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAAMBAAAAAAAAAAAAAAAAAAACETH/2gAMAwEAAhEDEQA/AGwvCaeoYDK422bXdyQn4RSc3eVKjEwhja9xGWxBB0toqe+0PXxe/qhcFrT/2Q=="
       },
       {
         "src": "/images/projects/ratnagiri-apartment/gallery/05-illuminated-artwork.webp?v=faa75aae7db8",
         "title": "Illuminated artwork and timber console",
         "alt": "Illuminated artwork hangs above a timber console with sculptural seating and warm interior lighting.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1350,
+        "height": 2400,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAkDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQF/8QAHxAAAgICAQUAAAAAAAAAAAAAAQMAAhETIgUhMlFh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAXEQEBAQEAAAAAAAAAAAAAAAABAgAh/9oADAMBAAIRAxEAPwAMStJAZmxv48vsOkepDbqJcxZbQcT2wZo7BJolDua3f//Z"
       },
       {
         "src": "/images/projects/ratnagiri-apartment/gallery/06-orange-sofa-and-wall-panelling.webp?v=118320c5b256",
         "title": "Orange sofa and wall panelling",
         "alt": "An orange curved sofa with blue and cream cushions sits against cream wall mouldings, behind a glass-topped timber coffee table.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1350,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EACAQAAIABQUBAAAAAAAAAAAAAAECAAMRITEEBTJxsTT/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECEVH/2gAMAwEAAhEDEQA/AKl3m5U6e62JrSts4xAzN3VgyGSVJBuWjH131v0PBCV5jsewWtYqFPD/2Q=="
       }
     ]
   },
@@ -113,37 +161,55 @@
         "src": "/images/projects/anagha-salon/gallery/01-reception-and-styling.webp?v=795651bd8669",
         "title": "Reception and styling floor",
         "alt": "Salon reception with a fluted timber counter, orange styling chairs and illuminated arched mirrors.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwL/xAAiEAACAgECBwEAAAAAAAAAAAABAgMEABESISIxMkFRcdH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAAMBAQAAAAAAAAAAAAAAAAABIQIR/9oADAMBAAIRAxEAPwBqkbVztfasfUhjoR8y70leVDCrKSwCnQ+8KeNXPMCfHE4cleIzKCg7f3A3eFFmH//Z"
       },
       {
         "src": "/images/projects/anagha-salon/gallery/02-staircase-and-display.webp?v=f78b25fc753b",
         "title": "Staircase and display joinery",
         "alt": "Timber staircase with integrated illuminated product shelves, small planters and suspended black rods.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1600,
+        "height": 2400,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEC/8QAHhAAAgMAAQUAAAAAAAAAAAAAAQIAAxFBBBJRgeH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEQMRAD8A30Na1APgJY8eI011k73CGroFYVldinK5okNy6cJ9D5JGmaF//9k="
       },
       {
         "src": "/images/projects/anagha-salon/gallery/03-pedicure-lounge.webp?v=aee889967100",
         "title": "Pedicure lounge",
         "alt": "Two cream pedicure chairs on a terrazzo platform beside a sculptural timber screen.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAeEAEAAgEFAQEAAAAAAAAAAAABAgMAERIhMXEFE//EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwBcGuFTwO09yX9OqP5ttcBjJ7DrH3SlVUbFNTV94yNbfbIFskquvOAZ/9k="
       },
       {
         "src": "/images/projects/anagha-salon/gallery/04-nail-studio.webp?v=cfb2f62dbaed",
         "title": "Nail studio",
         "alt": "Pink manicure chairs and a fluted timber desk beneath an arched nail-polish display.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAIBAAAgEEAQUAAAAAAAAAAAAAAQIDAAQRMSESIiNBcf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFhEBAQEAAAAAAAAAAAAAAAAAABIx/9oADAMBAAIRAxEAPwCtJIlUqGQNjWsUdysckPUGwNcNus+3YyXiK/IKEEfBxR2/kS6D9wXQPrdCtUl//9k="
       },
       {
         "src": "/images/projects/anagha-salon/gallery/05-shampoo-area.webp?v=033acd2393e2",
         "title": "Shampoo area",
         "alt": "Two caramel upholstered shampoo chairs with white wash basins and an illuminated product cabinet.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAF/8QAHhAAAQUAAgMAAAAAAAAAAAAAAQACAwQREiEiQVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAh/9oADAMBAAIRAxEAPwCifDWkc6QgfOkzrVWUiNvEl3rFlQATU2CTyxFUcTcaCTg3EOkgCX//2Q=="
       },
       {
         "src": "/images/projects/anagha-salon/gallery/06-treatment-room.webp?v=dc63cd3a6fdb",
         "title": "Private treatment room",
         "alt": "Pink treatment room with a white treatment bed, timber cabinetry and a blue glass enclosure.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEF/8QAHxAAAgIBBAMAAAAAAAAAAAAAAQIDEQAEEyExEiJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAC/9oADAMBAAIRAxEAPwBEsJbSIVUkgdqOcxXYFmEkrD2qiO+cs2rnNJut411eD35GjZWaxf0A5R7lMC7/2Q=="
       }
     ]
   },
@@ -153,37 +219,55 @@
         "src": "/images/projects/andheri-apartment/gallery/01-living-room.webp?v=7d6cc2a2ab10",
         "title": "Living room",
         "alt": "Cream seating and marble-look nesting tables face a timber and marble-look media wall, with muted olive walls and warm ceiling lighting.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAIBAAAQMEAgMAAAAAAAAAAAAAAQIDEQAEEiEiMTJBkf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREx/9oADAMBAAIRAxEAPwDUdei8HKBHypuXC3LptoE4ZeQPeqO06s3LgJ6VA16pq20BIhIEbEUOiJQ//9k="
       },
       {
         "src": "/images/projects/andheri-apartment/gallery/02-dining-and-display.webp?v=0f74aa93b907",
         "title": "Dining and display storage",
         "alt": "A white dining table with timber chairs sits beside a matching sideboard, open shelves and an illuminated glass display cabinet.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAeEAACAgIDAQEAAAAAAAAAAAABAgMRAAQhUWEFMf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8ArFtyRIk00jghgrAnivcdHsozsFdixs0Wuh50OcJvIp1ntR3hPkklmB/EBA85yZv/2Q=="
       },
       {
         "src": "/images/projects/andheri-apartment/gallery/03-kitchen.webp?v=bbfab57de5c8",
         "title": "Kitchen and textured backsplash",
         "alt": "Glossy pale upper cabinets and wood-look base units frame a grey geometric backsplash and a clear stone worktop.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIAAxExEwUSITJB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDXWKiCeZQx+EakVtTkvRWx2jaj2hd9tgvCBiFO8RHp6qUc484IkH//2Q=="
       },
       {
         "src": "/images/projects/andheri-apartment/gallery/04-grey-bedroom.webp?v=93b1f85450f3",
         "title": "Grey bedroom in daylight",
         "alt": "A grey upholstered headboard and blue patterned bedding sit beside a full-height window with layered curtains.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEF/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIDABESBAUhMSJRYf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIR/9oADAMBAAIRAxEAPwDQilzkkRrkIR0PlQ6+GJMZPBrntT7o05wjdl4LOtzQNxlcRqA3BoyHJb//2Q=="
       },
       {
         "src": "/images/projects/andheri-apartment/gallery/05-teal-bedroom.webp?v=098078daadd6",
         "title": "Teal bedroom",
         "alt": "A teal upholstered headboard, matching overhead cabinets and warm timber finishes define the second bedroom.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1839,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAhEAACAgIBBAMAAAAAAAAAAAABAgMEABESBRMhMSKhsf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhEDEQA/AKq0zS113tuIHofv1hWZ43rATR8W5bI0dYVN2j6X3VPzVtg5GoNiE2ZWYuT634GTDX//2Q=="
       },
       {
         "src": "/images/projects/andheri-apartment/gallery/06-prayer-alcove.webp?v=368ba2ee7eaa",
         "title": "Prayer alcove detail",
         "alt": "A backlit Ganesha motif and geometric latticework frame a compact prayer alcove with red stepped platforms.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1253,
+        "height": 2400,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAgEAAABQQDAQAAAAAAAAAAAAAAAQMSEwIEETEFFEFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAVEQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEQMRAD8AoSShWEk9T436L5kBEuUTO168FeY2O80AnJkv/9k="
       }
     ]
   },
@@ -193,13 +277,19 @@
         "src": "/images/projects/thane-apartment/gallery/01-living-and-media-wall.png?v=098ae50b7663",
         "title": "Living and media wall",
         "alt": "A Modern Classic living room with teal seating, marble-look detailing, warm timber and layered lighting.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 1448,
+        "height": 1086,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQL/xAAfEAACAQQDAQEAAAAAAAAAAAABAgMABBEhEjFBImH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIRAxEAPwBNpI3lZEdPn9o+4lZwUdZW1y5A4Rd9Y91SYCvKhKLkHwVdzbRyxMGGMgbHfdEhLlv/2Q=="
       },
       {
         "src": "/images/projects/thane-apartment/gallery/02-teal-sofa-and-armchairs.webp?v=4f31390738b3",
         "title": "Teal sofa and patterned armchairs",
         "alt": "A teal sofa and two cream patterned armchairs sit beneath wall mouldings, gold wall lights and warm recessed ceiling lighting.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 1448,
+        "height": 1086,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAIhAAAgEDAgcAAAAAAAAAAAAAAQIDAAQREkEFFCExUYGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/ANeR0jUF20jYk1CzI4xHhj3JGwo/KLdsRJJIArdAreqZFw+2jXCoc+dRz9oqgmv/2Q=="
       }
     ]
   },
@@ -209,19 +299,28 @@
         "src": "/images/projects/ratnagiri-1bhk/gallery/01-kitchen-and-breakfast-counter.webp?v=38716645b044",
         "title": "Kitchen and breakfast counter",
         "alt": "Cream kitchen cabinetry and a timber-framed breakfast counter with pendant lights in a Ratnagiri one-bedroom home.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 1448,
+        "height": 1086,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAfEAACAgICAwEAAAAAAAAAAAABAgMRAAQSMRMhYZH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABcRAAMBAAAAAAAAAAAAAAAAAAABETH/2gAMAwEAAhEDEQA/AG29xoNiMKkTRMOR8jUR8FnBaVGlE2uvj4sLZCPdk/vWVzaUOy4aUE0tUDWLJpwa0XCKMVXZ99dZO5Blp//Z"
       },
       {
         "src": "/images/projects/ratnagiri-1bhk/gallery/02-living-and-dining.webp?v=06e4a317f968",
         "title": "Living and dining",
         "alt": "Connected living and dining spaces with light upholstery, warm ceiling lighting and timber accents.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1086,
+        "height": 1448,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDEQAhBCISMWHB/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwBhcpTuKRxde7yW5cantGTe91mUMUEs0caSh/FeyjdEffzEPwg1UQABQ1hqRH//2Q=="
       },
       {
         "src": "/images/projects/ratnagiri-1bhk/gallery/03-bedroom-and-storage.webp?v=92a85dbf157f",
         "title": "Bedroom and integrated storage",
         "alt": "A bedroom with a soft pink bedspread, upholstered headboard and full-height cream wardrobes.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 1448,
+        "height": 1086,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgME/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIDAAQREiExQSJRof/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8A124Jt00DAC4+e6LFlGsxsuA3YPVWntYkgUIpUDHBpR+WQeG2NFhFf//Z"
       }
     ]
   },
@@ -231,13 +330,19 @@
         "src": "/images/projects/wakad-3bhk/gallery/01-kitchen-and-timber-counter.webp?v=00f503e733db",
         "title": "Kitchen and timber counter",
         "alt": "A white kitchen with a timber-fronted peninsula, pale tiled floor and pendant lighting in a Wakad home.",
-        "aspect": "landscape"
+        "aspect": "landscape",
+        "width": 1448,
+        "height": 1086,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQIE/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDABExBBKxBSEiQXL/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAh/9oADAMBAAIRAxEAPwBBdNHtVlRB4g3x6qtunUBJXQOTgyWPNaIO0KfI4oyXTJJ1VpWLbltYDGKCZIdv/9k="
       },
       {
         "src": "/images/projects/wakad-3bhk/gallery/02-living-room.webp?v=7d846bac894d",
         "title": "Living room in daylight",
         "alt": "An open living area with grey seating, a reflective pale floor and large windows in a Wakad three-bedroom home.",
-        "aspect": "portrait"
+        "aspect": "portrait",
+        "width": 1086,
+        "height": 1448,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAgEAEAAgIBBAMAAAAAAAAAAAABAgMAEQQFEhNBIVHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8Ab5ey1lZOxGUkIx37fzD39V4ddnat+/YxBMrwY+W+NyIwPhF1vF3TGe2EF+0ycOv/2Q=="
       }
     ]
   }

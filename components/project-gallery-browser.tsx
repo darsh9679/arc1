@@ -11,6 +11,12 @@ import {
 import { ArrowLeft, ArrowRight, Maximize2, ImageIcon } from 'lucide-react';
 import { PlaceholderImage } from '@/components/placeholder-image';
 import { ProjectLightbox } from '@/components/project-lightbox';
+import {
+  galleryImageSizes,
+  prepareGalleryImage,
+  useGalleryNavigation,
+  useGalleryPreparation,
+} from '@/components/use-gallery-navigation';
 import type { Project } from '@/lib/content';
 import { isConceptImage } from '@/lib/imagery';
 import { collectionPage, GALLERY_PAGE_SIZE } from '@/lib/portfolio';
@@ -41,7 +47,11 @@ function ImageCredit({ image }: { image: Project['gallery'][number] }) {
 /** A bounded image viewer: adding photos never adds another tall gallery row. */
 export function ProjectGallery({ project }: { project: Project }) {
   const id = useId();
-  const [active, setActive] = useState(0);
+  const { active, pending, error, select, move } = useGalleryNavigation(
+    project.gallery,
+  );
+  const galleryRoot = useRef<HTMLElement>(null);
+  useGalleryPreparation(galleryRoot, project.gallery, active);
   const [selected, setSelected] = useState<number | null>(null);
   const gesture = useRef<{
     id: number;
@@ -65,10 +75,6 @@ export function ProjectGallery({ project }: { project: Project }) {
   const photoCount = project.gallery.filter(
     (item) => item.src && !item.isReference && !isConceptImage(item.src),
   ).length;
-  const move = (direction: number) =>
-    setActive((current) =>
-      Math.max(0, Math.min(count - 1, current + direction)),
-    );
   const keyboard = (event: KeyboardEvent<HTMLElement>) => {
     if (
       event.altKey ||
@@ -82,7 +88,7 @@ export function ProjectGallery({ project }: { project: Project }) {
       move(event.key === 'ArrowLeft' ? -1 : 1);
     } else if (event.key === 'Home' || event.key === 'End') {
       event.preventDefault();
-      setActive(event.key === 'Home' ? 0 : count - 1);
+      void select(event.key === 'Home' ? 0 : count - 1);
     }
   };
   const startSwipe = (event: PointerEvent<HTMLButtonElement>) => {
@@ -129,6 +135,7 @@ export function ProjectGallery({ project }: { project: Project }) {
 
   return (
     <section
+      ref={galleryRoot}
       id="project-gallery"
       className={styles.gallery}
       aria-labelledby={`${id}-heading`}
@@ -168,6 +175,14 @@ export function ProjectGallery({ project }: { project: Project }) {
                 type="button"
                 aria-haspopup="dialog"
                 aria-label={`Open image ${active + 1} of ${count}: ${image.title}`}
+                aria-busy={pending !== null}
+                onPointerEnter={(event) => {
+                  if (event.pointerType !== 'touch')
+                    void prepareGalleryImage(image, 'fullscreen');
+                }}
+                onFocus={() => {
+                  void prepareGalleryImage(image, 'fullscreen');
+                }}
                 onClick={(event) => {
                   if (suppressClick.current) {
                     suppressClick.current = false;
@@ -190,8 +205,15 @@ export function ProjectGallery({ project }: { project: Project }) {
                   fit="contain"
                   className={styles.image}
                   alt={image.alt || `${project.title} — ${image.title}`}
-                  sizes="(max-width: 800px) 90vw, 85vw"
+                  sizes={galleryImageSizes(image)}
+                  blurDataURL={image.blurDataURL}
+                  priority
                 />
+                {(pending !== null || error) && (
+                  <output className={styles.loading}>
+                    {error || 'Loading photo…'}
+                  </output>
+                )}
                 <span className={styles.openHint}>
                   <Maximize2 size={15} aria-hidden="true" />
                   Full screen
@@ -219,7 +241,7 @@ export function ProjectGallery({ project }: { project: Project }) {
                     <button
                       type="button"
                       aria-label="Previous gallery image"
-                      disabled={active === 0}
+                      disabled={(pending ?? active) === 0}
                       onClick={() => move(-1)}
                     >
                       <ArrowLeft size={20} aria-hidden="true" />
@@ -227,7 +249,7 @@ export function ProjectGallery({ project }: { project: Project }) {
                     <button
                       type="button"
                       aria-label="Next gallery image"
-                      disabled={active === count - 1}
+                      disabled={(pending ?? active) === count - 1}
                       onClick={() => move(1)}
                     >
                       <ArrowRight size={20} aria-hidden="true" />
@@ -247,9 +269,9 @@ export function ProjectGallery({ project }: { project: Project }) {
                     <select
                       id={`${id}-jump`}
                       aria-label="Jump to image"
-                      value={active}
+                      value={pending ?? active}
                       onChange={(event) =>
-                        setActive(Number(event.target.value))
+                        void select(Number(event.target.value))
                       }
                     >
                       {project.gallery.map((item, index) => (
@@ -272,13 +294,16 @@ export function ProjectGallery({ project }: { project: Project }) {
                         type="button"
                         aria-label={`Show image ${absolute + 1}: ${item.title}`}
                         aria-pressed={absolute === active}
-                        onClick={() => setActive(absolute)}
+                        onClick={() => {
+                          void select(absolute);
+                        }}
                       >
                         <PlaceholderImage
                           src={item.src}
                           variant={item.variant}
                           alt=""
-                          sizes="(max-width: 599px) 30vw, 15vw"
+                          sizes="(max-width: 599px) 30vw, (max-width: 900px) 15vw, 13vw"
+                          blurDataURL={item.blurDataURL}
                         />
                         <span>{number(absolute)}</span>
                       </button>
@@ -292,7 +317,7 @@ export function ProjectGallery({ project }: { project: Project }) {
                       disabled={thumbnails.page === 1}
                       aria-label="Previous image thumbnails"
                       onClick={() =>
-                        setActive((thumbnails.page - 2) * GALLERY_PAGE_SIZE)
+                        void select((thumbnails.page - 2) * GALLERY_PAGE_SIZE)
                       }
                     >
                       <ArrowLeft size={16} aria-hidden="true" />
@@ -305,7 +330,7 @@ export function ProjectGallery({ project }: { project: Project }) {
                       disabled={thumbnails.page === thumbnails.pageCount}
                       aria-label="Next image thumbnails"
                       onClick={() =>
-                        setActive(thumbnails.page * GALLERY_PAGE_SIZE)
+                        void select(thumbnails.page * GALLERY_PAGE_SIZE)
                       }
                     >
                       <ArrowRight size={16} aria-hidden="true" />

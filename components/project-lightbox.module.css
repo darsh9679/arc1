@@ -313,3 +313,17 @@
     opacity: 1;
   }
 }
+.loading {
+  position: absolute;
+  top: 86px;
+  left: 50%;
+  z-index: 1;
+  max-width: calc(100% - 40px);
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 8px 12px;
+  background: #293126;
+  color: #fcf8ed;
+  font-size: 12px;
+  line-height: 1.5;
+}

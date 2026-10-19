@@ -115,8 +115,15 @@ async function inspectImage(file, relativePath) {
         'file content must match its extension and be a still image',
       );
     }
-    // Read pixel data too: a valid header alone does not guarantee a usable image.
-    await image.rotate().resize(1, 1, { fit: 'fill' }).raw().toBuffer();
+    // Decode pixels as well as headers, and publish a tiny preview without
+    // rewriting the supplied photo. A preview can appear before its full image
+    // finishes downloading; dimensions let contain viewers request the right size.
+    const preview = await image
+      .rotate()
+      .resize(16, 16, { fit: 'inside', withoutEnlargement: true })
+      .flatten({ background: '#eceee8' })
+      .jpeg({ quality: 35 })
+      .toBuffer();
     const rotates = [5, 6, 7, 8].includes(metadata.orientation);
     const width = rotates ? metadata.height : metadata.width;
     const height = rotates ? metadata.width : metadata.height;
@@ -125,6 +132,9 @@ async function inspectImage(file, relativePath) {
     const ratio = width / height;
     return {
       aspect: ratio > 1.1 ? 'landscape' : ratio < 0.9 ? 'portrait' : 'square',
+      width,
+      height,
+      blurDataURL: `data:image/jpeg;base64,${preview.toString('base64')}`,
       // Changed image bytes produce a new Next.js image optimization cache key,
       // even when a replacement retains the same filename and dimensions.
       version: createHash('sha256').update(buffer).digest('hex').slice(0, 12),
@@ -262,10 +272,11 @@ export async function scanProjectImages({
     for (const entry of galleryEntries) {
       const relativePath = `${slug}/gallery/${entry.name}`;
       requireImageFile(entry, relativePath);
-      const { aspect, version } = await inspectImage(
-        path.join(directory, 'gallery', entry.name),
-        relativePath,
-      );
+      const { aspect, width, height, blurDataURL, version } =
+        await inspectImage(
+          path.join(directory, 'gallery', entry.name),
+          relativePath,
+        );
       const details = metadata[entry.name] ?? {};
       const title = details.title ?? titleFromFilename(entry.name);
       gallery.push({
@@ -273,6 +284,9 @@ export async function scanProjectImages({
         title,
         alt: details.alt ?? title,
         aspect,
+        width,
+        height,
+        blurDataURL,
         ...(details.objectPosition
           ? { objectPosition: details.objectPosition }
           : {}),

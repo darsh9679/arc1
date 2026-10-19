@@ -20,6 +20,7 @@ type Props = {
   fit?: 'cover' | 'contain';
   style?: CSSProperties;
   objectPosition?: string;
+  blurDataURL?: string;
 };
 
 /** Illustrative, non-project-specific drawings. Set src to swap in approved photography. */
@@ -34,6 +35,7 @@ export function PlaceholderImage({
   fit,
   style,
   objectPosition,
+  blurDataURL,
 }: Props) {
   const id = useId().replaceAll(':', '');
   const concept = getConceptImage(src);
@@ -60,6 +62,8 @@ export function PlaceholderImage({
           loading={priority ? 'eager' : 'lazy'}
           fetchPriority={priority ? 'high' : 'auto'}
           decoding="async"
+          placeholder={blurDataURL ? 'blur' : 'empty'}
+          blurDataURL={blurDataURL}
         />
       ) : (
         <svg
