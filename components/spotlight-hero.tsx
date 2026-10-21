@@ -46,7 +46,7 @@ const sceneProjects = [
   },
   {
     slug: 'anagha-salon',
-    title: 'Anagha’s Salon & Academy',
+    title: 'Welcome beauty family salon and spa',
     location: 'Juinagar, Navi Mumbai',
     desktopPosition: '50% 50%',
     mobilePosition: '60% 50%',
@@ -59,7 +59,7 @@ const scenes = sceneProjects.map((project) => ({
   desktopHeroPosition: '50% 50%',
   desktopAlt:
     project.slug === 'anagha-salon'
-      ? 'AI-refined landscape visualization of Anagha’s Salon & Academy, with empty teal chairs and mirrors, recomposed from the original project photograph.'
+      ? 'AI-refined landscape visualization of Welcome beauty family salon and spa, with empty teal chairs and mirrors, recomposed from the original project photograph.'
       : `AI-refined landscape visualization of the ${project.title} interior, recomposed from the original project photograph for the desktop hero.`,
   mobileSrc: `/images/mobile-hero/${project.slug}-portrait-v1.webp`,
   portraitPosition: project.slug === 'thane-apartment' ? '50% 35%' : '50% 65%',

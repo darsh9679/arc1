@@ -4,7 +4,7 @@ Open the matching project folder and put your photographs inside `gallery/`:
 
 - `ghatkopar-apartment/gallery/` — Warmth in the everyday
 - `ratnagiri-apartment/gallery/` — A home with character
-- `anagha-salon/gallery/` — Anagha’s Salon & Academy
+- `anagha-salon/gallery/` — Welcome beauty family salon and spa
 - `andheri-apartment/gallery/` — A quieter kind of home
 - `thane-apartment/gallery/` — Modern Classic, made livable
 - `ratnagiri-1bhk/gallery/` — Ratnagiri 1BHK residence

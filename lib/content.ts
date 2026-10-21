@@ -130,10 +130,10 @@ const projectRecords: Project[] = [
   {
     slug: 'anagha-salon',
     number: '03',
-    title: 'Anagha’s Salon & Academy',
+    title: 'Welcome beauty family salon and spa',
     category: 'Interiors',
     typology: 'Hospitality',
-    propertyType: 'Salon & academy',
+    propertyType: 'Salon & spa',
     location: 'Juinagar, Navi Mumbai',
     area: '550 sq. ft. duplex',
     style: 'Contemporary',
