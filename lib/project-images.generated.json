@@ -345,5 +345,224 @@
         "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAgEAEAAgIBBAMAAAAAAAAAAAABAgMAEQQFEhNBIVHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAwDAQACEQMRAD8Ab5ey1lZOxGUkIx37fzD39V4ddnat+/YxBMrwY+W+NyIwPhF1vF3TGe2EF+0ycOv/2Q=="
       }
     ]
+  },
+  "parijat-bungalow": {
+    "gallery": [
+      {
+        "src": "/images/projects/parijat-bungalow/gallery/01-bungalow-facade-enhanced-v1.webp?v=2bdf69620f96",
+        "title": "Blue-and-white bungalow facade",
+        "alt": "AI-enhanced project photograph of Parijat bungalow, showing its blue-and-white facade, tall arched window, balcony swing, timber entrance screen and black-and-gold gate.",
+        "aspect": "landscape",
+        "width": 1536,
+        "height": 1024,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwH/xAAiEAACAAUDBQAAAAAAAAAAAAABAgADERIhBDFhBRNBQoH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABcRAAMBAAAAAAAAAAAAAAAAAAABAkH/2gAMAwEAAhEDEQA/AKOomayEhVphrqwkzUmXTZ7vVV2wOeYTsS7yLBk5g2lIBhfFPlawd1OkUKsP/9k="
+      },
+      {
+        "src": "/images/projects/parijat-bungalow/gallery/02-exterior-and-entrance.webp?v=ea31dd8fab6b",
+        "title": "Exterior and entrance",
+        "alt": "A full exterior view of the blue-and-white bungalow, entrance gate, front garden and boundary wall.",
+        "aspect": "square",
+        "width": 1920,
+        "height": 1920,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQF/8QAJBAAAQMCBAcAAAAAAAAAAAAAAQIDEQAFBBIxQSIzUWFyobH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAAMBAQAAAAAAAAAAAAAAAAABEhFB/9oADAMBAAIRAxEAPwDWVcyEgh9uVGADrPSiLi8RzAD41G3YMS0SUqg7ce40pvWjFuphzKqAIE9hPz3SvOE5bP/Z"
+      },
+      {
+        "src": "/images/projects/parijat-bungalow/gallery/03-living-room-media-wall.webp?v=fabacf7e0e47",
+        "title": "Living room and media wall",
+        "alt": "The finished living room with a timber media wall, low storage unit, broad windows and warm ceiling lighting.",
+        "aspect": "square",
+        "width": 1920,
+        "height": 1920,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBP/EACIQAAEDAwQDAQAAAAAAAAAAAAECAwQAERIFEyFhMUGRof/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8A2t6hI2gFOKWbc3A5qQnTcgtyTiPTaQLffdK/p8pcNLbUHbdA5WCkEmx77oxNNlhtBdZxUkYkEi588+e/yiF//9k="
+      },
+      {
+        "src": "/images/projects/parijat-bungalow/gallery/04-balcony-swing.webp?v=6fa3e8e6d483",
+        "title": "Balcony swing and textured wall",
+        "alt": "A suspended woven swing beside a textured balcony wall, timber-look flooring and small wall lights.",
+        "aspect": "square",
+        "width": 1920,
+        "height": 1920,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAhEAACAQQCAgMAAAAAAAAAAAABAhEAAwQFIjESQYHR4f/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAExQf/aAAwDAQACEQMRAD8Atk22vbbMYQDKdHrgtP1tlhlAvcJKzC/H7QMjITH3OajyxPhEe+ApWtuNd2AuKFCmQwPcR91MWcf/2Q=="
+      },
+      {
+        "src": "/images/projects/parijat-bungalow/gallery/05-finished-bathroom.webp?v=3e49cb266948",
+        "title": "Neutral bathroom finishes",
+        "alt": "The finished bathroom with neutral wall and floor tiles, a wall-mounted toilet and small dark-framed windows.",
+        "aspect": "square",
+        "width": 1920,
+        "height": 1920,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQP/xAAlEAACAQMCBQUAAAAAAAAAAAABAgQAAxESIQUTUWFxFBUjMUH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwCb8bmGageR8OMsugdPFJpJmJcduaBbOAowM527eaL9j4gt5nEPVqQg5uLsfwjekZMKb6S4tuyzXGXAGpdj9de9Tpv/2Q=="
+      }
+    ]
+  },
+  "vishwabharti-bank": {
+    "gallery": [
+      {
+        "src": "/images/projects/vishwabharti-bank/gallery/01-banking-counter.webp?v=868211ac39bd",
+        "title": "Banking counter and customer area",
+        "alt": "The bank service counter with a white worktop, timber front, teal accents and seating beside broad window blinds.",
+        "aspect": "landscape",
+        "width": 2400,
+        "height": 1600,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQMEBf/EACIQAAIBAwIHAAAAAAAAAAAAAAECEQAEEgMxEyEiQUJxkf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oADAMBAAIRAxEAPwDbCADBWlo2BqK8fFSgUO/ePH3S9Ik2vEJ6oHP7QnG1cjehc5Abf//Z"
+      },
+      {
+        "src": "/images/projects/vishwabharti-bank/gallery/02-private-cabin.webp?v=e741c7238f01",
+        "title": "Private cabin and workspace",
+        "alt": "A compact private bank cabin with a white desk, teal office chair, window blinds and planting.",
+        "aspect": "portrait",
+        "width": 1600,
+        "height": 2400,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgMF/8QAHRAAAwABBQEAAAAAAAAAAAAAAQIDAAQREiFRMf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFREBAQAAAAAAAAAAAAAAAAAAAHH/2gAMAwEAAhEDEQA/ANHTuZqFLAj4CcN7olmUoSR4MjO86RVnmHIII72wUvp2oSacT4dusRL/2Q=="
+      },
+      {
+        "src": "/images/projects/vishwabharti-bank/gallery/03-meeting-room-founder-enhanced-v1.webp?v=27f678acbecd",
+        "title": "Meeting room with the founder",
+        "alt": "AI-enhanced project photograph of the founder standing behind a teal chair beside the bank meeting room table, with marble-look surfaces, teal seating, white window blinds and a green wall panel.",
+        "aspect": "landscape",
+        "width": 1536,
+        "height": 1024,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQID/8QAHxABAAICAQUBAAAAAAAAAAAAAQIDABETBBIUITFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIx/9oADAMBAAIRAxEAPwBSy4NxqRsNeu1cnkhGMfKjAtk/A3vM+eyDaRloAfhg8LbLOrJTkyVFX9xHaWlC/9k="
+      }
+    ]
+  },
+  "patwardhan-house": {
+    "gallery": [
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.24%20AM.jpeg?v=583615f33fea",
+        "title": "Entrance and pitched-roof exterior",
+        "alt": "Architectural visualization of Patwardhan House. Red-brick walls, pitched roofs, a shaded entrance veranda and surrounding planting.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAE/8QAHRAAAgMAAgMAAAAAAAAAAAAAAQIAAxEScTEyM//EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAiH/2gAMAwEAAhEDEQA/AKtXUq12nPDKp3oR2C60lU5BCMPMZNR9BGfkepNnbao+SQ//2Q=="
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.25%20AM%20%281%29.jpeg?v=4758be7909c3",
+        "title": "Balcony and shaded facade",
+        "alt": "Architectural visualization of Patwardhan House. An upper balcony and screened ground-floor openings beneath broad pitched roof overhangs.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAIxAAAgEDAwQDAAAAAAAAAAAAAQIDAAQRITNxEhMxUZGxwf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGBEAAwEBAAAAAAAAAAAAAAAAABIxASH/2gAMAwEAAhEDEQA/ANz3QnV0jwqKBhsEZ+KNmklcPAY06D47YI1960za7dxyPqo3uwnH4akfaNxYf//Z"
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.25%20AM%20%282%29.jpeg?v=4758be7909c3",
+        "title": "Balcony and shaded facade · alternate export",
+        "alt": "Architectural visualization of Patwardhan House. An upper balcony and screened ground-floor openings beneath broad pitched roof overhangs.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAIxAAAgEDAwQDAAAAAAAAAAAAAQIDAAQRITNxEhMxUZGxwf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGBEAAwEBAAAAAAAAAAAAAAAAABIxASH/2gAMAwEAAhEDEQA/ANz3QnV0jwqKBhsEZ+KNmklcPAY06D47YI1960za7dxyPqo3uwnH4akfaNxYf//Z"
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.25%20AM%20%283%29.jpeg?v=72e21827b1a6",
+        "title": "Roofscape and overhead view",
+        "alt": "Architectural visualization of Patwardhan House. An overhead view of the pitched roof arrangement, central raised roof and surrounding landscape.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgME/8QAIBABAAEDAwUAAAAAAAAAAAAAAQIAAxEEEkEiMTRhcv/EABUBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8AbZnajaGTsM5BweqWpttyAQBQ6ovGea1naoS80+GpYx3If//Z"
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.25%20AM.jpeg?v=f7c01a4bd272",
+        "title": "Front elevation and arrival",
+        "alt": "Architectural visualization of Patwardhan House. The front entrance and symmetrical pitched-roof elevation with shaded windows and a planted boundary.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgEE/8QAIRAAAgIBAgcAAAAAAAAAAAAAAQIDEQASISIxM0FRcZH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAQEAAwAAAAAAAAAAAAAAABEAASEx/9oADAMBAAIRAxEAPwARpLFY0SPw0AoHyrxsjvGyaHTvZHLzsDm5MjdRPeSwvZ6C/9k="
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.26%20AM%20%281%29.jpeg?v=849670be4036",
+        "title": "Rear elevation and balcony",
+        "alt": "Architectural visualization of Patwardhan House. A long rear elevation with an upper balcony, shaded ground-floor openings and a planted lawn.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQIE/8QAIhAAAgEDAgcAAAAAAAAAAAAAAQIDAAQhBTIREyIxQXGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgT/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8AZXvLYKkKryhgdHEfM1EcrTZuWVXHYhPFOo7z6rJbbzU806E65h//2Q=="
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.26%20AM%20%282%29.jpeg?v=1676dff987ad",
+        "title": "House and landscape court",
+        "alt": "Architectural visualization of Patwardhan House. The red-brick house viewed across a garden with curved water features and planting.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAIxAAAgECBAcAAAAAAAAAAAAAAQIDACEEBRExIjI0cXOBwf/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8APjhDLDiBYaLcAntvSZfLJJC8GJR2U7Mulqjpy+60MPSL4/lTQ3If/9k="
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.26%20AM%20%283%29.jpeg?v=f6b888dacb18",
+        "title": "Light along the veranda",
+        "alt": "Architectural visualization of Patwardhan House. A shaded sitting veranda with brick walls, timber roof details and vertical window screens.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEE/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIDEQAEBTI1cbH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABcRAAMBAAAAAAAAAAAAAAAAAAABAhH/2gAMAwEAAhEDEQA/ADE145gGdmVBRJVboZs419OEzRLLZLUCwotk0PFSej8wg92wUyup0//Z"
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.26%20AM.jpeg?v=eea1668cdcfe",
+        "title": "Entrance from the garden",
+        "alt": "Architectural visualization of Patwardhan House. An angled view of the entrance porch, pitched roofs and screened veranda from the garden.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAC/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIAAwQRISIzNHOx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQADAQEAAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A2FNV5PWqnWlUQOQ7PqhiRvklTxLN8mn1n7GntmQ23no6pIf/2Q=="
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.27%20AM.jpeg?v=4b13e975bd9e",
+        "title": "Veranda seating and brickwork",
+        "alt": "Architectural visualization of Patwardhan House. A sitting area beside exposed brick walls, a patterned roof and screened openings admitting daylight.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAIxAAAQMCBQUAAAAAAAAAAAAAAQACAwQFESExNFETQWFx8P/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEhMf/aAAwDAQACEQMRAD8Azo29XQHxlqmioKRr3iqlmjwaHAEDPnDlV2HcRfdkF73J9lBCvaf/2Q=="
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.28%20AM%20%281%29.jpeg?v=dca50aa74116",
+        "title": "Central courtyard and living spaces",
+        "alt": "Architectural visualization of Patwardhan House. A tall internal courtyard with exposed brick walls, upper balconies, stairs and adjoining seating areas.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAiEAABAwMDBQAAAAAAAAAAAAACAQMRAAQFEiExNEFxcsH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGBEBAAMBAAAAAAAAAAAAAAAAEQABEgL/2gAMAwEAAhEDEQA/AAwRuBdOGwInAQsrETxUF9bAyhm4Jg4RSgwmnersF07nlKHL9/X7RdHeYwaZ/9k="
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.28%20AM%20%282%29.jpeg?v=7ed49764b774",
+        "title": "An archway to the courtyard",
+        "alt": "Architectural visualization of Patwardhan House. A brick arch framing the internal courtyard, upper balcony and staircase.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwD/xAAnEAABAwIBDQAAAAAAAAAAAAADAAECBAYREhMhMTIzQVFhcoKywf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEAAwEAAAAAAAAAAAAAAAAAABESIf/aAAwDAQACEQMRAD8ACkohiK+QLPu3Ph1VWUMCTi8xsGUm04ak9s70nZ9R3DtC8vZ0CK61H//Z"
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.28%20AM%20%283%29.jpeg?v=94cbab835583",
+        "title": "Courtyard prayer alcove",
+        "alt": "Architectural visualization of Patwardhan House. A prayer alcove beside exposed brick pillars and a tall courtyard living area.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EAB4QAAICAgIDAAAAAAAAAAAAAAECAAMEERIyITHB/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABgRAAIDAAAAAAAAAAAAAAAAAAABAiFB/9oADAMBAAIRAxEAPwCdVg5LMjtjWcV8k61HRU1dtlhqI5jto7PyaEdRBv6MPglTs//Z"
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.28%20AM.jpeg?v=3a3e056ee99b",
+        "title": "Living around the courtyard",
+        "alt": "Architectural visualization of Patwardhan House. Seating and family circulation around a bright courtyard with exposed brick and timber ceiling details.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIABAMREjITM4H/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECERIi/9oADAMBAAIRAxEAPwCd2vas5ALaMy75K2IDYH2GoviyFCGABPYamtsdIJb9ghHLrI2LtWf/2Q=="
+      },
+      {
+        "src": "/images/projects/patwardhan-house/gallery/WhatsApp%20Image%202026-10-23%20at%2011.26.29%20AM.jpeg?v=b2fc9f30f411",
+        "title": "Bedroom with warm brick finishes",
+        "alt": "Architectural visualization of Patwardhan House. A bedroom with a bed, patterned headboard, timber ceiling and exposed brick walls around broad windows.",
+        "aspect": "landscape",
+        "width": 1600,
+        "height": 900,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAJABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgb/xAAhEAACAQMDBQAAAAAAAAAAAAABAwIAEiEEBRExNUFzsf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQACEf/aAAwDAQACEQMRAD8AMohzFMhiJObZAHikpQluIuiwpzxeOtTyfFW2n7fD1j4KFyVPUL//2Q=="
+      }
+    ]
   }
 }

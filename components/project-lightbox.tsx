@@ -15,7 +15,7 @@ import {
 } from '@/components/use-gallery-navigation';
 import { useScrollLock } from '@/components/scroll-lock-context';
 import type { Project } from '@/lib/content';
-import { getConceptImage } from '@/lib/imagery';
+import { getConceptImage, isEnhancedProjectPhoto } from '@/lib/imagery';
 import styles from './project-lightbox.module.css';
 
 type Props = {
@@ -229,6 +229,10 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
                 )
               ) : concept ? (
                 'AI concept · not completed project photography'
+              ) : project.visualizationOnly ? (
+                'Architectural visualization'
+              ) : isEnhancedProjectPhoto(item.src) ? (
+                'AI-enhanced project photograph'
               ) : !item.src ? (
                 'Illustrative drawing · not a project record'
               ) : (

@@ -58,6 +58,42 @@ void test('empty folders and optional metadata preserve the existing concept fal
   );
 });
 
+void test('new bungalow, bank and house folders accept photos after starting empty', async (t) => {
+  const { projectsDir } = await fixture(t);
+  const slugs = ['parijat-bungalow', 'vishwabharti-bank', 'patwardhan-house'];
+  for (const slug of slugs) {
+    const projectDir = path.join(projectsDir, slug);
+    await mkdir(path.join(projectDir, 'gallery'), { recursive: true });
+    await writeFile(path.join(projectDir, 'gallery', '.gitkeep'), '');
+    await writeFile(path.join(projectDir, 'metadata.json'), '{}');
+    await writeFile(
+      path.join(projectDir, 'README.md'),
+      'Add photos in gallery/.',
+    );
+  }
+  assert.deepEqual(await scanProjectImages({ projectsDir }), {});
+  const bytes = await sharp({
+    create: { width: 80, height: 40, channels: 3, background: '#bab5a5' },
+  })
+    .jpeg()
+    .toBuffer();
+  for (const slug of slugs) {
+    await writeFile(
+      path.join(projectsDir, slug, 'gallery', '01-overview.jpg'),
+      bytes,
+    );
+  }
+  const result = await scanProjectImages({ projectsDir });
+  for (const slug of slugs) {
+    assert.equal(result[slug].gallery.length, 1);
+    assert.equal(result[slug].gallery[0].title, 'Overview');
+    assert.equal(
+      new URL(result[slug].gallery[0].src, 'https://example.test').pathname,
+      `/images/projects/${slug}/gallery/01-overview.jpg`,
+    );
+  }
+});
+
 void test('many images are discovered in natural order without a gallery limit', async (t) => {
   const { projectsDir, image } = await fixture(t);
   // Deliberately unsorted and well above fourteen; no real project files change.

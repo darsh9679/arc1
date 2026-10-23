@@ -56,66 +56,76 @@
   border: 1px solid var(--color-line);
   background: #fefefe;
 }
-.awardGraphic {
+.awardPhotograph {
   position: relative;
+  min-width: 0;
+  min-height: 460px;
+  margin: 0;
+  overflow: hidden;
+  background: #e9e5db;
+}
+.awardPhoto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 64%;
+}
+.awardPhotograph figcaption {
+  position: absolute;
+  inset: auto 0 0;
   display: flex;
   flex-direction: column;
+  gap: 6px;
+  padding: 42px 24px 22px;
+  background: linear-gradient(transparent, #211b13d9);
+  color: #fffdf6;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.awardPhotograph figcaption > span {
+  color: #f3d9a6;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.mediaLink {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
-  min-width: 0;
-  padding: 40px 26px;
-  overflow: hidden;
-  color: var(--brand-ivory);
-  background: #8a3a02;
+  gap: 16px;
+  min-height: 44px;
+  margin-top: 14px;
+  border-bottom: 1px solid #b1915d;
+  color: var(--color-accent);
+  font-size: 12px;
 }
-.awardGraphic::before {
-  content: '';
-  position: absolute;
-  inset: 22px;
-  border: 1px solid #e8b30b66;
-  border-radius: 180px 180px 0 0;
-  pointer-events: none;
+.moments {
+  padding: 42px var(--gutter) 46px;
+  border-top: 1px solid var(--color-line);
+  background: #f2efe6;
+  scroll-margin-top: 20px;
 }
-.badgeHeading {
+.momentsHeading {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  z-index: 1;
-  color: var(--brand-ivory);
-  font-size: 9px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 26px;
 }
-.monogram {
-  z-index: 1;
-  font-family: var(--font-display), serif;
-  font-size: clamp(76px, 8vw, 120px);
-  letter-spacing: -0.08em;
-  line-height: 0.92;
-  text-align: center;
+.momentsHeading h2 {
+  margin-top: 10px;
+  font-size: clamp(32px, 3vw, 44px);
+  line-height: 1.15;
 }
-.monogram > span {
-  display: block;
-  margin-top: 12px;
-  color: var(--brand-gold);
-  font-size: 0.6em;
-  font-style: italic;
+.momentsHeading h2 em {
+  color: var(--color-accent);
 }
-.eventLabel {
-  z-index: 1;
-  font-size: 13px;
-  line-height: 1.65;
-  text-align: center;
-}
-.winner {
-  z-index: 1;
-  padding: 8px 12px;
-  border: 1px solid #e8b30b88;
-  color: var(--brand-ivory);
-  font-size: 9px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+.momentsHeading > p {
+  max-width: 38ch;
+  color: var(--color-ink-soft);
+  font-size: 12px;
+  line-height: 1.8;
 }
 .awardCopy {
   padding: clamp(26px, 3vw, 40px);
@@ -330,52 +340,27 @@
   .awardFeature {
     grid-template-columns: minmax(0, 1fr);
   }
-  .awardGraphic {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    column-gap: 18px;
-    row-gap: 8px;
-    min-height: 172px;
-    padding: 24px;
+  .awardPhotograph {
+    min-height: 0;
+    height: 300px;
   }
-  .awardGraphic::before {
-    inset: 12px;
-    border-radius: 70px 70px 0 0;
+  .awardPhotograph figcaption {
+    padding: 32px 20px 16px;
+    font-size: 12px;
   }
-  .badgeHeading {
-    grid-column: 2;
-    grid-row: 1;
-    gap: 6px;
-    font-size: 8px;
-    letter-spacing: 0.05em;
+  .moments {
+    padding-block: 26px 30px;
   }
-  .badgeHeading svg {
-    width: 18px;
-    height: 18px;
+  .momentsHeading {
+    display: block;
+    margin-bottom: 20px;
   }
-  .monogram {
-    grid-column: 1;
-    grid-row: 1 / 4;
-    font-size: 58px;
+  .momentsHeading h2 {
+    font-size: 31px;
   }
-  .monogram > span {
-    margin-top: 8px;
-    font-size: 36px;
-  }
-  .eventLabel {
-    grid-column: 2;
-    font-size: 10px;
-    text-align: left;
-  }
-  .winner {
-    grid-column: 2;
-    justify-self: start;
-    padding: 6px 0 0;
-    border: 0;
-    border-top: 1px solid #e7c98555;
-    font-size: 7px;
-    line-height: 1.6;
-    letter-spacing: 0.05em;
+  .momentsHeading > p {
+    margin-top: 12px;
+    font-size: 11px;
   }
   .awardCopy {
     padding: 22px;

@@ -22,7 +22,7 @@ export function ProjectCard({
       <Link
         href={`/work/${project.slug}`}
         data-cursor="View ↗"
-        aria-label={`${project.title} — ${project.typology}, ${project.location} — view project`}
+        aria-label={`${project.title} — ${[project.typology, project.location].filter(Boolean).join(', ')} — view project`}
       >
         <div
           className={`project-visual ${!project.thumbnail ? 'project-visual-editorial' : ''}`}
@@ -46,8 +46,14 @@ export function ProjectCard({
                 {project.area && ` / ${project.area}`}
               </span>
               <strong>{project.coverLabel || 'Interior'}</strong>
-              <span className="project-cover-style">{project.style}</span>
-              <span className="project-cover-location">{project.location}</span>
+              {project.style && (
+                <span className="project-cover-style">{project.style}</span>
+              )}
+              {project.location && (
+                <span className="project-cover-location">
+                  {project.location}
+                </span>
+              )}
             </div>
           )}
           <span className="project-number" aria-hidden="true">
@@ -64,18 +70,23 @@ export function ProjectCard({
         <div className="project-caption">
           <div>
             <p className="eyebrow">
-              {project.propertyType} / {project.style}
+              {[project.propertyType, project.style]
+                .filter(Boolean)
+                .join(' / ')}
             </p>
             <h3>{project.title}</h3>
-            <p className="project-location">
-              {project.location}
-              {project.area && (
-                <>
-                  {' '}
-                  <span>·</span> {project.area}
-                </>
-              )}
-            </p>
+            {(project.location || project.area) && (
+              <p className="project-location">
+                {project.location}
+                {project.location && project.area && (
+                  <>
+                    {' '}
+                    <span>·</span>{' '}
+                  </>
+                )}
+                {project.area}
+              </p>
+            )}
           </div>
           <span className="project-arrow" aria-hidden="true">
             ↗

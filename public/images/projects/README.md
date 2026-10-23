@@ -10,6 +10,9 @@ Open the matching project folder and put your photographs inside `gallery/`:
 - `ratnagiri-1bhk/gallery/` — Ratnagiri 1BHK residence
 - `wakad-3bhk/gallery/` — Wakad 3BHK residence
 - `nerul-workspace/gallery/` — Plan S office
+- `parijat-bungalow/gallery/` — Parijat bungalow
+- `vishwabharti-bank/gallery/` — Vishwabharti Bank
+- `patwardhan-house/gallery/` — Patwardhan House (Architecture; 3,000 sq. ft. built-up area)
 
 The Dahisar and Vikhroli projects were removed from the public portfolio on 19 October 2026. Their empty folders are retained for local staging only; adding photographs there does not publish a project.
 

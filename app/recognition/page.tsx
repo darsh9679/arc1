@@ -1,8 +1,11 @@
 import Link from 'next/link';
-import { ArrowUpRight, Award, CalendarDays, MapPin } from 'lucide-react';
+import Image from 'next/image';
+import { ArrowDown, ArrowUpRight, CalendarDays, MapPin } from 'lucide-react';
 import { ProjectGrid } from '@/components/project-grid';
 import { EditorialMotion } from '@/components/editorial-motion';
+import { RecognitionMedia } from '@/components/recognition-media';
 import { award } from '@/lib/content';
+import { recognitionFilm, recognitionPhotos } from '@/lib/recognition-media';
 import { pageMetadata } from '@/lib/metadata';
 import styles from './recognition.module.css';
 
@@ -10,7 +13,7 @@ export const metadata = pageMetadata(
   'Recognition',
   'Trayaksh Architeqts and the D&V’25 Built Environment Leadership Awards, Goa, 28 November 2025.',
   '/recognition',
-  '/og.png',
+  recognitionPhotos[0].src,
 );
 
 export default function Recognition() {
@@ -37,21 +40,22 @@ export default function Recognition() {
             </p>
           </div>
           <div className={styles.awardFeature} data-editorial-reveal>
-            <div className={styles.awardGraphic} aria-hidden="true">
-              <div className={styles.badgeHeading}>
-                <Award size={22} strokeWidth={1.2} />
-                <span>Design & Vision</span>
-              </div>
-              <div className={styles.monogram}>
-                D&V<span>’25</span>
-              </div>
-              <p className={styles.eventLabel}>
-                Built Environment
-                <br />
-                Leadership Awards
-              </p>
-              <span className={styles.winner}>Winner · Maharashtra</span>
-            </div>
+            <figure className={styles.awardPhotograph}>
+              <Image
+                src={recognitionPhotos[0].src}
+                alt={recognitionPhotos[0].alt}
+                width={recognitionPhotos[0].width}
+                height={recognitionPhotos[0].height}
+                sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1600px) 34vw, 520px"
+                className={styles.awardPhoto}
+                loading="eager"
+                fetchPriority="high"
+              />
+              <figcaption>
+                <span>D&V’25 · Goa</span>
+                Ar. Sharvari Pawaskar
+              </figcaption>
+            </figure>
             <section
               className={styles.awardCopy}
               aria-labelledby="award-heading"
@@ -87,8 +91,40 @@ export default function Recognition() {
                 <strong>Ar. Sharvari Pawaskar</strong>, Architect & Interior
                 Designer.
               </p>
+              <a className={styles.mediaLink} href="#recognition-moments">
+                View photos & film <ArrowDown size={15} aria-hidden="true" />
+              </a>
             </section>
           </div>
+        </div>
+      </section>
+      <section
+        id="recognition-moments"
+        className={styles.moments}
+        aria-labelledby="recognition-moments-heading"
+        data-editorial-reveal
+      >
+        <div className={styles.container}>
+          <div className={styles.momentsHeading}>
+            <div>
+              <p className={styles.kicker}>02 / In the moment</p>
+              <h2 id="recognition-moments-heading">
+                From the <em>ceremony.</em>
+              </h2>
+            </div>
+            <p>
+              Photographs and a short film from the Design & Vision 2025 awards
+              in Goa.
+            </p>
+          </div>
+          <RecognitionMedia
+            photos={recognitionPhotos}
+            videoSrc={recognitionFilm.src}
+            videoPoster={recognitionFilm.poster}
+            videoWidth={recognitionFilm.width}
+            videoHeight={recognitionFilm.height}
+            videoDuration={recognitionFilm.duration}
+          />
         </div>
       </section>
       <section
@@ -99,7 +135,7 @@ export default function Recognition() {
         <div className={styles.container}>
           <div className={styles.workHeading}>
             <div>
-              <p className={styles.kicker}>02 / Selected work</p>
+              <p className={styles.kicker}>03 / Selected work</p>
               <h2 id="recognition-work-heading">
                 The spaces behind <em>the practice.</em>
               </h2>

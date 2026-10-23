@@ -42,3 +42,13 @@ export function getConceptImage(src?: string | null) {
 export function isConceptImage(src?: string | null) {
   return Boolean(getConceptImage(src));
 }
+
+/** Retouched project images retain a clear credit distinct from unaltered photos. */
+const enhancedProjectPhotoPaths = new Set([
+  '/images/projects/parijat-bungalow/gallery/01-bungalow-facade-enhanced-v1.webp',
+  '/images/projects/vishwabharti-bank/gallery/03-meeting-room-founder-enhanced-v1.webp',
+]);
+
+export function isEnhancedProjectPhoto(src?: string | null) {
+  return Boolean(src && enhancedProjectPhotoPaths.has(src.split('?')[0]));
+}

@@ -25,6 +25,9 @@ export const PROJECT_SLUGS = [
   'vikhroli-bank',
   'ratnagiri-1bhk',
   'wakad-3bhk',
+  'parijat-bungalow',
+  'vishwabharti-bank',
+  'patwardhan-house',
 ];
 
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));

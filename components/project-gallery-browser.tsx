@@ -18,11 +18,17 @@ import {
   useGalleryPreparation,
 } from '@/components/use-gallery-navigation';
 import type { Project } from '@/lib/content';
-import { isConceptImage } from '@/lib/imagery';
+import { isConceptImage, isEnhancedProjectPhoto } from '@/lib/imagery';
 import { collectionPage, GALLERY_PAGE_SIZE } from '@/lib/portfolio';
 import styles from './project-gallery.module.css';
 
-function ImageCredit({ image }: { image: Project['gallery'][number] }) {
+function ImageCredit({
+  image,
+  visualizationOnly,
+}: {
+  image: Project['gallery'][number];
+  visualizationOnly?: boolean;
+}) {
   if (image.isReference)
     return (
       <>
@@ -40,6 +46,9 @@ function ImageCredit({ image }: { image: Project['gallery'][number] }) {
     );
   if (isConceptImage(image.src))
     return <>AI concept · not completed project photography</>;
+  if (visualizationOnly) return <>Architectural visualization</>;
+  if (isEnhancedProjectPhoto(image.src))
+    return <>AI-enhanced project photograph</>;
   if (!image.src) return <>Illustrative drawing · not a project record</>;
   return <>Project photography</>;
 }
@@ -154,9 +163,11 @@ export function ProjectGallery({ project }: { project: Project }) {
               ? `${photoCount ? `${photoCount} supplied project ${photoCount === 1 ? 'photo' : 'photos'} and ` : ''}${referenceCount} illustrative references. References do not show this completed project.`
               : project.gallery.some((item) => isConceptImage(item.src))
                 ? 'AI concepts and illustrative plans. These do not document the completed project.'
-                : photoCount
-                  ? 'Spaces, materials and considered details. Select an image to view it full screen.'
-                  : 'Illustrative drawing studies. Approved project photography has not been supplied.'}
+                : project.visualizationOnly
+                  ? 'Architectural visualizations. Select an image to view it full screen.'
+                  : photoCount
+                    ? 'Spaces, materials and considered details. Select an image to view it full screen.'
+                    : 'Illustrative drawing studies. Approved project photography has not been supplied.'}
           </p>
         )}
       </div>
@@ -232,7 +243,10 @@ export function ProjectGallery({ project }: { project: Project }) {
                   <div>
                     <p>{image.title}</p>
                     <span className={styles.credit}>
-                      <ImageCredit image={image} />
+                      <ImageCredit
+                        image={image}
+                        visualizationOnly={project.visualizationOnly}
+                      />
                     </span>
                   </div>
                 </div>

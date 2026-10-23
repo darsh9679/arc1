@@ -6,16 +6,31 @@ Each project already has its own gallery. Place client-approved photos in the ma
 | --- | --- |
 | Warmth in the everyday — Ghatkopar apartment | `public/images/projects/ghatkopar-apartment/gallery/` |
 | A home with character — Ratnagiri apartment | `public/images/projects/ratnagiri-apartment/gallery/` |
-| Anagha’s Salon & Academy | `public/images/projects/anagha-salon/gallery/` |
+| Welcome beauty family salon and spa | `public/images/projects/anagha-salon/gallery/` |
 | A quieter kind of home — Andheri apartment | `public/images/projects/andheri-apartment/gallery/` |
 | Modern Classic, made livable — Thane apartment | `public/images/projects/thane-apartment/gallery/` |
 | Ratnagiri 1BHK residence | `public/images/projects/ratnagiri-1bhk/gallery/` |
 | Wakad 3BHK residence | `public/images/projects/wakad-3bhk/gallery/` |
 | Plan S office — Nerul | `public/images/projects/nerul-workspace/gallery/` |
+| Parijat bungalow | `public/images/projects/parijat-bungalow/gallery/` |
+| Vishwabharti Bank | `public/images/projects/vishwabharti-bank/gallery/` |
+| Patwardhan House — Architecture, 3,000 sq. ft. built-up area | `public/images/projects/patwardhan-house/gallery/` |
+
+Patwardhan House currently contains 15 supplied architectural visualizations with
+descriptive captions. Its `visualizationOnly` setting in `lib/content.ts` keeps
+the cover, gallery and full-screen credits accurate. Update that setting when
+the collection is replaced with actual photography. All uploaded files are
+retained, including one repeated export.
 
 The Ghatkopar, Ratnagiri, salon, Andheri and Thane starting photographs came from `3BHK Residential Interior.docx`. The October 15 import adds curated photographs to Ghatkopar, Ratnagiri and Andheri, plus separate Ratnagiri 1BHK, Wakad 3BHK and Nerul office projects. The Amol Pawar source folder matches the existing Ratnagiri apartment, while the Pawaskar 1BHK is a separate home. A later salon import replaces Anagha’s original photograph with six selected interior views, as explicitly requested after clarifying the Welcome Beauty signage; see `docs/SALON-PHOTO-CURATION-2026-10-15.md`. The Dahisar and Vikhroli projects were removed from the public portfolio on 19 October 2026. Their empty folders are retained for local staging only; adding photographs there does not publish a project.
 
 The initial imported collection selected 19 of 26 images; its originals remain in `docs/source-assets/project-imports-2026-10-15/`. The complete re-uploaded Ghatkopar, Andheri and Amol Pawar shoots were then reviewed: 219 images became 17 selected views across those three galleries, with six, six and five images respectively. People/pet portrait sequences, repeated angles, weak fragments and distracting reflections were excluded from the public galleries.
+
+The October 22 additions select five Parijat bungalow views and two Vishwabharti Bank views from 30 uploads. Their original files and excluded alternates remain in `docs/source-assets/project-curation-2026-10-22/originals/`. See `docs/PHOTO-CURATION-2026-10-22.md` for the selection, filenames and processing details. The old Vikhroli bank folder remains untouched.
+
+Parijat's first image was subsequently replaced with a labelled AI-enhanced facade photograph at the user's request. Its wide framing and the gallery presentation changes are documented in `docs/PARIJAT-PRESENTATION-2026-10-22.md`; the previous cover is retained in the local archive.
+
+Vishwabharti Bank subsequently gained a third image, **Meeting room with the founder**, using an AI-enhanced version of the user's supplied photograph. The counter and cabin views remain first and second. See `docs/BANK-THIRD-IMAGE-2026-10-22.md` for the source, asset path and prompt.
 
 All 219 second-round originals remain recoverable in `docs/source-assets/project-imports-2026-10-15-round2/originals/`; the previous website galleries and captions are backed up in its `previous-website/` folder. These archives are outside `public/`. See `docs/PHOTO-CURATION-2026-10-15-ROUND2.md` for the current choices, source filenames and reasons. The original first-round report is retained as history.
 

@@ -10,7 +10,7 @@ import {
   Ruler,
 } from 'lucide-react';
 import { projects } from '@/lib/content';
-import { isConceptImage } from '@/lib/imagery';
+import { isConceptImage, isEnhancedProjectPhoto } from '@/lib/imagery';
 import styles from './project.module.css';
 import { pageMetadata } from '@/lib/metadata';
 import { PlaceholderImage } from '@/components/placeholder-image';
@@ -30,7 +30,8 @@ export async function generateMetadata({
   return project
     ? pageMetadata(
         project.title,
-        project.description,
+        project.description ||
+          `${project.title} — ${project.propertyType} project by Trayaksh Architeqts.`,
         `/work/${slug}`,
         project.hero,
       )
@@ -64,18 +65,24 @@ export default async function ProjectDetail({
                 {project.number} / {project.propertyType}
               </p>
               <h1 id="project-title">{project.title}</h1>
-              <p className={styles.location}>
-                <MapPin size={16} aria-hidden="true" />
-                {project.location}
-              </p>
-              <p className={styles.area}>
-                {project.area && (
-                  <>
-                    {project.area} <span aria-hidden="true">·</span>{' '}
-                  </>
-                )}
-                {project.style}
-              </p>
+              {project.location && (
+                <p className={styles.location}>
+                  <MapPin size={16} aria-hidden="true" />
+                  {project.location}
+                </p>
+              )}
+              {(project.area || project.style) && (
+                <p className={styles.area}>
+                  {project.area}
+                  {project.area && project.style && (
+                    <>
+                      {' '}
+                      <span aria-hidden="true">·</span>{' '}
+                    </>
+                  )}
+                  {project.style}
+                </p>
+              )}
             </div>
             <figure className={styles.hero} data-project-hero>
               {project.hero ? (
@@ -100,16 +107,22 @@ export default async function ProjectDetail({
                   <span className={styles.coverLabel}>
                     {project.coverLabel || project.area || project.propertyType}
                   </span>
-                  <p className={styles.coverStyle}>{project.style}</p>
+                  {project.style && (
+                    <p className={styles.coverStyle}>{project.style}</p>
+                  )}
                 </div>
               )}
               <figcaption>
-                <span>{project.location}</span>
+                {project.location && <span>{project.location}</span>}
                 <span>
                   {project.hero
                     ? isConceptImage(project.hero)
                       ? 'AI concept image'
-                      : 'Project photography'
+                      : project.visualizationOnly
+                        ? 'Architectural visualization'
+                        : isEnhancedProjectPhoto(project.hero)
+                          ? 'AI-enhanced project photograph'
+                          : 'Project photography'
                     : 'Project overview'}
                 </span>
               </figcaption>
@@ -129,63 +142,74 @@ export default async function ProjectDetail({
         </div>
       </section>
 
-      <section className={styles.intent} aria-labelledby="design-intent-title">
-        <div className={`${styles.container} ${styles.intentGrid}`}>
-          <div className={styles.narrative}>
-            <p className={styles.kicker}>01 / Design intent</p>
-            <h2 id="design-intent-title">
-              {project.typology === 'Residential' ? (
-                <>
-                  A home shaped <em>around daily life.</em>
-                </>
-              ) : (
-                <>
-                  A space made <em>for its purpose.</em>
-                </>
-              )}
-            </h2>
-            <p className={styles.description}>{project.description}</p>
+      {project.description && (
+        <section
+          className={styles.intent}
+          aria-labelledby="design-intent-title"
+        >
+          <div className={`${styles.container} ${styles.intentGrid}`}>
+            <div className={styles.narrative}>
+              <p className={styles.kicker}>01 / Design intent</p>
+              <h2 id="design-intent-title">
+                {project.typology === 'Residential' ? (
+                  <>
+                    A home shaped <em>around daily life.</em>
+                  </>
+                ) : (
+                  <>
+                    A space made <em>for its purpose.</em>
+                  </>
+                )}
+              </h2>
+              <p className={styles.description}>{project.description}</p>
+            </div>
+            <aside
+              className={styles.factsPanel}
+              aria-labelledby="project-facts-title"
+            >
+              <h3 id="project-facts-title">Project at a glance</h3>
+              <dl className={styles.facts}>
+                {project.propertyType && (
+                  <div>
+                    <dt>
+                      <Building2 size={17} aria-hidden="true" />
+                      Project type
+                    </dt>
+                    <dd>{project.propertyType}</dd>
+                  </div>
+                )}
+                {project.location && (
+                  <div>
+                    <dt>
+                      <MapPin size={17} aria-hidden="true" />
+                      Location
+                    </dt>
+                    <dd>{project.location}</dd>
+                  </div>
+                )}
+                {project.area && (
+                  <div>
+                    <dt>
+                      <Ruler size={17} aria-hidden="true" />
+                      Area
+                    </dt>
+                    <dd>{project.area}</dd>
+                  </div>
+                )}
+                {project.style && (
+                  <div>
+                    <dt>
+                      <Palette size={17} aria-hidden="true" />
+                      Design language
+                    </dt>
+                    <dd>{project.style}</dd>
+                  </div>
+                )}
+              </dl>
+            </aside>
           </div>
-          <aside
-            className={styles.factsPanel}
-            aria-labelledby="project-facts-title"
-          >
-            <h3 id="project-facts-title">Project at a glance</h3>
-            <dl className={styles.facts}>
-              <div>
-                <dt>
-                  <Building2 size={17} aria-hidden="true" />
-                  Project type
-                </dt>
-                <dd>{project.propertyType}</dd>
-              </div>
-              <div>
-                <dt>
-                  <MapPin size={17} aria-hidden="true" />
-                  Location
-                </dt>
-                <dd>{project.location}</dd>
-              </div>
-              {project.area && (
-                <div>
-                  <dt>
-                    <Ruler size={17} aria-hidden="true" />
-                    Area
-                  </dt>
-                  <dd>{project.area}</dd>
-                </div>
-              )}
-              <div>
-                <dt>
-                  <Palette size={17} aria-hidden="true" />
-                  Design language
-                </dt>
-                <dd>{project.style}</dd>
-              </div>
-            </dl>
-          </aside>
-        </div>
-      </section>
+        </section>
+      )}
 
       <ProjectGallery project={project} />
 
@@ -214,13 +238,15 @@ export default async function ProjectDetail({
               ) : (
                 <div className={styles.nextCover}>
                   <span>{next.coverLabel || next.propertyType}</span>
-                  <p>{next.style}</p>
+                  {next.style && <p>{next.style}</p>}
                 </div>
               )}
               <div className={styles.nextContent}>
                 <p className={styles.kicker}>Next project / {next.typology}</p>
                 <h3>{next.title}</h3>
-                <p className={styles.nextLocation}>{next.location}</p>
+                {next.location && (
+                  <p className={styles.nextLocation}>{next.location}</p>
+                )}
                 <span className={styles.cardAction}>
                   View project <ArrowUpRight size={18} aria-hidden="true" />
                 </span>
