@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   browseProjects,
   collectionPage,
+  matchesProjectFilter,
   pageNumbers,
   GALLERY_PAGE_SIZE,
 } from '../lib/portfolio.ts';
@@ -43,6 +44,52 @@ void test('category and multi-word search combine, ignore case/space, and clamp 
   assert.equal(result.page, 1);
   assert.equal(result.pageCount, 1);
   assert.equal(browseProjects(archive, { query: '  ' }).total, 25);
+});
+
+void test('Architecture includes Patwardhan while Parijat remains a residential interior project', () => {
+  const collection = [
+    {
+      ...archive[0],
+      title: 'Patwardhan House',
+      category: 'Architecture',
+      area: '3,000 sq. ft. built-up area',
+    },
+    { ...archive[0], title: 'Parijat bungalow', category: 'Interiors' },
+    { ...archive[0], title: 'Apartment interior', category: 'Interiors' },
+    { ...archive[1], title: 'Bank interior', category: 'Interiors' },
+  ];
+
+  const architecture = browseProjects(collection, { filter: 'Architecture' });
+  assert.deepEqual(
+    architecture.items.map((project) => project.title),
+    ['Patwardhan House'],
+  );
+  assert.equal(
+    collection.filter((project) =>
+      matchesProjectFilter(project, 'Architecture'),
+    ).length,
+    architecture.total,
+  );
+  assert.equal(browseProjects(collection, { filter: 'Residential' }).total, 3);
+  assert.equal(browseProjects(collection, { filter: 'Workplace' }).total, 1);
+  assert.equal(browseProjects(collection, { filter: 'All projects' }).total, 4);
+
+  const searched = browseProjects(collection, {
+    filter: 'Architecture',
+    query: '  HOUSE  3,000 ',
+    page: 99,
+  });
+  assert.equal(searched.total, 1);
+  assert.equal(searched.items[0].title, 'Patwardhan House');
+  assert.equal(searched.page, 1);
+  assert.equal(
+    browseProjects(collection, { query: 'architecture residential' }).total,
+    1,
+  );
+  assert.equal(
+    browseProjects(collection, { filter: 'Architecture', query: 'bank' }).total,
+    0,
+  );
 });
 
 void test('empty results and malformed page inputs have safe boundaries', () => {

@@ -6,7 +6,11 @@ import { ScrollTrigger } from '@/lib/motion';
 import { PlaceholderImage } from '@/components/placeholder-image';
 import { projects, type Project } from '@/lib/content';
 import { isConceptImage } from '@/lib/imagery';
-import { browseProjects, pageNumbers } from '@/lib/portfolio';
+import {
+  browseProjects,
+  matchesProjectFilter,
+  pageNumbers,
+} from '@/lib/portfolio';
 import styles from './project-grid.module.css';
 
 export function ProjectCard({
@@ -60,17 +64,23 @@ export function ProjectCard({
             {project.number}
           </span>
           <span className="project-status">
-            {concept
-              ? 'Design study'
-              : project.thumbnail
-                ? 'Selected project'
-                : 'Project story'}
+            {project.visualizationOnly
+              ? 'Architectural visualization'
+              : concept
+                ? 'Design study'
+                : project.thumbnail
+                  ? 'Selected project'
+                  : 'Project story'}
           </span>
         </div>
         <div className="project-caption">
           <div>
             <p className="eyebrow">
-              {[project.propertyType, project.style]
+              {[
+                project.category === 'Architecture' && project.category,
+                project.propertyType,
+                project.style,
+              ]
                 .filter(Boolean)
                 .join(' / ')}
             </p>
@@ -144,8 +154,15 @@ function PortfolioBrowser() {
   }, [filter, query, result.page]);
   const filters = [
     'All projects',
+    ...(projects.some((project) => project.category === 'Architecture')
+      ? ['Architecture']
+      : []),
     ...new Set(projects.map((project) => project.typology)),
-  ];
+  ].map((label) => ({
+    label,
+    count: projects.filter((project) => matchesProjectFilter(project, label))
+      .length,
+  }));
   const changePage = (next: number) => {
     setPage(next);
     // Move keyboard focus back to the new results without losing the filter/search controls.
@@ -166,9 +183,21 @@ function PortfolioBrowser() {
     <div className={styles.browser} ref={results} tabIndex={-1}>
       <div className={styles.heading}>
         <div>
-          <p className="eyebrow">The project collection</p>
+          <p className="eyebrow">
+            {filter === 'Architecture'
+              ? 'Architectural projects'
+              : 'The project collection'}
+          </p>
           <h2>
-            Selected <em>work.</em>
+            {filter === 'Architecture' ? (
+              <>
+                Architecture, <em>considered.</em>
+              </>
+            ) : (
+              <>
+                Selected <em>work.</em>
+              </>
+            )}
           </h2>
         </div>
         <div className={styles.search}>
@@ -181,7 +210,7 @@ function PortfolioBrowser() {
             id="portfolio-search"
             type="search"
             value={query}
-            placeholder="Search a place, style or project"
+            placeholder="Search projects, places or disciplines"
             onChange={(event) => {
               setQuery(event.target.value);
               setPage(1);
@@ -212,36 +241,27 @@ function PortfolioBrowser() {
             setPage(1);
           }}
         >
-          {filters.map((item) => (
-            <option key={item} value={item}>
-              {item} (
-              {item === 'All projects'
-                ? projects.length
-                : projects.filter((project) => project.typology === item)
-                    .length}
-              )
+          {filters.map(({ label, count }) => (
+            <option key={label} value={label}>
+              {label} ({count})
             </option>
           ))}
         </select>
         <fieldset className={styles.filters}>
           <legend className="sr-only">Filter projects</legend>
-          {filters.map((item) => (
+          {filters.map(({ label, count }) => (
             <button
-              key={item}
+              key={label}
               type="button"
-              aria-pressed={filter === item}
+              aria-pressed={filter === label}
               aria-controls="portfolio-results"
               onClick={() => {
-                setFilter(item);
+                setFilter(label);
                 setPage(1);
               }}
             >
-              {item}
-              <span>
-                {item === 'All projects'
-                  ? projects.length
-                  : projects.filter((p) => p.typology === item).length}
-              </span>
+              {label}
+              <span>{count}</span>
             </button>
           ))}
         </fieldset>

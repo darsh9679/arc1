@@ -6,7 +6,7 @@ import { projects } from '@/lib/content';
 import styles from './work.module.css';
 export const metadata = pageMetadata(
   'Work',
-  'Selected residential, hospitality and workplace interiors by Trayaksh Architeqts across Mumbai and Maharashtra.',
+  'Explore architecture and selected residential, hospitality and workplace interiors by Trayaksh Architeqts.',
   '/work',
   '/og.png',
 );
@@ -49,7 +49,7 @@ export default function Work() {
           <p className="portfolio-count">
             {String(projects.length).padStart(2, '0')} selected projects{' '}
             <span className={styles.typologySummary}>
-              · Residential, hospitality & workplace interiors
+              · Architecture & interiors
             </span>
           </p>
         </div>

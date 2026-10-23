@@ -25,6 +25,7 @@ export function collectionPage<T>(
 
 type SearchableProject = {
   title: string;
+  category?: string;
   typology: string;
   location: string;
   propertyType: string;
@@ -32,15 +33,29 @@ type SearchableProject = {
   area: string;
 };
 
+/** Discipline and building-type filters share one matcher for results and counts. */
+export function matchesProjectFilter(
+  project: SearchableProject,
+  filter: string,
+) {
+  return (
+    filter === 'All projects' ||
+    project.category === filter ||
+    project.typology === filter
+  );
+}
+
 export function browseProjects<T extends SearchableProject>(
   projects: readonly T[],
   { filter = 'All projects', query = '', page = 1 } = {},
 ) {
   const terms = query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
   const matches = projects.filter((project) => {
-    if (filter !== 'All projects' && project.typology !== filter) return false;
+    if (!matchesProjectFilter(project, filter)) return false;
     const text = [
       project.title,
+      project.category,
+      project.typology,
       project.location,
       project.propertyType,
       project.style,

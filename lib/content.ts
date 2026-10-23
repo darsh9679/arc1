@@ -279,7 +279,7 @@ const projectRecords: Project[] = [
     slug: 'parijat-bungalow',
     number: '09',
     title: 'Parijat bungalow',
-    category: 'Architecture',
+    category: 'Interiors',
     typology: 'Residential',
     propertyType: 'Bungalow',
     location: '',
