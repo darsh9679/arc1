@@ -223,12 +223,6 @@
   background: none;
   font-size: 11px;
 }
-.disclosure {
-  padding: 0 var(--gutter) 20px;
-  color: var(--footer-muted);
-  font-size: 10px;
-  line-height: 1.7;
-}
 .footer a:focus-visible,
 .footer button:focus-visible {
   outline: 2px solid var(--footer-accent);
@@ -346,10 +340,6 @@
   .utilities :global(.replay-introduction) {
     font-size: 10px;
     gap: 8px;
-  }
-  .disclosure {
-    padding-top: 4px;
-    font-size: 9px;
   }
 }
 @media (prefers-reduced-motion: no-preference) {

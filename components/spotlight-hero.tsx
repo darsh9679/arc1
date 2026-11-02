@@ -59,11 +59,11 @@ const scenes = sceneProjects.map((project) => ({
   desktopHeroPosition: '50% 50%',
   desktopAlt:
     project.slug === 'anagha-salon'
-      ? 'AI-refined landscape visualization of Welcome beauty family salon and spa, with empty teal chairs and mirrors, recomposed from the original project photograph.'
-      : `AI-refined landscape visualization of the ${project.title} interior, recomposed from the original project photograph for the desktop hero.`,
+      ? 'Welcome beauty family salon and spa interior with teal chairs, mirrors and layered lighting.'
+      : `${project.title} interior in ${project.location}.`,
   mobileSrc: `/images/mobile-hero/${project.slug}-portrait-v1.webp`,
   portraitPosition: project.slug === 'thane-apartment' ? '50% 35%' : '50% 65%',
-  mobileAlt: `AI portrait visualization inspired by the ${project.title} interior; extended and recomposed from the original project photograph.`,
+  mobileAlt: `${project.title} interior in ${project.location}.`,
   href: `/work/${project.slug}`,
 }));
 const SCENE_DURATION = 6500;

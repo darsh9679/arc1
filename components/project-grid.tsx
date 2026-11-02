@@ -65,7 +65,7 @@ export function ProjectCard({
           </span>
           <span className="project-status">
             {project.visualizationOnly
-              ? 'Architectural visualization'
+              ? 'Architecture'
               : concept
                 ? 'Design study'
                 : project.thumbnail

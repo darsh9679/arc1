@@ -9,7 +9,7 @@ Run `npm run images:sync` from the project root, then refresh the website.
 The first gallery image becomes the cover unless you add `hero.jpg` beside
 this README. A deployed website needs a rebuild/redeploy after adding photos.
 
-The current gallery contains three selected images, including an AI-enhanced meeting-room photograph, starting with
+The current gallery contains three selected images, starting with
 `01-banking-counter.webp`. `metadata.json` supplies their visible captions and
 accessible descriptions. Update matching entries when renaming or removing files.
 

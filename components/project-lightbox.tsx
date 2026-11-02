@@ -15,7 +15,6 @@ import {
 } from '@/components/use-gallery-navigation';
 import { useScrollLock } from '@/components/scroll-lock-context';
 import type { Project } from '@/lib/content';
-import { getConceptImage, isEnhancedProjectPhoto } from '@/lib/imagery';
 import styles from './project-lightbox.module.css';
 
 type Props = {
@@ -47,7 +46,6 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
   } | null>(null);
   const id = useId();
   const item = project.gallery[currentIndex];
-  const concept = getConceptImage(item?.src);
   const number = (index: number) => String(index + 1).padStart(2, '0');
 
   useLayoutEffect(() => {
@@ -215,9 +213,9 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
           </span>
           <div>
             <p>{item.title}</p>
-            <span className={styles.provenance}>
-              {item.isReference ? (
-                item.sourceUrl ? (
+            {item.isReference && (
+              <span className={styles.provenance}>
+                {item.sourceUrl ? (
                   <>
                     Illustrative reference ·{' '}
                     <a href={item.sourceUrl} target="_blank" rel="noreferrer">
@@ -226,19 +224,9 @@ export function ProjectLightbox({ project, initialIndex, onClose }: Props) {
                   </>
                 ) : (
                   'Illustrative reference · Unsplash'
-                )
-              ) : concept ? (
-                'AI concept · not completed project photography'
-              ) : project.visualizationOnly ? (
-                'Architectural visualization'
-              ) : isEnhancedProjectPhoto(item.src) ? (
-                'AI-enhanced project photograph'
-              ) : !item.src ? (
-                'Illustrative drawing · not a project record'
-              ) : (
-                'Project photography'
-              )}
-            </span>
+                )}
+              </span>
+            )}
           </div>
         </div>
 

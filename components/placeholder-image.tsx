@@ -43,7 +43,7 @@ export function PlaceholderImage({
     <div
       className={`placeholder-image drawing-${variant} ${className}`}
       style={style}
-      data-image-kind={concept ? 'ai-concept' : src ? 'photograph' : 'drawing'}
+      data-image-kind={concept ? 'concept' : src ? 'photograph' : 'drawing'}
     >
       {src ? (
         <Image
@@ -209,21 +209,9 @@ export function PlaceholderImage({
             <path d="M60 740H100M80 720V760M914 60H954M934 40V80" />
             <circle cx="934" cy="60" r="14" />
           </g>
-          <text
-            x="60"
-            y="785"
-            fill="currentColor"
-            opacity=".65"
-            fontFamily="monospace"
-            fontSize="9"
-            letterSpacing="3"
-          >
-            TRAYAKSH / DRAWING STUDY / NOT A PROJECT RECORD
-          </text>
         </svg>
       )}
       {!src && label && <span className="drawing-label">{label}</span>}
-      {concept && <span className="image-provenance">AI concept image</span>}
     </div>
   );
 }

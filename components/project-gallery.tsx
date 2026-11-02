@@ -21,7 +21,7 @@ export function BeforeAfter({ project }: { project: Project }) {
         </div>
         <p className="section-aside">
           {isConceptImage(project.before) || isConceptImage(project.after)
-            ? 'An AI-generated bare-shell and furnished-space comparison. Drag to explore the design possibility; this is not a record of an actual project transformation.'
+            ? 'Explore a design study from an open shell to a furnished space. Drag the divider to compare.'
             : project.before && project.after
               ? 'From the existing space to the finished interior. Drag the divider to compare.'
               : 'Before-and-after photography is not yet supplied. These two illustrative studies demonstrate the comparison, not the actual project transformation.'}

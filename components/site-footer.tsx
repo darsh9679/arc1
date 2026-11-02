@@ -104,10 +104,6 @@ export function SiteFooter() {
           </a>
         </div>
       </div>
-      <p className={styles.disclosure}>
-        Design preview · AI concept images are labelled and do not document
-        completed studio projects
-      </p>
     </footer>
   );
 }

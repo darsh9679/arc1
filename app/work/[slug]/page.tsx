@@ -10,7 +10,6 @@ import {
   Ruler,
 } from 'lucide-react';
 import { projects } from '@/lib/content';
-import { isConceptImage, isEnhancedProjectPhoto } from '@/lib/imagery';
 import styles from './project.module.css';
 import { pageMetadata } from '@/lib/metadata';
 import { PlaceholderImage } from '@/components/placeholder-image';
@@ -112,20 +111,7 @@ export default async function ProjectDetail({
                   )}
                 </div>
               )}
-              <figcaption>
-                {project.location && <span>{project.location}</span>}
-                <span>
-                  {project.hero
-                    ? isConceptImage(project.hero)
-                      ? 'AI concept image'
-                      : project.visualizationOnly
-                        ? 'Architectural visualization'
-                        : isEnhancedProjectPhoto(project.hero)
-                          ? 'AI-enhanced project photograph'
-                          : 'Project photography'
-                    : 'Project overview'}
-                </span>
-              </figcaption>
+              {project.location && <figcaption>{project.location}</figcaption>}
             </figure>
             {project.gallery.length > 0 && (
               <div className={styles.openingActions}>

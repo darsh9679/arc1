@@ -62,7 +62,7 @@ export function ProcessStack({ caseStudy = false }: { caseStudy?: boolean }) {
               <PlaceholderImage
                 src={step.src}
                 variant={step.drawing}
-                alt={`Illustrative drawing for ${step.title.toLowerCase()}, not a project record.`}
+                alt={`Design study for the ${step.title.toLowerCase()} stage of the studio's process.`}
               />
               <div className="process-glass">
                 <p className="eyebrow">{step.subtitle}</p>

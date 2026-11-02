@@ -133,9 +133,8 @@ const pages = await Promise.all(
       if (project.hero.startsWith('/images/concepts/')) {
         assert.match(
           html,
-          /<meta property="og:image:alt" content="AI-generated/,
+          /<meta property="og:image:alt" content="[^"]*(?:design|material) study/,
         );
-        assert.match(html, /AI concept imagery/);
       } else {
         assert.doesNotMatch(
           html,
@@ -210,7 +209,7 @@ for (const path of paths.filter(
   if (
     expectedProject(path.split('/').at(-1)).hero.startsWith('/images/concepts/')
   )
-    assert.match(textFor(path), /AI concept imagery/);
+    assert.doesNotMatch(textFor(path), /\bAI\b/);
 }
 const contactMarkup = markupFor('/contact');
 const formMarkup = contactMarkup.match(
@@ -391,8 +390,8 @@ for (const [path, html] of pages) {
   for (const img of generated)
     assert.match(
       img,
-      /alt="AI-generated/,
-      'Generated images must have truthful alternative text',
+      /alt="[^"]*(?:design|material) study/,
+      'Design studies retain descriptive alternative text',
     );
 }
 const suppliedSources = new Set(

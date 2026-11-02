@@ -234,8 +234,8 @@ export default function Studio() {
                 variant="detail"
                 alt={
                   studio.portraitIsPlaceholder
-                    ? 'AI-generated fictional portrait used as a temporary layout placeholder; not Ar. Sharvari Pawaskar.'
-                    : `${studio.principal}, founder of Trayaksh Architeqts, in a blue blazer; professionally edited from her supplied photograph.`
+                    ? 'Temporary portrait placeholder.'
+                    : `${studio.principal}, founder of Trayaksh Architeqts, in a blue blazer.`
                 }
                 objectPosition="50% 0%"
                 sizes="(max-width: 600px) 100vw, 35vw"

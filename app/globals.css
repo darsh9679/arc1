@@ -428,7 +428,7 @@ main:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-.process-card > .placeholder-image[data-image-kind='ai-concept'] {
+.process-card > .placeholder-image[data-image-kind='concept'] {
   opacity: 1;
 }
 .concept-story-note {
