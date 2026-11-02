@@ -164,14 +164,6 @@
   font-size: 12px;
   line-height: 1.5;
 }
-.creditLabel {
-  display: block;
-  color: #d4cebf;
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 3px;
-}
 .projectCredit > span:last-child {
   display: flex;
   align-items: center;
@@ -312,9 +304,6 @@
   .projectCredit {
     font-size: 10px;
     max-width: calc(100% - 140px);
-  }
-  .creditLabel {
-    font-size: 8px;
   }
   .projectCredit > span:last-child {
     display: block;

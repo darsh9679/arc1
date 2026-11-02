@@ -282,13 +282,6 @@ export function SpotlightHero() {
       </div>
       <div className={styles.footer} data-hero-footer>
         <Link className={styles.projectCredit} href={scene.href}>
-          <span className={styles.creditLabel}>
-            {isPhone
-              ? 'AI portrait visual'
-              : isDesktop
-                ? 'AI-refined visual'
-                : 'In focus'}
-          </span>
           <span>
             {scene.location} <ArrowUpRight size={14} aria-hidden="true" />
           </span>
