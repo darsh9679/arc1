@@ -47,7 +47,7 @@ const sceneProjects = [
   {
     slug: 'anagha-salon',
     title: 'Welcome beauty family salon and spa',
-    location: 'Juinagar, Navi Mumbai',
+    location: 'Kalyan, Mumbai',
     desktopPosition: '50% 50%',
     mobilePosition: '60% 50%',
   },

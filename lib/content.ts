@@ -135,8 +135,8 @@ const projectRecords: Project[] = [
     category: 'Interiors',
     typology: 'Hospitality',
     propertyType: 'Salon & spa',
-    location: 'Juinagar, Navi Mumbai',
-    area: '550 sq. ft. duplex',
+    location: 'Kalyan, Mumbai',
+    area: '1,000 sq. ft.',
     style: 'Contemporary',
     description:
       'A duplex salon where warm timber, sculptural screens and illuminated arched mirrors bring the spaces together. Terracotta styling chairs and soft pink details give each service area its own character. Integrated display shelves and dedicated nail, pedicure, wash and treatment areas balance a welcoming atmosphere with everyday function.',

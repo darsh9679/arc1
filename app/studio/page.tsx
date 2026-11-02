@@ -267,9 +267,7 @@ export default function Studio() {
         <div className="principal-copy">
           <p className="eyebrow">02 / Founder</p>
           <h2 id="founder-title">
-            Ar. Sharvari
-            <br />
-            <em>Pawaskar.</em>
+            Ar. Sharvari <em>Pawaskar.</em>
           </h2>
           <ul className={styles.credentials} aria-label="Founder credentials">
             {clientCopy.founder.credentials

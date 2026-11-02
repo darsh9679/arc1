@@ -102,9 +102,9 @@ export default function Contact() {
           <div className={styles.studioInformation}>
             <p className={styles.eyebrow}>02 / Meet the studio</p>
             <h2 id="studio-location-heading">
-              Rooted in Mumbai.
+              Rooted in Mumbai
               <br />
-              <em>Open to possibility.</em>
+              <em>with Branches in Konkan and Pune</em>
             </h2>
             <p className={styles.invitation}>
               {clientCopy.geography.invitation}

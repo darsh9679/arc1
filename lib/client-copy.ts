@@ -117,7 +117,7 @@ export const clientCopy = {
     },
     {
       title: 'Light',
-      text: 'Natural light is treated as an integral part of the architecture, shaping both atmosphere and experience.',
+      text: 'Natural Light and Air are treated as integral parts of the architecture, shaping both atmosphere and experience.',
     },
     {
       title: 'Nature',
