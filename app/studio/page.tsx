@@ -53,7 +53,7 @@ const practiceTopics = [
     paragraphs: [3, 6],
     icon: Compass,
     summary:
-      'Considered planning, coordination and execution, with Vastu principles where relevant and desired.',
+      'Considerate planning, coordination and execution, with Vastu principles where relevant and desired.',
   },
 ];
 
@@ -269,6 +269,9 @@ export default function Studio() {
           <h2 id="founder-title">
             Ar. Sharvari <em>Pawaskar.</em>
           </h2>
+          <div className={styles.founderDistinction}>
+            {clientCopy.founder.distinction}
+          </div>
           <ul className={styles.credentials} aria-label="Founder credentials">
             {clientCopy.founder.credentials
               .split(' | ')

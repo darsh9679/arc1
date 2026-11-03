@@ -3,6 +3,10 @@ import { conceptImages } from '@/lib/imagery';
 import projectImages from '@/lib/project-images.generated.json';
 import projectReferences from '@/lib/project-references.generated.json';
 
+const studioAddress =
+  '09, 3rd Floor, Vidya Bhuvan,\nKeluskar road, Shivaji Park,\nDadar West, Mumbai – 400028';
+const studioMapQuery = encodeURIComponent(studioAddress.replaceAll('\n', ' '));
+
 /** Client-approved facts only. Null values intentionally do not render as invented details. */
 export const studio = {
   name: 'Trayaksh Architeqts',
@@ -21,12 +25,10 @@ export const studio = {
   email: null as string | null,
   phone: '9890849232',
   phoneHref: '+919890849232',
-  address: '3rd Floor, Vidya Bhuvan,\nShivaji Park, Dadar West,\nMumbai',
+  address: studioAddress,
   practiceAreas: ['Mumbai', 'Navi Mumbai', 'Ratnagiri', 'Pune', 'Pan India'],
-  mapEmbedUrl:
-    'https://maps.google.com/maps?q=Vidya%20Bhuvan%2C%20Shivaji%20Park%2C%20Dadar%20West%2C%20Mumbai&z=16&output=embed',
-  mapSearchUrl:
-    'https://www.google.com/maps/search/?api=1&query=Vidya%20Bhuvan%2C%20Shivaji%20Park%2C%20Dadar%20West%2C%20Mumbai',
+  mapEmbedUrl: `https://maps.google.com/maps?q=${studioMapQuery}&z=16&output=embed`,
+  mapSearchUrl: `https://www.google.com/maps/search/?api=1&query=${studioMapQuery}`,
 };
 export const award = {
   name: 'Trusted & Innovative Architect & Designer of the Year 2025 – Maharashtra',
@@ -412,7 +414,7 @@ export const processSteps = [
   {
     title: 'Observe',
     subtitle: '02 / Site & surroundings',
-    text: 'We study the site and its surroundings—the orientation, climate, context, light, views, existing conditions and opportunities.',
+    text: 'We study the site and its surroundings—the orientation, climate, context, Topography, light and ventilation, views, existing vegetation, natural bodies etc.',
     drawing: 'elevation' as const,
     src: conceptImages.residence.src,
   },

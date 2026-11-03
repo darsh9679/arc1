@@ -31,7 +31,7 @@ export default function Recognition() {
             <div>
               <p className={styles.kicker}>Recognition / A shared milestone</p>
               <h1 id="recognition-heading">
-                A practice of care. <em>Recognised.</em>
+                A practice of Trust and Innovation <em>– Honoured</em>
               </h1>
             </div>
             <p className={styles.lead}>

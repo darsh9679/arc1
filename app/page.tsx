@@ -93,7 +93,7 @@ export default function Home() {
             and retail spaces.
           </p>
           <p className={styles.geography}>
-            Mumbai & Ratnagiri · Working across India
+            <strong>Mumbai & Ratnagiri</strong> · Working across India
           </p>
           <div className={styles.perspectives}>
             {clientCopy.perspectives.items.map((item) => (

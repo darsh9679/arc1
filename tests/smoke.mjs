@@ -247,7 +247,7 @@ for (const field of enquiryFields)
 assert.match(contactMarkup, /href="tel:\+919890849232"/);
 assert.match(
   textFor('/contact'),
-  /3rd Floor, Vidya Bhuvan, Shivaji Park, Dadar West, Mumbai/,
+  /09, 3rd Floor, Vidya Bhuvan, Keluskar road, Shivaji Park, Dadar West, Mumbai – 400028/,
 );
 assert.match(textFor('/contact'), /Online delivery is not configured yet/);
 console.log(

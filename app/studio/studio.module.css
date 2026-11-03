@@ -295,6 +295,13 @@
 .studio.studio :global(.principal-copy h2) {
   font-size: 40px;
 }
+.founderDistinction {
+  margin-top: 8px;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
 .credentials {
   display: flex;
   flex-wrap: wrap;

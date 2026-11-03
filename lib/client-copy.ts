@@ -1,4 +1,4 @@
-/** Client copy from Recommended brand descriptor.docx, supplied on 3 September 2026. */
+/** Client-approved website copy, including the November 2026 revisions. */
 export const clientCopy = {
   brand: {
     vision: 'THREE-EYED VISION',
@@ -6,7 +6,7 @@ export const clientCopy = {
       'Architecture | Interior Design | Project Management | Vastu Shastra Consultant',
     tagline: 'Design that sees beyond the obvious.',
     summary:
-      'Thoughtful architecture and interiors shaped by context, human experience and a deeper connection with nature.',
+      'Thoughtful Architecture and Interiors shaped by context, human experience and a deeper connection with the nature using local materials and craftsmanship.',
     closing:
       'We design less for the moment, and more for the way life unfolds.',
     geography: 'Based in Mumbai | Ratnagiri | Working Across India.',
@@ -21,7 +21,7 @@ export const clientCopy = {
   about: {
     title: 'Architecture with a deeper perspective.',
     introduction:
-      'TRAYAKSH ARCHITEQTS is a multidisciplinary design practice working across architecture, interior design and project management, with a growing portfolio of residential, commercial and retail projects.',
+      'TRAYAKSH ARCHITEQTS is a multidisciplinary design practice working across Architecture, Interior design and Project management, with a growing portfolio of Residential, Commercial, Hospitality and Retail projects.',
     paragraphs: [
       'Our practice is guided by a simple understanding: every space has a story, and every client has a different way of inhabiting it.',
       'We do not begin with a predefined style. We begin by understanding the site, the context, the people and the purpose of the project. The design then evolves from these parameters.',
@@ -59,14 +59,15 @@ export const clientCopy = {
   },
   founder: {
     name: 'Ar. Sharvari Pawaskar',
+    distinction: 'Mumbai University Topper',
     credentials:
       'Founder | Architect | Interior Designer | M.Arch. (Project Management) | Vastu Shastra Consultant',
     paragraphs: [
-      'Ar. Sharvari Pawaskar is the founder of TRAYAKSH ARCHITEQTS, an architecture and interior design practice focused on thoughtful planning, minimal aesthetics and meaningful connections between people and their surroundings.',
+      'Ar. Sharvari Pawaskar is the founder of TRAYAKSH ARCHITEQTS, an architecture and Interior design practice, focused on thoughtful planning, minimal aesthetics and meaningful connections between people and their surroundings.',
       "A 2018 graduate of Rachana Sansad's Academy of Architecture, Mumbai, she was a University Topper in Semester X and later pursued an M.Arch in Project Management, Mumbai.",
-      'Her experience spans residential, bungalow, commercial, office, salon, bank and retail projects, allowing her to approach design with both creative and practical perspectives.',
-      'Her design philosophy is rooted in minimalism, natural light, soothing colours, thoughtful materiality and a connection with nature. She believes that every element should have a purpose and that well-designed spaces should bring a sense of calm, balance and functionality to everyday life.',
-      'As a Vastu Shastra Consultant, she thoughtfully incorporates principles of spatial orientation and harmony into contemporary architecture and interiors wherever appropriate.',
+      'Her experience spans Residential, Resort, Commercial, Salon, Office Spaces, Banks and Retail projects, allowing her to approach design with both creative and practical perspectives.',
+      'Her design philosophy is rooted in Minimalism, Natural light and ventilation, Soothing colours, Thoughtful materiality and a connection with nature. She believes that every element should have a purpose and that well-designed spaces should bring a sense of Calm, Balance and Functionality to everyday life.',
+      'As a Vastu Shastra Consultant, she thoughtfully incorporates principles of Spatial orientation and Harmony into contemporary architecture and interiors wherever appropriate.',
       'Through TRAYAKSH ARCHITEQTS, she strives to create spaces that are purposeful, balanced, quietly expressive and enduring.',
     ],
   },

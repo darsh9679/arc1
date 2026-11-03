@@ -266,7 +266,7 @@ export function SpotlightHero() {
           beyond the <em>obvious.</em>
         </h1>
         <p className={styles.description} data-hero-reveal>
-          Considered spaces. A better way to live.
+          Well curated spaces. A better way to live.
         </p>
         <div className={styles.actions} data-hero-reveal>
           <Link className={styles.primaryAction} href="/work">
