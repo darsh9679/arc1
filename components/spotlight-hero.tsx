@@ -38,11 +38,11 @@ const sceneProjects = [
     mobilePosition: '58% 50%',
   },
   {
-    slug: 'ratnagiri-apartment',
-    title: 'Ratnagiri apartment',
-    location: 'Ratnagiri, Maharashtra',
-    desktopPosition: '50% 55%',
-    mobilePosition: '45% 50%',
+    slug: 'patwardhan-house',
+    title: 'Patwardhan House',
+    location: '',
+    desktopPosition: '50% 50%',
+    mobilePosition: '50% 50%',
   },
   {
     slug: 'anagha-salon',
@@ -52,20 +52,33 @@ const sceneProjects = [
     mobilePosition: '60% 50%',
   },
 ] as const;
-const scenes = sceneProjects.map((project) => ({
-  ...projectImages[project.slug].gallery[0],
-  ...project,
-  desktopSrc: `/images/desktop-hero/${project.slug}-landscape-${project.slug === 'anagha-salon' ? 'v3' : 'v1'}.webp`,
-  desktopHeroPosition: '50% 50%',
-  desktopAlt:
-    project.slug === 'anagha-salon'
-      ? 'Welcome beauty family salon and spa interior with teal chairs, mirrors and layered lighting.'
+const scenes = sceneProjects.map((project) => {
+  const gallery = projectImages[project.slug].gallery;
+  const isHouse = project.slug === 'patwardhan-house';
+  const photo = gallery[0];
+
+  return {
+    ...photo,
+    ...project,
+    desktopSrc: `/images/desktop-hero/${project.slug}-landscape-${project.slug === 'anagha-salon' ? 'v3' : 'v1'}.webp`,
+    desktopHeroPosition: isHouse ? '50% 35%' : '50% 50%',
+    desktopAlt: isHouse
+      ? photo.alt
+      : project.slug === 'anagha-salon'
+        ? 'Welcome beauty family salon and spa interior with teal chairs, mirrors and layered lighting.'
+        : `${project.title} interior in ${project.location}.`,
+    mobileSrc: `/images/mobile-hero/${project.slug}-portrait-v1.webp`,
+    portraitPosition: isHouse
+      ? '50% 50%'
+      : project.slug === 'thane-apartment'
+        ? '50% 35%'
+        : '50% 65%',
+    mobileAlt: isHouse
+      ? photo.alt
       : `${project.title} interior in ${project.location}.`,
-  mobileSrc: `/images/mobile-hero/${project.slug}-portrait-v1.webp`,
-  portraitPosition: project.slug === 'thane-apartment' ? '50% 35%' : '50% 65%',
-  mobileAlt: `${project.title} interior in ${project.location}.`,
-  href: `/work/${project.slug}`,
-}));
+    href: `/work/${project.slug}`,
+  };
+});
 const SCENE_DURATION = 6500;
 
 export function SpotlightHero() {
@@ -216,16 +229,20 @@ export function SpotlightHero() {
             }
           >
             <picture className={styles.picture}>
-              <source
-                media="(width < 600px)"
-                type="image/webp"
-                srcSet={image.mobileSrc}
-              />
-              <source
-                media="(min-width: 901px)"
-                type="image/webp"
-                srcSet={image.desktopSrc}
-              />
+              {image.mobileSrc && (
+                <source
+                  media="(width < 600px)"
+                  type="image/webp"
+                  srcSet={image.mobileSrc}
+                />
+              )}
+              {image.desktopSrc && (
+                <source
+                  media="(min-width: 901px)"
+                  type="image/webp"
+                  srcSet={image.desktopSrc}
+                />
+              )}
               <Image
                 src={image.src}
                 alt={
@@ -283,7 +300,8 @@ export function SpotlightHero() {
       <div className={styles.footer} data-hero-footer>
         <Link className={styles.projectCredit} href={scene.href}>
           <span>
-            {scene.location} <ArrowUpRight size={14} aria-hidden="true" />
+            {scene.location || scene.title}{' '}
+            <ArrowUpRight size={14} aria-hidden="true" />
           </span>
         </Link>
         <fieldset className={styles.slideshow}>

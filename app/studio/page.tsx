@@ -20,11 +20,9 @@ import { StudioMotion } from '@/components/studio-motion';
 import { processSteps, projects, studio } from '@/lib/content';
 import { clientCopy } from '@/lib/client-copy';
 import { pageMetadata } from '@/lib/metadata';
+import studioHeroImage from '@/public/images/studio/patwardhan-house-pool-v1.webp';
 import styles from './studio.module.css';
 
-const studioHeroProject = projects.find(
-  (project) => project.slug === 'thane-apartment',
-);
 const philosophyProject = projects.find(
   (project) => project.slug === 'ratnagiri-apartment',
 );
@@ -138,13 +136,11 @@ export default function Studio() {
         </div>
         <div className={styles.heroImage} data-studio-image>
           <PlaceholderImage
-            src={studioHeroProject?.hero}
-            alt={
-              studioHeroProject?.gallery[0]?.alt ||
-              'A selected interior project by Trayaksh Architeqts.'
-            }
-            objectPosition="50% 58%"
-            sizes="(max-width: 700px) 100vw, 50vw"
+            src={studioHeroImage.src}
+            alt="Patwardhan House with laterite walls, terracotta roofs and a timber balcony overlooking a curved pool and tropical garden."
+            blurDataURL={studioHeroImage.blurDataURL}
+            objectPosition="50% 50%"
+            sizes="(max-width: 800px) 100vw, 50vw"
             priority
           />
         </div>

@@ -13,8 +13,9 @@ Open the matching project folder and put your photographs inside `gallery/`:
 - `parijat-bungalow/gallery/` — Parijat bungalow
 - `vishwabharti-bank/gallery/` — Vishwabharti Bank
 - `patwardhan-house/gallery/` — Patwardhan House (Architecture; 3,000 sq. ft. built-up area)
+- `dahisar-3bhk/gallery/` — Japandi, with a bohemian edge (3BHK residential interior; Dahisar East, Mumbai)
 
-The Dahisar and Vikhroli projects were removed from the public portfolio on 19 October 2026. Their empty folders are retained for local staging only; adding photographs there does not publish a project.
+The former Dahisar project folder is now used for the 3BHK residential interior in Dahisar East. Vikhroli remains excluded from the public portfolio; its empty folder is retained for local staging only.
 
 Use names such as `01-living-room.jpg`, `02-detail.jpg`, `03-courtyard.webp`. There is no fixed gallery limit. JPG, JPEG, PNG, WebP and AVIF still images are supported.
 

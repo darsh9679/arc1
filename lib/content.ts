@@ -18,7 +18,7 @@ export const studio = {
   handle: '@trayaksh_architeqts',
   logoSrc: '/brand/trayaksh-horizontal.svg',
   logoStackedSrc: '/brand/trayaksh-stacked.svg',
-  portraitSrc: '/images/studio/founder-sharvari-portrait-v1.webp' as
+  portraitSrc: '/images/studio/1founder-sharvari-portrait-v1.webp' as
     | string
     | null,
   portraitIsPlaceholder: false,
@@ -331,6 +331,27 @@ const projectRecords: Project[] = [
     coverLabel: 'House',
     description: '',
     drawing: 'elevation',
+    hero: null,
+    thumbnail: null,
+    hover: null,
+    before: null,
+    after: null,
+    gallery: [],
+  },
+  {
+    slug: 'dahisar-3bhk',
+    number: '12',
+    title: 'Japandi, with a bohemian edge',
+    category: 'Interiors',
+    typology: 'Residential',
+    propertyType: '3BHK apartment',
+    location: 'Dahisar East, Mumbai, Maharashtra',
+    area: '910 sq. ft. carpet area',
+    style: 'Japandi × Boho · Minimal · Bold accents · Personalised interiors',
+    coverLabel: '3BHK',
+    description:
+      'A minimal three-bedroom home brings together the calm simplicity of Japandi design and the warmth and character of Boho elements. A neutral base is layered with bold colours, natural textures and carefully selected materials to create visual interest without overwhelming the space. Personal artefacts, artwork and client-specific touches are thoughtfully integrated throughout, giving the interiors a distinctly personal identity. The result is a comfortable, functional and expressive home where minimalism meets individuality.',
+    drawing: 'perspective',
     hero: null,
     thumbnail: null,
     hover: null,

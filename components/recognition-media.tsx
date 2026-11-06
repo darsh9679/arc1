@@ -1,6 +1,12 @@
 'use client';
 
-import { useId, useLayoutEffect, useRef, useState } from 'react';
+import {
+  useId,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+} from 'react';
 import { flushSync } from 'react-dom';
 import Image from 'next/image';
 import { ArrowUpRight, Expand, Play, X } from 'lucide-react';
@@ -144,7 +150,15 @@ export function RecognitionMedia({
           </div>
           <div className={styles.photoStrip}>
             {photos.map((photo, index) => (
-              <figure key={photo.src} className={styles.photoCard}>
+              <figure
+                key={photo.src}
+                className={styles.photoCard}
+                style={
+                  {
+                    '--photo-ratio': photo.width / photo.height,
+                  } as CSSProperties
+                }
+              >
                 <button
                   type="button"
                   className={styles.photoButton}
@@ -159,8 +173,8 @@ export function RecognitionMedia({
                     alt={photo.alt}
                     width={photo.width}
                     height={photo.height}
-                    sizes="(max-width: 599px) 74vw, (max-width: 900px) 42vw, (max-width: 1600px) 25vw, 400px"
-                    className={styles.photo}
+                    sizes="(max-width: 599px) 110vw, (max-width: 900px) 64vw, (max-width: 1600px) 38vw, 560px"
+                    className={`${styles.photo} ${photo.height > photo.width ? styles.portraitPhoto : styles.presentationPhoto}`}
                   />
                   <span className={styles.expand} aria-hidden="true">
                     <Expand size={15} />

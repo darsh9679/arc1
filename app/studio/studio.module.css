@@ -92,7 +92,7 @@
 }
 .heroImage {
   position: relative;
-  height: clamp(340px, 32vw, 440px);
+  aspect-ratio: 1672 / 941;
   overflow: hidden;
 }
 .studio .heroImage > :global(.placeholder-image),
@@ -993,9 +993,6 @@
   .heroCopy h1 {
     max-width: 600px;
   }
-  .heroImage {
-    height: 320px;
-  }
   .studio.studio :global(.philosophy) {
     gap: 0 28px;
   }
@@ -1059,7 +1056,6 @@
   }
   .heroImage {
     grid-row: 1;
-    height: clamp(170px, 52vw, 230px);
   }
   .heroCopy {
     grid-row: 2;

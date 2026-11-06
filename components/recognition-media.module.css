@@ -4,7 +4,7 @@
   --media-accent: #815d24;
   --media-line: #dcd8cd;
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
   align-items: start;
   gap: clamp(24px, 3vw, 44px);
   color: var(--media-ink);
@@ -46,6 +46,7 @@
 
 .photoStrip {
   display: flex;
+  align-items: start;
   gap: 16px;
   overflow-x: auto;
   overscroll-behavior-x: contain;
@@ -56,7 +57,7 @@
 }
 
 .photoCard {
-  flex: 1 0 calc(50% - 8px);
+  flex: var(--photo-ratio, 1) 0 0;
   min-width: 0;
   margin: 0;
   scroll-snap-align: start;
@@ -70,7 +71,7 @@
   position: relative;
   display: block;
   width: 100%;
-  height: clamp(240px, 26vw, 370px);
+  aspect-ratio: var(--photo-ratio, 1);
   padding: 0;
   overflow: hidden;
   border: 1px solid var(--media-line);
@@ -78,9 +79,21 @@
 }
 
 .photo {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.portraitPhoto {
+  transform: scale(1.45);
+  transform-origin: 64% 70%;
+  filter: saturate(0.84) contrast(1.025) brightness(1.025);
+}
+
+.presentationPhoto,
+.poster {
+  filter: saturate(0.88) contrast(1.035) brightness(1.035);
 }
 
 .expand {
@@ -89,8 +102,8 @@
   bottom: 10px;
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #f7f2e7b3;
   background: #fcf8edeb;
   color: var(--media-ink);
@@ -141,22 +154,18 @@
   object-position: 50% 68%;
 }
 
-.playButton::after {
-  content: '';
-  position: absolute;
-  inset: 45% 0 0;
-  background: linear-gradient(transparent, #151710d9);
-  pointer-events: none;
-}
-
 .playLabel {
   position: absolute;
   z-index: 1;
-  inset-inline: 20px;
-  bottom: 20px;
+  top: 14px;
+  left: 14px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  padding: 6px 14px 6px 6px;
+  background: #fcf8edf2;
+  border: 1px solid #f4dfb8;
+  color: var(--media-ink);
   text-align: left;
   font-size: 13px;
   font-weight: 500;
@@ -325,10 +334,6 @@
     gap: 28px;
   }
 
-  .photoButton {
-    height: 330px;
-  }
-
   .filmStage {
     height: auto;
   }
@@ -355,15 +360,11 @@
   }
 
   .photoCard {
-    flex-basis: 82%;
+    flex: 0 0 82%;
   }
 
   .photoCard:only-child {
     flex-basis: 100%;
-  }
-
-  .photoButton {
-    height: clamp(250px, 76vw, 330px);
   }
 
   .photoCard figcaption {
@@ -383,9 +384,9 @@
   }
 
   .playLabel {
-    inset-inline: 16px;
-    bottom: 16px;
-    font-size: 12px;
+    top: 10px;
+    left: 10px;
+    font-size: 11px;
   }
 
   .filmCaption {

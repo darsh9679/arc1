@@ -41,16 +41,18 @@ export default function Recognition() {
           </div>
           <div className={styles.awardFeature} data-editorial-reveal>
             <figure className={styles.awardPhotograph}>
-              <Image
-                src={recognitionPhotos[0].src}
-                alt={recognitionPhotos[0].alt}
-                width={recognitionPhotos[0].width}
-                height={recognitionPhotos[0].height}
-                sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1600px) 34vw, 520px"
-                className={styles.awardPhoto}
-                loading="eager"
-                fetchPriority="high"
-              />
+              <div className={styles.awardPhotoFrame}>
+                <Image
+                  src={recognitionPhotos[0].src}
+                  alt={recognitionPhotos[0].alt}
+                  width={recognitionPhotos[0].width}
+                  height={recognitionPhotos[0].height}
+                  sizes="(max-width: 599px) 125vw, 540px"
+                  className={styles.awardPhoto}
+                  loading="eager"
+                  fetchPriority="high"
+                />
+              </div>
               <figcaption>
                 <span>D&V’25 · Goa</span>
                 Ar. Sharvari Pawaskar

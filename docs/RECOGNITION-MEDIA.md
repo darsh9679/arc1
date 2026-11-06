@@ -15,8 +15,18 @@ so those supplied attachments were imported directly:
 The photos are actual event photographs, encoded as sRGB WebP with full source
 framing preserved and no AI regeneration. Their combined exported size is
 257,148 bytes compared with 3,350,760 bytes for the original PNGs (about 92%
-smaller). The feature and video poster use presentation crops in CSS; opening
-a photo displays its complete framing in a contained viewer.
+smaller). Presentation crops and subtle colour adjustments are applied in CSS;
+opening a photo displays the unchanged, complete original in a contained viewer.
+
+The November 3 refinement brings the founder closer in the feature and gallery,
+moves the feature caption beneath the photograph, and sizes the photo cards by
+their source aspect ratios to avoid side bars. The video preview no longer has
+a dark gradient across the certificate and trophy. Phone layouts retain the
+swipeable photo collection and use a shorter, square feature frame.
+
+Two built-in image-editing drafts were evaluated for this refinement and rejected:
+they changed facial details and certificate lettering. Neither generated draft
+is referenced by the website. The original photographs and MP4 remain intact.
 
 Original PNGs are backed up outside the public website in
 `docs/source-assets/recognition-2026-10-23/`. Source and export hashes and asset
@@ -58,9 +68,9 @@ live site; neither is performed by this media update.
 mounting or preloading the MP4, event-photo accessibility text, the video-only
 fallback, photo decoding and dimensions, and the supplied MP4 format.
 
-Typechecking and linting cover the page and player implementation. Source
-review covers mobile sizing, focus handling and deferred video mounting.
-Live browser preview was rejected by the browser URL security policy in this
-session, so playback, photo-dialog interactions and visual layout remain
-unverified in a live browser. No alternate browser or browser-policy workaround
-was used.
+Typechecking, linting and the three media tests passed on November 3. Browser
+checks at 1440px and 390px confirmed loaded photographs and no horizontal page
+overflow. The original photo viewer opened with contained framing and closed
+successfully; the film reached readyState 4 and played with native controls.
+Screenshots are stored locally in
+`outputs/recognition-refinement-2026-11-03/` (ignored by Git).
