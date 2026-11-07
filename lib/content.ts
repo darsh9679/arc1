@@ -1,5 +1,5 @@
 import type { DrawingVariant } from '@/components/placeholder-image';
-import { conceptImages } from '@/lib/imagery';
+import { andheriDaylightPhoto, conceptImages } from '@/lib/imagery';
 import projectImages from '@/lib/project-images.generated.json';
 import projectReferences from '@/lib/project-references.generated.json';
 
@@ -18,7 +18,7 @@ export const studio = {
   handle: '@trayaksh_architeqts',
   logoSrc: '/brand/trayaksh-horizontal.svg',
   logoStackedSrc: '/brand/trayaksh-stacked.svg',
-  portraitSrc: '/images/studio/1founder-sharvari-portrait-v1.webp' as
+  portraitSrc: '/images/studio/founder-sharvari-portrait-v2.webp' as
     | string
     | null,
   portraitIsPlaceholder: false,
@@ -73,6 +73,7 @@ export type Project = {
     blurDataURL?: string;
   }[];
 };
+
 const projectRecords: Project[] = [
   {
     slug: 'ghatkopar-apartment',
@@ -171,7 +172,7 @@ const projectRecords: Project[] = [
     description:
       'A home shaped by warm wood, beige and muted olive. Light-toned furniture and marble surfaces keep the palette fresh, while warmer finishes add depth and texture. Minimal detailing lets the materials speak without making the rooms feel overdesigned.',
     drawing: 'perspective',
-    hero: null,
+    hero: andheriDaylightPhoto.src,
     thumbnail: null,
     hover: null,
     before: null,
@@ -381,11 +382,17 @@ export const projects: Project[] = projectRecords.map((project) => {
   const photos: ProjectPhotoSet = photoSet ?? {};
   const references = referenceSets[project.slug] ?? [];
   if (!photoSet && !references.length) return project;
-  const gallery = photos.gallery?.map((image) => ({
-    ...image,
-    variant: project.drawing,
-  }));
-  const hero = photos.hero || gallery?.[0]?.src || photos.thumbnail;
+  const gallery = photos.gallery?.map((image) => {
+    const isAndheriLivingRoom =
+      image.src?.split('?')[0] ===
+      '/images/projects/andheri-apartment/gallery/01-living-room.webp';
+    return {
+      ...(isAndheriLivingRoom ? andheriDaylightPhoto : image),
+      variant: project.drawing,
+    };
+  });
+  const defaultCover = photos.hero || gallery?.[0]?.src || photos.thumbnail;
+  const hero = photos.hero || project.hero || defaultCover;
   const hasPair = Boolean(photos.before && photos.after);
   const hasPhotography = Boolean(
     hero || photos.hover || photos.before || photos.after,
@@ -405,10 +412,12 @@ export const projects: Project[] = projectRecords.map((project) => {
       : project.gallery;
   return {
     ...project,
-    hero: hero || project.hero,
-    thumbnail: photos.thumbnail || hero || project.thumbnail,
+    hero: hero || null,
+    thumbnail: photos.thumbnail || defaultCover || project.thumbnail,
     thumbnailPosition: '50% 50%',
-    hover: photos.hover || (hero ? gallery?.[1]?.src || hero : project.hover),
+    hover:
+      photos.hover ||
+      (defaultCover ? gallery?.[1]?.src || defaultCover : project.hover),
     // Never combine a supplied photograph with a fictional concept comparison.
     before: hasPair ? photos.before! : hasPhotography ? null : project.before,
     after: hasPair ? photos.after! : hasPhotography ? null : project.after,
@@ -458,7 +467,8 @@ export const processSteps = [
     subtitle: '05 / Design & execution',
     text: 'Design and execution are coordinated across consultants, contractors, vendors and site teams.',
     drawing: 'plan' as const,
-    src: null,
+    src: '/images/studio/process-coordinate-v1.webp',
+    alt: 'Three people discussing foundation work on a hillside construction site.',
   },
   {
     title: 'Realise',

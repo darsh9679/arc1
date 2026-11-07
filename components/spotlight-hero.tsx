@@ -11,6 +11,7 @@ import {
 } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { clientCopy } from '@/lib/client-copy';
+import { andheriDaylightPhoto } from '@/lib/imagery';
 import projectImages from '@/lib/project-images.generated.json';
 import { gsap } from '@/lib/motion';
 import styles from './spotlight-hero.module.css';
@@ -53,9 +54,11 @@ const sceneProjects = [
   },
 ] as const;
 const scenes = sceneProjects.map((project) => {
-  const gallery = projectImages[project.slug].gallery;
   const isHouse = project.slug === 'patwardhan-house';
-  const photo = gallery[0];
+  const photo =
+    project.slug === 'andheri-apartment'
+      ? andheriDaylightPhoto
+      : projectImages[project.slug].gallery[0];
 
   return {
     ...photo,

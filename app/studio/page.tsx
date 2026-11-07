@@ -231,9 +231,9 @@ export default function Studio() {
                 alt={
                   studio.portraitIsPlaceholder
                     ? 'Temporary portrait placeholder.'
-                    : `${studio.principal}, founder of Trayaksh Architeqts, in a blue blazer.`
+                    : `${studio.principal}, founder of Trayaksh Architeqts, standing in the studio.`
                 }
-                objectPosition="50% 0%"
+                objectPosition="50% 50%"
                 sizes="(max-width: 600px) 100vw, 35vw"
               />
             </div>

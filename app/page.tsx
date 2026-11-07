@@ -13,7 +13,6 @@ import { ProjectGrid } from '@/components/project-grid';
 import { award } from '@/lib/content';
 import { clientCopy } from '@/lib/client-copy';
 import { WhyTrayaksh } from '@/components/practice-content';
-import projectImages from '@/lib/project-images.generated.json';
 import styles from './home.module.css';
 
 const serviceSummaries = [
@@ -44,9 +43,6 @@ const phonePerspectives: Record<string, string> = {
   People: 'Everyday experience',
   Possibility: 'Beyond the brief',
 };
-const studioPhoto = projectImages['ratnagiri-apartment'].gallery[0];
-const servicePhoto = projectImages['andheri-apartment'].gallery[0];
-
 export default function Home() {
   return (
     <main
@@ -73,17 +69,23 @@ export default function Home() {
         </div>
         <Link
           className={styles.introImage}
-          href="/work/ratnagiri-apartment"
-          aria-label="Explore the Ratnagiri residence"
+          href="/work/anagha-salon"
+          aria-label="Explore Welcome beauty family salon and spa in Kalyan, Mumbai"
         >
-          <Image
-            src={studioPhoto.src}
-            alt={studioPhoto.alt}
-            fill
-            sizes="(max-width: 599px) 104px, (max-width: 800px) 30vw, 25vw"
-          />
-          <span>
-            Ratnagiri residence <ArrowUpRight size={14} aria-hidden="true" />
+          <span className={styles.introImageFrame}>
+            <Image
+              src="/images/home/welcome-beauty-spa-v2.webp"
+              alt="Pedicure chairs and illuminated timber shelves at Welcome beauty family salon and spa."
+              fill
+              sizes="(width < 600px) clamp(104px, 32vw, 144px), (max-width: 800px) 36vw, 28vw"
+            />
+          </span>
+          <span className={styles.introImageCaption}>
+            <span>
+              Welcome beauty family salon and spa
+              <small>Kalyan, Mumbai</small>
+            </span>
+            <ArrowUpRight size={14} aria-hidden="true" />
           </span>
         </Link>
         <div className={styles.introDetail}>
@@ -142,10 +144,10 @@ export default function Home() {
           aria-label="Explore the Andheri residence"
         >
           <Image
-            src={servicePhoto.src}
-            alt={servicePhoto.alt}
+            src="/images/home/andheri-living-room-daylight-v2.webp"
+            alt="Morning light through partly open curtains falls across the cream sofa and brass nesting tables in the Andheri living room."
             fill
-            sizes="(max-width: 599px) 100vw, (max-width: 800px) 50vw, 40vw"
+            sizes="(max-width: 800px) 90vw, max(40vw, 750px)"
           />
           <span>
             Andheri residence <ArrowUpRight size={16} aria-hidden="true" />

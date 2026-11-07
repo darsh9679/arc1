@@ -1,3 +1,12 @@
+export const andheriDaylightPhoto = {
+  src: '/images/project-covers/andheri-apartment-daylight-v1.webp',
+  title: 'Living room in daylight',
+  alt: 'Cream seating and brass nesting tables beside the timber and marble media wall in the Andheri living room.',
+  aspect: 'landscape',
+  width: 1536,
+  height: 1024,
+} as const;
+
 /** Design studies used to illustrate the practice's process. */
 export const conceptImages = {
   workspace: {

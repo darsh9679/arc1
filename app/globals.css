@@ -428,7 +428,8 @@ main:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-.process-card > .placeholder-image[data-image-kind='concept'] {
+.process-card
+  > .placeholder-image:is([data-image-kind='concept'], [data-image-kind='photograph']) {
   opacity: 1;
 }
 .concept-story-note {
