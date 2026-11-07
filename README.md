@@ -33,7 +33,7 @@ The preview intentionally emits `noindex, nofollow`. Set `NEXT_PUBLIC_LAUNCH_REA
 
 - `/`: opening slideshow of supplied project photographs, with labelled AI portrait interpretations on phones, approved practice statement, service introduction, four featured projects, Why Trayaksh, recognition and footer.
 - `/studio`: approved founder biography, philosophy, vision/mission, seven design principles, four service cards and the six-step scrolling process stack on laptops, with compact native disclosures on phones.
-- `/work`: eight selected projects, the approved 10+ completed-project count, and filters for residential, hospitality and workplace interiors.
+- `/work`: selected projects, the approved 10+ completed-project count, and filters for architecture, residential, commercial and workplace projects.
 - `/work/ghatkopar-apartment`, `/work/ratnagiri-apartment`, `/work/anagha-salon`, `/work/andheri-apartment`, `/work/thane-apartment`: project descriptions and matching photographs from the supplied project document.
 - `/work/ratnagiri-1bhk`, `/work/wakad-3bhk`, `/work/nerul-workspace`: additional curated residential and workplace galleries. The former Dahisar and Vikhroli project routes return 404.
 - `/recognition`: D&V’25 award information and selected photographed projects.

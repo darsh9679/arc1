@@ -213,6 +213,55 @@
       }
     ]
   },
+  "anagha-salon-academy": {
+    "gallery": [
+      {
+        "src": "/images/projects/anagha-salon-academy/gallery/01-styling-floor.webp?v=26df6a3faa22",
+        "title": "Salon styling floor",
+        "alt": "Deep teal styling chairs, mirrored stations and a timber staircase inside the Juinagar salon.",
+        "aspect": "landscape",
+        "width": 958,
+        "height": 637,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAgEAACAgICAgMAAAAAAAAAAAABAgMRABIEMRQhQVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQEBAQEAAAAAAAAAAAAAAAACABEi/9oADAMBAAIRAxEAPwAW5Oo0MzXX1eUIoaYiU0NbF9nrAk48TIzlBsFPvI5mPiRmzZY/P5kDqPTf/9k="
+      },
+      {
+        "src": "/images/projects/anagha-salon-academy/gallery/02-styling-stations.webp?v=987be18a21a2",
+        "title": "Styling stations",
+        "alt": "Deep teal styling chairs flank a lit timber display cabinet and tall mirrors.",
+        "aspect": "portrait",
+        "width": 853,
+        "height": 1280,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBf/EACAQAAICAQQDAQAAAAAAAAAAAAECAxEABCEyoRMUIlH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAAIDAAAAAAAAAAAAAAAAAAABAhEx/9oADAMBAAIRAxEAPwCMcUTpdBCvKwNsFEbLYgBH7j0SH1XJUoZB9DfvM1xqA5AYoL4+QCu8lHWJ2f/Z"
+      },
+      {
+        "src": "/images/projects/anagha-salon-academy/gallery/03-reception.webp?v=4e7a7fce4052",
+        "title": "Reception by the entrance",
+        "alt": "Curved white reception desk with a timber countertop and a brass band beside the glazed entrance.",
+        "aspect": "portrait",
+        "width": 853,
+        "height": 1280,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIE/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIDEQAEEtEhMWFiwf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwB9ezxQsLKyCrCdD3yk0MTRqzByxAJt25x3CvuLbS3tzmSTUyK5VdtDxf3J1IUP/9k="
+      },
+      {
+        "src": "/images/projects/anagha-salon-academy/gallery/04-salon-and-wash-station-retouched.webp?v=60b6878bd5ad",
+        "title": "Salon and wash station (AI-retouched)",
+        "alt": "Empty teal styling chairs beside a black wash basin and the glazed salon entrance.",
+        "aspect": "landscape",
+        "width": 1280,
+        "height": 853,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgIE/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIDBAARIUETcYH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAAMBAAAAAAAAAAAAAAAAAAABAhH/2gAMAwEAAhEDEQA/AIS+pjVoYQFVu1A38zdWkaSNpHi8a7AUA649YYqSOLAUMQGbkDFVljHUcodFRx3kOsFTp//Z"
+      },
+      {
+        "src": "/images/projects/anagha-salon-academy/gallery/05-mirror-wall-retouched.webp?v=9357d994c6ef",
+        "title": "Mirrors and product display (AI-retouched)",
+        "alt": "Empty teal styling chairs in front of tall mirrors and illuminated timber product shelves.",
+        "aspect": "landscape",
+        "width": 1280,
+        "height": 853,
+        "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABcQERQRDhcUEhQaGBcbIjklIh8fIkYyNSk5UkhXVVFIUE5bZoNvW2F8Yk5QcptzfIeLkpSSWG2grJ+OqoOPko3/2wBDARgaGiIeIkMlJUONXlBejY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY3/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAHxAAAgIBBAMAAAAAAAAAAAAAAQIDEQAEEyFBEiIy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEC/9oADAMBAAIRAxEAPwCFmRnaM8t5FFBFi81jljfVbCBgwsGuqw+qjRpI1ZbG3eL0frEWAAYqOa5+R3k6cgwaqX//2Q=="
+      }
+    ]
+  },
   "andheri-apartment": {
     "gallery": [
       {

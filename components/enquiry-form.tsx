@@ -229,10 +229,10 @@ export function ContactMap() {
   return (
     <figure className={`contact-map ${styles.map}`}>
       <iframe
-        title={`Google Maps address search for ${studio.address.replaceAll('\n', ' ')}`}
+        title="Google Maps pin for Vidya Bhuvan, Shivaji Park, Mumbai"
         src={studio.mapEmbedUrl}
         loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
+        referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       />
       <figcaption className={styles.mapCaption}>

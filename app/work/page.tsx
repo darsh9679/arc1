@@ -6,7 +6,7 @@ import { projects } from '@/lib/content';
 import styles from './work.module.css';
 export const metadata = pageMetadata(
   'Work',
-  'Explore architecture and selected residential, hospitality and workplace interiors by Trayaksh Architeqts.',
+  'Explore architecture and selected residential, commercial and workplace interiors by Trayaksh Architeqts.',
   '/work',
   '/og.png',
 );

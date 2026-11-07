@@ -121,7 +121,7 @@ export default function Home() {
               A closer look at <em>our work.</em>
             </h2>
             <p className={styles.sectionDeck}>
-              Homes, hospitality and workplace interiors across Mumbai and
+              Homes, commercial and workplace interiors across Mumbai and
               Maharashtra.
             </p>
           </div>

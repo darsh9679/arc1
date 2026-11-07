@@ -86,8 +86,14 @@
 .editorialCover {
   width: 100%;
   aspect-ratio: 3 / 2;
-  max-height: 520px;
   background: #eeede6;
+}
+.responsiveCover {
+  position: relative;
+  display: block;
+}
+.responsiveCover img {
+  object-fit: cover;
 }
 .hero figcaption {
   display: flex;
@@ -102,6 +108,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-height: 520px;
   padding: clamp(24px, 4vw, 48px);
   border: 1px solid var(--color-line);
   background: linear-gradient(135deg, #e9e8df, #f6f5ef);
@@ -410,9 +417,15 @@
     grid-column: 1;
     grid-row: 2;
   }
-  .heroPhoto,
   .editorialCover {
     max-height: 420px;
+  }
+  .hero:has(> .responsiveCover) {
+    width: min(100%, 420px);
+    justify-self: center;
+  }
+  .responsiveCover {
+    aspect-ratio: 4 / 5;
   }
   .hero figcaption {
     padding-top: 9px;

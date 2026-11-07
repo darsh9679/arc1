@@ -1,3 +1,4 @@
+import Image, { getImageProps } from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import {
@@ -14,6 +15,10 @@ import styles from './project.module.css';
 import { pageMetadata } from '@/lib/metadata';
 import { PlaceholderImage } from '@/components/placeholder-image';
 import { ProjectGallery } from '@/components/project-gallery';
+
+const heroSizes =
+  '(max-width: 700px) calc(100vw - 48px), (max-width: 1600px) 52vw, 820px';
+const phoneCoverSizes = '(max-width: 468px) calc(100vw - 48px), 420px';
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -46,6 +51,20 @@ export default async function ProjectDetail({
   const project = projects.find((item) => item.slug === slug);
   if (!project) notFound();
   const next = projects[(projects.indexOf(project) + 1) % projects.length];
+  const cover = project.detailCover;
+  const heroImage = project.gallery.find((image) => image.src === project.hero);
+  const heroRatio =
+    heroImage?.width && heroImage.height
+      ? Math.max(4 / 3, heroImage.width / heroImage.height)
+      : undefined;
+  const phoneCover = cover
+    ? getImageProps({
+        src: cover.phone,
+        alt: cover.alt,
+        fill: true,
+        sizes: phoneCoverSizes,
+      }).props.srcSet
+    : undefined;
 
   return (
     <main
@@ -84,17 +103,38 @@ export default async function ProjectDetail({
               )}
             </div>
             <figure className={styles.hero} data-project-hero>
-              {project.hero ? (
+              {cover ? (
+                <picture
+                  className={`${styles.heroPhoto} ${styles.responsiveCover}`}
+                >
+                  <source
+                    media="(max-width: 700px)"
+                    srcSet={phoneCover}
+                    sizes={phoneCoverSizes}
+                  />
+                  <Image
+                    src={cover.laptop}
+                    alt={cover.alt}
+                    fill
+                    sizes={heroSizes}
+                    loading="eager"
+                    fetchPriority="high"
+                  />
+                </picture>
+              ) : project.hero ? (
                 <PlaceholderImage
                   src={project.hero}
                   variant={project.drawing}
                   alt={
+                    heroImage?.alt ||
                     project.gallery[0]?.alt ||
                     `${project.title}, ${project.typology.toLowerCase()} interior.`
                   }
                   className={styles.heroPhoto}
-                  fit="contain"
-                  sizes="(max-width: 700px) calc(100vw - 48px), (max-width: 1600px) 52vw, 820px"
+                  style={{ aspectRatio: heroRatio }}
+                  fit="cover"
+                  objectPosition={heroImage?.objectPosition}
+                  sizes={heroSizes}
                   priority
                 />
               ) : (
@@ -111,7 +151,12 @@ export default async function ProjectDetail({
                   )}
                 </div>
               )}
-              {project.location && <figcaption>{project.location}</figcaption>}
+              {(project.location || cover) && (
+                <figcaption>
+                  {project.location}
+                  {cover && <span>AI-refined cover</span>}
+                </figcaption>
+              )}
             </figure>
             {project.gallery.length > 0 && (
               <div className={styles.openingActions}>

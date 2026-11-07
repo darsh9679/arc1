@@ -9,6 +9,10 @@ export const andheriDaylightPhoto = {
 
 /** Design studies used to illustrate the practice's process. */
 export const conceptImages = {
+  understand: {
+    src: '/images/studio/process-understand-v1.webp',
+    alt: 'Illustration of an architect and client reviewing a plan beside concrete foundations.',
+  },
   workspace: {
     src: '/images/concepts/workspace-wide.webp',
     alt: 'Workspace design study with warm timber joinery, a communal table and soft city-facing daylight.',

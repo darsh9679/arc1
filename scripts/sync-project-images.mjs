@@ -19,6 +19,7 @@ export const PROJECT_SLUGS = [
   'ghatkopar-apartment',
   'ratnagiri-apartment',
   'anagha-salon',
+  'anagha-salon-academy',
   'andheri-apartment',
   'thane-apartment',
   'dahisar-3bhk',

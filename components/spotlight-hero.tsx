@@ -55,30 +55,44 @@ const sceneProjects = [
 ] as const;
 const scenes = sceneProjects.map((project) => {
   const isHouse = project.slug === 'patwardhan-house';
+  const isKalyanSalon = project.slug === 'anagha-salon';
   const photo =
     project.slug === 'andheri-apartment'
       ? andheriDaylightPhoto
       : projectImages[project.slug].gallery[0];
+  const mobilePhoto = isKalyanSalon
+    ? projectImages[project.slug].gallery.find(({ src }) =>
+        src.split('?')[0].endsWith('/02-staircase-and-display.webp'),
+      )
+    : undefined;
 
   return {
     ...photo,
     ...project,
-    desktopSrc: `/images/desktop-hero/${project.slug}-landscape-${project.slug === 'anagha-salon' ? 'v3' : 'v1'}.webp`,
-    desktopHeroPosition: isHouse ? '50% 35%' : '50% 50%',
-    desktopAlt: isHouse
-      ? photo.alt
-      : project.slug === 'anagha-salon'
-        ? 'Welcome beauty family salon and spa interior with teal chairs, mirrors and layered lighting.'
+    desktopSrc: isKalyanSalon
+      ? '/images/desktop-hero/kalyan-salon-landscape-v1.webp'
+      : `/images/desktop-hero/${project.slug}-landscape-v1.webp`,
+    desktopHeroPosition: isHouse
+      ? '50% 35%'
+      : isKalyanSalon
+        ? '50% 62%'
+        : '50% 50%',
+    desktopAlt:
+      isHouse || isKalyanSalon
+        ? photo.alt
         : `${project.title} interior in ${project.location}.`,
-    mobileSrc: `/images/mobile-hero/${project.slug}-portrait-v1.webp`,
+    mobileSrc: isKalyanSalon
+      ? mobilePhoto?.src
+      : `/images/mobile-hero/${project.slug}-portrait-v1.webp`,
     portraitPosition: isHouse
       ? '50% 50%'
       : project.slug === 'thane-apartment'
         ? '50% 35%'
         : '50% 65%',
-    mobileAlt: isHouse
-      ? photo.alt
-      : `${project.title} interior in ${project.location}.`,
+    mobileAlt:
+      isHouse || isKalyanSalon
+        ? (mobilePhoto?.alt ?? photo.alt)
+        : `${project.title} interior in ${project.location}.`,
     href: `/work/${project.slug}`,
   };
 });
